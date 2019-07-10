@@ -1,0 +1,42 @@
+* {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+html {
+    background: black;
+    color: white;
+    font-size: 8px;
+}
+
+
+.logo { background: url(/src/logoColor.svg) center no-repeat; }
+.logo.color { background: url(/src/logoColor.svg) center no-repeat; }
+.logo.black { background: url(/src/logoBlack.svg) center no-repeat; }
+.logo.white { background: url(/src/logoWhite.svg) center no-repeat; }
+
+.logoLabel.color { background: url(/logoLabelColor.svg) center no-repeat; }
+
+
+h1 {
+    font-weight: 500;
+}
+p {
+    font-weight: 500;
+}
+a {
+    font-size: inherit;
+    color: inherit;
+    text-decoration: inherit;
+}
+
+
+.center {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+
