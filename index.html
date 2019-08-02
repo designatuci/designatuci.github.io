@@ -3,50 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Design at UCI is the community on campus for passionate designers. We love graphic, UX, UI, and motion design. Join us at our next meeting!">    
+    <meta name="author" content="Kailer Garcia">
+    <meta name="keywords" content="design,at,UCI,university,irvine,UC,motion,graphic,UX,UI,learn,club,group,community,organization">
+    
+    <link rel="icon" href="/favicon/favicon96x.png" sizes="96x96">
+    <link rel="icon" href="/favicon/favicon192x.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="/favicon/favicon180x.png" sizes="180x180">
 
     <title>Design at UCI</title>
 
     <script src="http://static.kailer.co/jq"></script>
+    <script src="script.js"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=DM+Sans:500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/global.css">
+    <link rel="stylesheet" href="/tokens.css">
     <link rel="stylesheet" href="/ui.css">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleMobile.css">
 </head>
 <body>
     
 
-    <div id="container">
-            <div class="center">
-            <div id="icon"></div>
-            <p>Website under development</p>
+    <div id="nav">
+        <a href="/" class="logo"></a>
+        <a href="/schedule/" class="link">schedule</a>
+        <a href="/resources/" class="link">resources</a>
+        <a href="/membership/" class="link">membership</a>
+        <a href="/about/" class="link">about</a>
+        <a href="/contact/" id="join" class="link">contact</a>
+    </div>
+
+    <div id="s-splash">
+        <h1>Design<br>at UCI</h1>
+        <a href="/join/" id="action">Join our next meeting</a>
+        <div class="graphic">
+            <svg id="bg" viewBox="0 0 100 40">
+                <rect fill-rule="evenodd" fill="#0CCCFF" width="100" height="40"/>
+                <path fill-rule="evenodd" d="M83.1,0c-11,11.6-17.3,28.5-16.6,40H45c3.3-6.7,10.3-15.8,23.4-29.1L71,8.4L82,0H83.1z"/>
+                <polygon fill-rule="evenodd" fill="#FF5C2E" points="0,0 82.1,0 29.7,40 0,40 "/>
+                <path fill-rule="evenodd" fill="#FFFFFF" d="M29,40c9-6.7,24.9-18.6,41.9-31.5C56.2,23.2,48.5,33,45,40H29z"/>
+                <polygon fill-rule="evenodd" fill="#FFCC45" points="0,25 0,0 60,0 "/>
+            </svg>       
+            <svg id="lines" viewBox="0 0 100 40">
+                <path fill="none" stroke="#00A4FF" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+                    M83.7,44.6c-14.1-5.4-11.2-33.9,9.6-50"/>
+                <path fill="none" stroke="#00E2FF" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+                    M95.1-3.6c-14,18.9-12.1,41,1.9,46.4"/>
+                <path fill="none" stroke="#A7D4DF" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+                    M102.8-9.5c-14,18.9-14.2,40.6,4.2,42.3"/>
+                <path fill="none" stroke="#5D0070" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+                    M88.6-5.1c0.1-0.1,0.3-0.2,0.4-0.3L88.6-5.1C67.9,11,49.5,49.9,63.5,55.3"/>
+                <path fill="none" stroke="#000071" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+                    M53.3,61.7C37.3,38.2,84.4-3.6,89-5.4"/>
+                <polyline fill="none" stroke="#FF282E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+                    95.8,-12.2 5.5,46 83.7,44.6 "/>
+                <line fill="none" stroke="#FF892E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="69.5" y1="-1.1" x2="-5.1" y2="37.9"/>
+                <polyline fill="none" stroke="#FF9CB8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+                    -10.7,36.1 -10.7,20 94.7,-18.6 "/>
+                <polyline fill="none" stroke="#FF9D2E" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+                    94.7,-18.6 -14.1,11.5 -10.7,36.1 "/>
+                <path fill="none" stroke="#4DFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+                    M70,9.3c-6.6,5.9-21.1,16.4-34.2,33.5"/>
+            </svg>
+                     
         </div>
     </div>
 
-    
-    <style>
-        body {
-            text-align: center;
-            background: black;
-        }
-        #container {
-            position: absolute;
-            top: 0; bottom: 0; right: 0; left: 0;
-        }
-        #icon {
-            width: 250px;
-            height: 100px;
-            background: url(logoLabelColor.svg) no-repeat center;
-            background-size: contain;
-        }
-        p {
-            margin-top: 32px;
-            display: inline-block;
-            color: white;
-            font-size: 20px;
-        }
-    </style>
-    
+    <div id="s-about">
+        <div class="max">
+            <div class="img"></div>
+            <h1 class="caption">A community that loves creating and learning diverse areas of digital design</h1>
+            <div class="list">
+                <p class="caption">Learn new techniques in presentations</p>
+                <p class="caption">Meet other like-minded designers</p>
+                <p class="caption">Have conversations with real world designers</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="maxLine"></div>
+
+    <div id="s-res">
+            <div class="max">
+                <h1 class="caption">Powerful Resources Just for You</h1>
+                <p class="caption">Design at UCI offers many free collections of great online resources in addition to those at UCI. Paid members can also access exclusive premium accounts on websites like SkillShare.</p>
+                <a href="/resources/">See them now</a>
+            </div>
+        </div>
+
+    <div id="s-join" class="max">
+        <h1 class="middle">If you love design,<br>there's no reason not to join us.</h1>
+        <a href="/join/" class="middle" id="action">Join Design at UCI</a>
+        <div class="background"></div>
+    </div>
+
+    <div id="bottom">
+        <div class="max">
+            <div>
+                <div class="logo"></div>
+                <div>
+                    <p>Copyright 2019 Design at UCI.</p>
+                    <p>This website does not collect any information.</p>
+                </div>
+            </div>
+            <div class="links">
+                <a href="/" class="selected">Homepage</a>
+                <a href="/schedule/">schedule</a>
+                <a href="/resources/">Resources</a>
+                <a href="/join/">Join</a>
+                <a href="/membership/">Membership</a>
+                <a href="/contact/">Contact</a>
+                <a href="/brand/">Brand</a>
+            </div>
+        </div>
+        
+        
+    </div>
 
 </body>
 </html>

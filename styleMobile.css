@@ -1,0 +1,87 @@
+@media only screen and (max-width: 700px) {
+
+  #nav .link {
+    font-size: 0;
+  }
+  #nav .logo {
+      transform: translateY(2rem);
+  }
+  #nav #join {
+      font-size: 2.5rem;
+  }
+#s-splash {
+    padding: 8rem 12rem;
+}
+
+#s-splash h1 {
+    font-size: 5rem;
+    margin-top: 2rem;
+}
+
+
+#s-splash #action {
+    padding: 1.5rem 2rem;
+    font-size: 2.5rem;
+}
+
+
+
+
+#s-about {
+    padding: 12rem 8rem;
+}
+#s-about p {
+    font-size: 2.5rem;
+}
+#s-about h1 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+#s-about .list p {
+    margin-top: 2rem;
+}
+#s-about .list p::before {
+    content: "+";
+    padding-right: 2rem;
+    color: #FF9C35;
+}
+#s-about a {
+    position: relative;
+    display: table;
+    margin-top: 3rem;
+    font-size: 2.5rem;
+    color: #FF9C35;
+}
+
+#s-about .img {
+    width: 15rem;
+    height: 15rem;
+    margin-top: -3rem;
+    margin-bottom: 2rem;
+}
+
+
+
+#s-join {
+    padding: 15rem 8rem;
+}
+#s-join .background {
+    top: 4rem; left: 4rem; right: 4rem; bottom: 4rem;
+}
+#s-join p {
+    font-size: 3rem;
+}
+#s-join h1 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+#s-join #action {
+    margin-top: 6rem;
+    margin-bottom: -2rem;
+    font-size: 2.5rem;
+    padding: 2rem 3rem;
+
+}
+    
+    
+}

@@ -1,0 +1,88 @@
+
+#s-splash {
+    padding: 15rem 20rem;
+}
+#s-splash h1 {
+    text-align: center;
+    font-size: 6rem;
+}
+#s-splash .img {
+    display: block;
+    height: 10rem;
+    width: 10rem;
+    background: url(/src/img/join.svg) center no-repeat;
+    margin: auto;
+    margin-bottom: 4rem;
+    margin-top: -4rem;
+}
+
+
+
+
+#s-info {
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 14rem;
+}
+#s-info h1 {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+#s-info .left h2 {
+    font-size: 4rem;
+    color: #01B7FF;
+}
+#s-info .left h3 {
+    font-size: 2rem;
+    margin-top: 4rem;
+}
+#s-info .left p {
+    font-size: 2rem;
+    max-width: 40rem;
+    margin-top: 2rem;
+}
+#-date {
+    margin-top: 4rem;
+}
+
+
+
+#s-info .right input {
+    display: block;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    padding: 2rem;
+    font-size: 2.5rem;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+    max-width: 50rem;
+    background: var(--softGrey);
+}
+#s-info .right p {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+#-signup {
+    cursor: pointer;
+    color: white;
+    background: #FC593D;
+    font-weight: bold;
+    display: table;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(.54,.25,.27,1);
+}
+#-signup:hover {
+    transform: scale(1.04);
+    box-shadow: 0 1rem 2rem -1rem rgb(240, 35, 62);
+}
+#-signup::placeholder {
+    color: black;
+}

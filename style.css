@@ -1,0 +1,175 @@
+
+
+#nav {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    color: white;
+}
+#nav .logo {
+    background: url(/src/logoWhite.svg) no-repeat center;
+}
+#nav .link::after {
+    background: white;
+}
+#nav #join {
+    background: white;
+    color: black;
+}
+
+
+.middle {
+    text-align: center;
+    margin: auto;
+}
+
+
+#s-splash {
+    position: relative;
+    padding: 20rem 20rem;
+    /* background: url(/src/img/splash.svg) no-repeat left;
+    background-size: cover; */
+}
+#s-splash .graphic {
+    background: #0CCCFF;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+#s-splash .graphic svg {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+#s-splash .graphic #lines {
+    stroke-width: 0.2;
+    stroke-dasharray: 50 60;
+    animation: antmarch 7s linear infinite;
+}
+@keyframes antmarch {
+    0% { stroke-dashoffset: 0; }
+    100% { stroke-dashoffset: 110; }
+}
+
+#s-splash h1 {
+    color: white;
+    font-size: 10rem;
+    font-weight: bold;
+}
+#s-splash #action {
+    color: black;
+    background: white;
+    font-weight: bold;
+    display: table;
+    margin-top: 4rem;
+    font-size: 2.5rem;
+    padding: 2rem 3rem;
+    border-radius: 0.5rem;
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(.54,.25,.27,1);
+}
+#s-splash #action:hover {
+    transform: scale(1.04);
+    box-shadow: 0 1rem 2rem 0rem rgb(255, 0, 0);
+}
+
+
+
+
+
+#s-about {
+    background: black;
+    color: white;
+    padding: 20rem 15rem;
+}
+#s-about p {
+    font-size: 3rem;
+}
+#s-about h1 {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+}
+#s-about .list p {
+    margin-top: 2rem;
+}
+#s-about .list p::before {
+    content: "+";
+    padding-right: 2rem;
+    color: #FF9C35;
+}
+
+#s-about .img {
+    width: 18rem;
+    height: 18rem;
+    margin-top: -4rem;
+    margin-bottom: 2rem;
+    background: url(/src/img/loveDesign.svg) center no-repeat;
+}
+
+
+
+
+#s-res {
+    padding: 20rem 15rem;
+}
+#s-res p {
+    font-size: 3rem;
+}
+#s-res h1 {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+}
+#s-res a {
+    position: relative;
+    display: table;
+    margin-top: 3rem;
+    font-size: 3rem;
+    color: #FF9C35;
+}
+#s-res a::after {
+    content: "↗︎";
+    padding-left: 2rem;
+}
+
+
+
+
+#s-join {
+    padding: 20rem 15rem;
+    position: relative;
+}
+#s-join .background {
+    z-index: -1;
+    background: var(--blue);
+    position: absolute;
+    top: 8rem; left: 8rem; right: 8rem; bottom: 8rem;
+}
+#s-join p {
+    font-size: 3rem;
+}
+#s-join h1 {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+}
+#s-join #action {
+    color: black;
+    background: white;
+    font-weight: bold;
+    display: table;
+    margin-top: 6rem;
+    margin-bottom: -2rem;
+    font-size: 2.5rem;
+    padding: 2rem 3rem;
+    border-radius: 0.5rem;
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(.54,.25,.27,1);
+}
+#s-join #action:hover {
+    transform: scale(1.04);
+    box-shadow: 0 1rem 2rem -1rem rgb(77, 0, 219);
+}
