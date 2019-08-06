@@ -1,0 +1,40 @@
+p {
+    font-size: 3rem;
+    max-width: 96rem;
+}
+
+#s-first {
+    padding: 15rem 10rem;
+}
+#s-first h1 {
+    font-size: 5rem;
+}
+
+#s-first h4 {
+    margin-top: 6rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--blue);
+}
+
+
+
+#s-more {
+    padding: 12rem 6rem;
+}
+#s-more h1 {
+    font-size: 4rem;
+}
+
+#s-more .table {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: left;
+    margin-top: 5rem;
+}
+#s-more a {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 3rem;
+    padding: 1rem 0;
+}

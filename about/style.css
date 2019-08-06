@@ -1,0 +1,89 @@
+h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+h2 {
+    font-size: 4rem;
+}
+p {
+    font-size: 2.5rem;
+}
+
+.max.small {
+    max-width: 96rem;
+    padding-right: 32rem;
+}
+
+#nav {
+    position: absolute;
+}
+#nav .link {
+    color: white;
+}
+#nav .link::after {
+    background: white;
+}
+#nav .logo {
+    background: url(/src/logoWhite.svg) no-repeat center;
+}
+#s-splash {
+    background: black;
+    padding: 15rem 10rem;
+    padding-top: 20rem;
+}
+#s-splash p {
+    color: white;
+    margin-top: 5rem;
+}
+#s-splash h1 {
+    color: var(--blue);
+}
+
+
+
+#s-team {
+    padding: 10rem 10rem;
+}
+#s-team > h1:first-of-type {
+    margin-top: 2rem;
+    margin-bottom: 12rem;
+    text-align: center;
+}
+.people {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10rem;
+}
+.person .split {
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    grid-gap: 4rem;
+}
+.person .icon {
+    background: gainsboro;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.person .name {
+    color: black;
+    font-size: 3rem;
+    margin-top: 0.5rem;
+}
+.person div {
+    font-size: 2rem;
+}
+.person .bio {
+    margin-top: 4rem;
+    text-align: justify;
+}
+.person .bio .label {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: inherit;
+    display: block;
+    font-weight: bold;
+}

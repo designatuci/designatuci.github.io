@@ -1,5 +1,4 @@
 
-
 h1 {
     font-size: 4rem;
     font-weight: bold;
@@ -7,21 +6,32 @@ h1 {
 
 
 #s-next {
-    padding: 15rem 10rem;
-    padding-bottom: 10rem;
+    padding: 10rem 10rem;
 }
 #s-next .split {
-    padding: 4rem;
+    cursor: pointer;
+    margin-top: 5rem;
     display: grid;
     grid-template-columns: 2fr 3fr;
     grid-gap: 4rem;
+    padding: 4rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 0 2px var(--softGrey);
 }
-
+#s-next .split:hover {
+    box-shadow: 0 0 0 2px var(--blue);
+}
 
 
 
 #s-next .left h1 {
     font-size: 4rem;
+    color: #01B7FF;
+}
+#s-next .left h2 {
+    font-weight: bold;
+    margin-top: 2rem;
+    font-size: 3rem;
     color: #01B7FF;
 }
 
@@ -38,21 +48,34 @@ h1 {
 
 #s-list {
     padding: 10rem;
+    background: black;
+    color: white;
 }
 #s-list .events {
     padding: 4rem 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 6rem;
+    grid-gap: 2rem;
+    padding-bottom: 8rem;
 }
+
+#s-list p {
+    font-size: 2.5rem;
+}
+#s-list .one {
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+
 .event {
     cursor: pointer;
     padding: 3rem;
-    transition-duration: 0.2s;
+    transition-duration: 0.1s;
     border-radius: 0.5rem;
+    background: rgb(0, 0, 82);
 }
 .event:hover {
-    box-shadow: 0 0 0 0.25rem var(--softGrey), 0 2rem 1rem -1rem var(--softGrey);
+    box-shadow: 0 0 0 2px var(--blue);
 }
 
 .event p {
@@ -69,13 +92,17 @@ h1 {
     transition-duration: 0.2s;
 }
 .event:hover h1 {
-    color: #01B7FF;
+    color: var(--blue);
 }
 
 
 
 
-
 #bottom {
-    margin-top: 8rem;
+    background: black;
+    color: white;
+    border-top: solid 2px rgb(43, 43, 43);
+}
+#bottom .logo {
+    background: url(/src/logoFullWhite.svg) left no-repeat;
 }

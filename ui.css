@@ -33,6 +33,10 @@
 #nav .link:hover::after {
     transform: scaleX(1);
 }
+#nav .link.selected:after {
+    transform: scaleX(1);
+    background: #01B7FF;
+}
 
 #nav #join {
     position: absolute;

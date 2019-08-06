@@ -1,0 +1,19 @@
+h1 {
+    font-size: 5rem;
+}
+p {
+    font-size: 2.5rem;
+}
+
+
+#s-splash {
+    padding: 10rem 8rem;
+}
+#s-splash p {
+    margin-top: 2rem;
+}
+
+
+#s-list {
+    padding: 10rem 8rem;
+}
