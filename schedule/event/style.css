@@ -41,7 +41,11 @@
 
 #s-head {
     padding: 8rem 8rem;
-    padding-bottom: 20rem;
+    margin: auto;
+    margin-bottom: 8rem;
+    border-radius: 1rem;
+    background: white;
+    color: black;
 }
 
 #-type {

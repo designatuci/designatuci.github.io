@@ -13,7 +13,8 @@
 
     <title>Design at UCI</title>
 
-    <script src="http://static.kailer.co/jq"></script>
+    <script src="/jq.js"></script>
+    <script src="/global.js"></script>
     <script src="script.js"></script>
 
     <link rel="stylesheet" href="/global.css">
@@ -29,9 +30,22 @@
         <a href="/" class="logo"></a>
         <a href="/schedule/" class="link">schedule</a>
         <a href="/resources/" class="link">resources</a>
-        <a href="/membership/" class="link">membership</a>
         <a href="/about/" class="link">about</a>
-        <a href="/contact/" id="join" class="link">contact</a>
+        <a href="/contact/" id="join" class="link button">contact</a>
+    </div>
+    <div id="navMobile">
+        <div class="logo"></div>
+        <div id="navButton" onclick="toggleMobileNav()">
+            <div class="one"></div>
+            <div class="two"></div>
+        </div>
+        <div class="links">
+            <a href="/" class="link">home</a>
+            <a href="/schedule/" class="link">schedule</a>
+            <a href="/resources/" class="link">resources</a>
+            <a href="/about/" class="link">about</a>
+            <a href="/contact/" class="link">contact</a>
+        </div>
     </div>
 
     <div id="s-splash">
@@ -81,8 +95,14 @@
                     <path d="M79.2,56.3V40.9h4v15.5H79.2z M81.2,38.5c-0.7,0-1.3-0.2-1.8-0.7c-0.5-0.4-0.7-1-0.7-1.7s0.2-1.2,0.7-1.6
                         c0.5-0.4,1.1-0.6,1.8-0.6c0.7,0,1.3,0.2,1.8,0.6c0.5,0.4,0.7,1,0.7,1.6s-0.2,1.2-0.7,1.7C82.5,38.2,81.9,38.5,81.2,38.5z"/>
                 </svg>
-                <a href="/join/" id="action">Join our next meeting</a>
-                <p>Scroll down to learn more</p>
+                <a href="/join/" id="action">join the best design club</a>
+            </div>
+            <div id="arrow" onclick="scrollDown()">
+                <svg viewbox="0 0 50 50">
+                    <line x1="25" y1="0" x2="25" y2="50"/>
+                    <line x1="25" y1="50" x2="40" y2="35"/>
+                    <line x1="25" y1="50" x2="10" y2="35"/>
+                </svg>
             </div>
         </div>
 
@@ -91,29 +111,76 @@
     <div id="s-about">
         <div class="max">
             <div class="img"></div>
-            <h1 class="caption">A community that loves creating and learning diverse areas of digital design</h1>
-            <div class="list">
+            <h1 class="caption">A community of passionate designers that love exploring the possibilities of digital mediums.</h1>
+            <!-- <div class="list">
                 <p class="caption">Learn new techniques in presentations</p>
                 <p class="caption">Meet other like-minded designers</p>
                 <p class="caption">Have conversations with real world designers</p>
+            </div> -->
+            <div class="portraits">
+                <div class="portrait one"></div>
+                <div class="portrait two"></div>
+                <div class="portrait three"></div>
+                <a class="portrait" href="/about/">Meet our club</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="s-new">
+
+        <div class="max">
+            <div class="img"></div>
+            <h1>Learn something new about design each week.</h1>
+            <p class="caption">We always have something exciting, fun, and useful in our presentations–happening every week–including live interactive tutorials, real world designer guest speakers, and more.</p>
+        
+            <div class="table">
+                <div class="item">
+                    <div class="img" style="background:url(/src/img/something1.svg)"></div>
+                    <h2>Design Workshops</h2>
+                </div>
+                <div class="item">
+                    <div class="img" style="background:url(/src/img/something2.svg)"></div>
+                    <h2>Creative Visits</h2>
+                </div>
+                <div class="item">
+                    <div class="img" style="background:url(/src/img/something3.svg)"></div>
+                    <h2>Group Activities</h2>
+                </div>
+                <div class="item">
+                    <div class="img" style="background:url(/src/img/something4.svg)"></div>
+                    <h2>More</h2>
+                </div>
+            </div>
+            <a href="/schedule/">see what's happening this week</a>
+        </div>
+
+    </div>
+
+    <div id="s-res">
+        <div class="max">
+            <h1 class="caption">Powerful Online Resources</h1>
+            <p>We've compiled our favorite videos and articles to boost your skills.</p>
+            <div class="table">
+                <div>
+                    <h2>Videos</h2>
+                    <div class="img"></div>
+                </div>
+                <div>
+                    <h2>Articles</h2>
+                    <div class="img"></div>
+                </div>
+                <div>
+                    <h2>Proprietary guides</h2>
+                    <div class="img"></div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="maxLine"></div>
-
-    <div id="s-res">
-            <div class="max">
-                <h1 class="caption">Powerful Resources Just for You</h1>
-                <p class="caption">Design at UCI offers many free collections of great online resources in addition to those at UCI. Paid members can also access exclusive premium accounts on websites like SkillShare.</p>
-                <a href="/resources/">See them now</a>
-            </div>
-        </div>
-
-    <div id="s-join" class="max">
-        <h1 class="middle">If you love design,<br>there's no reason not to join us.</h1>
-        <a href="/join/" class="middle" id="action">Join Design at UCI</a>
-        <div class="background"></div>
+    <div id="s-join">
+        <h1 class="middle">If you enjoy design,<br>there's no reason not to join us.</h1>
+        <a href="/join/" class="middle" id="action">join Design at UCI</a>
     </div>
 
     <div id="bottom">
@@ -124,10 +191,14 @@
                     <p>Copyright 2019 Design at UCI.</p>
                     <p>This website does not collect any information.</p>
                 </div>
+                <div class="socialMedia">
+                    <a href="https://www.facebook.com/designatuci/" class="socialMediaLink facebook"></a>
+                    <a href="https://www.instagram.com/designatuci/" class="socialMediaLink instagram"></a>
+                </div>
             </div>
             <div class="links">
                 <a href="/" class="selected">Homepage</a>
-                <a href="/schedule/">schedule</a>
+                <a href="/schedule/">Schedule</a>
                 <a href="/resources/">Resources</a>
                 <a href="/join/">Join</a>
                 <a href="/membership/">Membership</a>
@@ -135,8 +206,6 @@
                 <a href="/brand/">Brand</a>
             </div>
         </div>
-        
-        
     </div>
 
 

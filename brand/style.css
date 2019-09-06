@@ -28,6 +28,7 @@
 
 .maxLine {
     margin: 6rem 0;
+    background: #00007D;
 }
 
 
@@ -107,8 +108,8 @@
 .content .color h1, .content .color p {
     margin: 0;
 }
-.content .color.dark h1, .content .color.dark p {
-    color: white;
+.content .color.light h1, .content .color.light p {
+    color: black;
 }
 
 

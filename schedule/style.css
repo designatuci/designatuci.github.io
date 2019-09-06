@@ -1,3 +1,6 @@
+#nav {
+    background: #00007D;
+}
 
 h1 {
     font-size: 4rem;
@@ -9,6 +12,8 @@ h1 {
     padding: 10rem 10rem;
 }
 #s-next .split {
+    background: white;
+    color: black;
     cursor: pointer;
     margin-top: 5rem;
     display: grid;
@@ -16,10 +21,10 @@ h1 {
     grid-gap: 4rem;
     padding: 4rem;
     border-radius: 1rem;
-    box-shadow: 0 0 0 2px var(--softGrey);
+    transition-duration: 0.2s;
 }
 #s-next .split:hover {
-    box-shadow: 0 0 0 2px var(--blue);
+    box-shadow: 0 0 0 0.5rem var(--blue);
 }
 
 
@@ -41,6 +46,7 @@ h1 {
 #s-next .right p {
     margin-top: 2rem;
     font-size: 2.5rem;
+    font-weight: 500;
 }
 
 
@@ -70,39 +76,33 @@ h1 {
 .event {
     cursor: pointer;
     padding: 3rem;
-    transition-duration: 0.1s;
+    transition-duration: 0.2s;
     border-radius: 0.5rem;
-    background: rgb(0, 0, 82);
+    background: white;
+    color: black;
 }
 .event:hover {
-    box-shadow: 0 0 0 2px var(--blue);
+    background: var(--blue);
+    color: white;
+}
+#s-list .event:hover p.type {
+    color: black;
+    transition-duration: 0.2s;
 }
 
 .event p {
     font-size: 2rem;
     font-weight: bold;
 }
-.event p:first-of-type {
+#s-list .event p.type {
     color: #FC593D;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 2rem;
 }
 .event h1 {
     margin-top: 1rem;
     font-size: 3rem;
     font-weight: normal;
-    transition-duration: 0.2s;
-}
-.event:hover h1 {
-    color: var(--blue);
 }
 
-
-
-
-#bottom {
-    background: black;
-    color: white;
-    border-top: solid 2px rgb(43, 43, 43);
-}
-#bottom .logo {
-    background: url(/src/logoFullWhite.svg) left no-repeat;
-}

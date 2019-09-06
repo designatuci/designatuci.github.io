@@ -3,6 +3,9 @@
     padding: 1rem 4rem;
     top: 0; right: 0; left: 0;
 }
+#nav.light {
+    background: white;
+}
 #nav .logo {
     background: url(/src/logo.svg) no-repeat center;
     display: inline-block;
@@ -17,7 +20,9 @@
     font-weight: bold;
     padding: 1rem 2rem;
     margin: 1rem;
-    border-radius: 0.5rem;
+}
+#nav.light .link {
+    color: black;
 }
 #nav .link::after {
     content: "";
@@ -25,10 +30,13 @@
     position: absolute;
     bottom: 1rem; left: 2rem; right: 2rem;
     height: 0.20rem;
-    background: black;
+    background: white;
     transform-origin: center;
     transform: scaleX(0);
-    transition-duration: 0.1s;
+    transition-duration: 0.2s;
+}
+#nav.light .link::after {
+    background: black;
 }
 #nav .link:hover::after {
     transform: scaleX(1);
@@ -44,17 +52,21 @@
     padding: 1rem 3rem;
     background: #FF5C2E;
     color: white;
+    border-radius: 50rem;
+    transition-duration: 0.2s;
 }
 #nav #join::after {
     display: none;
 }
-
+#nav #join:hover {
+    box-shadow: 0 0 0 0.5rem #FF5C2E;
+}
 
 
 .button {
     cursor: pointer;
     padding: 1rem 2rem;
-    border-radius: 0.5rem;
+    border-radius: 100rem;
 }
 
 
@@ -75,9 +87,10 @@
 
 
 #bottom {
-    background: var(--softGrey);
+    background: black;
     color: var(--grey);
     padding: 8rem;
+    padding-bottom: 12rem;
 }
 #bottom .max {
     max-width: 1000px;
@@ -94,13 +107,33 @@
     margin: 0.5rem;
     font-weight: 500;
 }
+
+
+.socialMedia {
+    margin-top: 2rem;
+}
+.socialMedia .socialMediaLink {
+    display: inline-block;
+    margin: 0.5rem;
+    width: 5rem;
+    height: 5rem;
+    background-position: center;
+    background-size: 4rem;
+    background-repeat: no-repeat;
+}
+.socialMediaLink.facebook { background-image: url(/src/img/socialMedia/facebook-grey.svg); }
+.socialMediaLink.facebook:hover { background-image: url(/src/img/socialMedia/facebook-white.svg); }
+.socialMediaLink.instagram { background-image: url(/src/img/socialMedia/instagram-grey.svg); }
+.socialMediaLink.instagram:hover { background-image: url(/src/img/socialMedia/instagram-white.svg); }
+
+
 #bottom .links > a {
     display: table;
     font-size: 2rem;
     padding: 0.5rem;
 }
 #bottom .links > a:hover {
-    color: var(--orange);
+    color: white;
 }
 #bottom .selected {
     font-weight: 700;
@@ -113,3 +146,95 @@
     }
     
 }
+
+
+
+#navMobile {
+    display: none;
+}
+@media only screen and (max-width: 700px) {
+
+    #nav {
+        opacity: 0;
+    }
+    #navMobile {
+        overflow: hidden;
+        z-index: 100;
+        display: table;
+        position: absolute;
+        width: 100%;
+        height: 50rem;
+        top: 4rem;
+        left: 4rem;
+        max-width: 16rem;
+        max-height: 8rem;
+        background: white;
+        border-radius: 8rem;
+        transition-duration: 0.6s;
+        box-shadow: 0 0.5rem 4rem -2rem black;
+    }
+    #navMobile.open {
+        max-width: 100rem;
+        max-height: 100rem;
+        top: 0; left: 0; right: 0;
+        border-radius: 0;
+    }
+    
+    #navMobile .links {
+        max-height: 0;
+        position: absolute;
+        top: 8rem;
+        background: white;
+    }
+    #navMobile.open .links {
+        max-height: 200rem;
+    }
+
+    #navMobile .link {
+        display: block;
+        padding: 2rem 4rem;
+        font-size: 3rem;
+        color: black;
+    }
+
+    #navMobile .logo {
+        position: absolute;
+        width: 4rem;
+        height: 4rem;
+        background: url(/src/logo.svg);
+        left: 3.5rem;
+        top: 2rem;
+    }
+    
+    #navButton {
+        position: absolute;
+        cursor: pointer;
+        width: 8rem;
+        height: 8rem;
+        top: 0;
+        right: 0rem;
+    }
+
+    #navButton > div {
+        position: absolute;
+        display: block;
+        background: black;
+        height: 0.5rem;
+        width: 3rem;
+        border-radius: 1rem;
+        transform-origin: center;
+        transition-duration: 0.3s;
+    }
+    #navButton .one {
+        top: 3rem;
+        left: 2rem;
+    }
+    #navButton .two {
+        top: 4.5rem;
+        left: 2rem;
+    }
+    #navMobile.open #navButton .one { transform: rotate(45deg) translateY(1rem); }
+    #navMobile.open #navButton .two { transform: rotate(-45deg) translateY(-1rem); }
+
+}
+

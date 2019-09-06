@@ -14,25 +14,17 @@ p {
     padding-right: 32rem;
 }
 
-#nav {
-    position: absolute;
-}
-#nav .link {
-    color: white;
-}
-#nav .link::after {
-    background: white;
-}
+
 #nav .logo {
-    background: url(/src/logoWhite.svg) no-repeat center;
+    background: url(/src/logoBlack.svg) no-repeat center;
 }
 #s-splash {
-    background: black;
+    background: white;
+    color: black;
     padding: 15rem 10rem;
-    padding-top: 20rem;
+    padding-top: 16rem;
 }
 #s-splash p {
-    color: white;
     margin-top: 5rem;
 }
 #s-splash h1 {
@@ -52,7 +44,24 @@ p {
 .people {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10rem;
+    grid-gap: 4rem;
+}
+.container {
+    height: 18rem;
+}
+.container:hover {
+    z-index: 10;
+}
+
+.person {
+    overflow: hidden;
+    background: white;
+    color: black;
+    border-radius: 2rem;
+    padding: 4rem;
+    max-height: 10rem;
+    transition-duration: 0.5s;
+    box-shadow: 0 1rem 5rem -1rem black;
 }
 .person .split {
     font-weight: bold;
@@ -79,7 +88,17 @@ p {
 .person .bio {
     margin-top: 4rem;
     text-align: justify;
+    transition-duration: 0.5s;
 }
+
+.container:hover .person {
+    transform: scale(1.02);
+    max-height: 200rem;
+}
+.container:hover .person .bio {
+    z-index: 1;
+}
+
 .person .bio .label {
     margin-top: 3rem;
     margin-bottom: 1rem;

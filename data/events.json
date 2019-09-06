@@ -1,0 +1,47 @@
+[
+    {
+        "name":"Event One",
+        "start":"6:00pm",
+        "end":"7:00pm",
+        "date":"September 25th, 2019",
+        "location":"ALP 123",
+        "type":"workshop",
+        "desc":"This is event one"
+    },
+    {
+        "name":"Event Two",
+        "start":"6:00pm",
+        "end":"7:00pm",
+        "date":"September 26th, 2019",
+        "location":"ALP 123",
+        "type":"workshop",
+        "desc":"This is event Two"
+    },
+    {
+        "name":"Event Three",
+        "start":"6:30pm",
+        "end":"8:30pm",
+        "date":"September 27th, 2019",
+        "location":"ALP 123",
+        "type":"live lesson",
+        "desc":"This is event Three"
+    },
+    {
+        "name":"Event Four",
+        "start":"6:00pm",
+        "end":"7:30pm",
+        "date":"October 5th, 2019",
+        "location":"ALP 123",
+        "type":"creative visit",
+        "desc":"This is event Four"
+    },
+    {
+        "name":"Event Five",
+        "start":"1:00pm",
+        "end":"3:00pm",
+        "date":"September 26th, 2019",
+        "location":"ALP 123",
+        "type":"workshop",
+        "desc":"This is event Five"
+    }
+]

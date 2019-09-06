@@ -15,7 +15,9 @@
     background: white;
     color: black;
 }
-
+#nav #join:hover {
+    box-shadow: 0 0 0 0.5rem white;
+}
 
 .middle {
     text-align: center;
@@ -74,27 +76,64 @@
 
 
 #s-splash #action {
-    white-space: nowrap;
-    color: black;
-    background: white;
-    font-weight: bold;
-    display: table;
+    cursor: pointer;
+    display: block;
     margin-top: 10rem;
+    padding: 2rem 4rem;
+    background: var(--orange);
+    color: white;
     font-size: 2.5rem;
-    padding: 2rem 3rem;
-    border-radius: 0.5rem;
-    transition-duration: 0.4s;
-    transition-timing-function: cubic-bezier(.54,.25,.27,1);
+    font-weight: 700;
+    border-radius: 50rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 139, 0.2);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.43,.71,.12,1);
 }
 #s-splash #action:hover {
-    transform: scale(1.04);
-    box-shadow: 0 1rem 2rem 0rem rgb(28, 24, 252);
+    background: var(--blue);
+    box-shadow: 0 0 0 2rem #00007D; 
+    transform: translateY(-1rem);
 }
+
+#s-splash #arrow {
+    cursor: pointer;
+    overflow: visible;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    stroke: var(--orange);
+    stroke-width: 1rem;
+    stroke-linecap: round;
+    transform: translateY(0);
+    animation: bob 4s cubic-bezier(.3,0,.7,1) infinite;
+}
+#s-splash #arrow.hide {
+    transition-duration: 0.4s;
+    opacity: 0;
+}
+#s-splash #arrow svg { overflow: visible; }
+@keyframes bob {
+    0% { transform: translateY(0); stroke: var(--blue); }
+    50% { transform: translateY(-1.5rem); stroke: #00007D; }
+    100% { transform: translateY(0); stroke: var(--blue); }
+}
+#s-splash #arrow:hover {
+    stroke: white;
+}
+
+
+
+
+
 
 
 
 #s-about {
     padding: 20rem 15rem;
+    background: white;
+    color: black;
 }
 #s-about p {
     font-size: 3rem;
@@ -113,17 +152,125 @@
 }
 
 #s-about .img {
-    width: 18rem;
-    height: 18rem;
+    display: block;
+    width: 20rem;
+    height: 20rem;
     margin-top: -4rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     background: url(/src/img/loveDesign.svg) center no-repeat;
+}
+
+#s-about .portraits {
+    margin-top: 6rem;
+}
+
+
+#s-about .portrait {
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    height: 16rem;
+    width: 16rem;
+    margin: 2rem;
+    background: var(--yellow);
+    border-radius: 100rem;
+    background-size: cover;
+}
+#s-about .portrait.one { background-image: url(/src/img/team/tiffany.jpg); }
+#s-about .portrait.two { background-image: url(/src/img/team/nguyen.jpg); }
+#s-about .portrait.three { background-image: url(/src/img/team/kai.png); }
+
+#s-about a.portrait {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--orange);
+    padding: 5rem 2rem;
+    transition-duration: 0.2s;
+}
+#s-about a.portrait:hover {
+    background: var(--orange);
+    box-shadow: 0 0 0 1rem var(--yellow);
+    color: white;
+}
+
+
+
+#s-new {
+    padding: 20rem 15rem;
+    background: #00007D;
+    color: white;
+    text-align: center;
+}
+#s-new .img {
+    display: block;
+    width: 15rem;
+    height: 15rem;
+    margin: auto;
+    margin-top: -4rem;
+    margin-bottom: 6rem;
+    background: url(/src/img/somethingNew.svg) center no-repeat;
+}
+#s-new h1 {
+    max-width: 64rem;
+    margin: auto;
+    font-size: 5rem;
+}
+#s-new p {
+    margin: auto;
+    margin-top: 4rem;
+    font-size: 3rem;
+}
+#s-new h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--blue);
+}
+
+#s-new .table {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 8rem;
+    grid-gap: 2rem;
+    max-width: 80rem;
+}
+
+#s-new .table .item .img {
+    margin: auto;
+    height: 6rem;
+    width: 6rem;
+    margin-bottom: 0rem;
+}
+
+#s-new a {
+    cursor: pointer;
+    display: table;
+    margin: auto;
+    margin-top: 12rem;
+    margin-bottom: -6rem;
+    padding: 2rem 4rem;
+    background: var(--blue);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    border-radius: 50rem;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.43,.71,.12,1);
+}
+#s-new a:hover {
+    color: black;
+    background: white;
+    box-shadow: 0 0 0 1rem var(--blue); 
+    transform: translateY(-1rem);
 }
 
 
 
 
+
 #s-res {
+    background: black;
     padding: 20rem 15rem;
 }
 #s-res p {
@@ -138,25 +285,42 @@
     display: table;
     margin-top: 3rem;
     font-size: 3rem;
-    color: #FF9C35;
+    color: var(--orange);
 }
 #s-res a::after {
     content: "↗︎";
     padding-left: 2rem;
 }
 
+#s-res .table {
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4rem;
+}
+#s-res .table > div {
+    position: relative;
+    padding: 2rem;
+    height: 16rem;
+    border-radius: 1rem;
+    background: var(--orange);
+}
+#s-res .table h2 {
+    color: var(--yellow);
+    position: absolute;
+    font-size: 5rem;
+    text-align: left;
+}
+
 
 
 
 #s-join {
+    margin: 0;
     padding: 20rem 15rem;
     position: relative;
-}
-#s-join .background {
-    z-index: -1;
-    background: var(--blue);
-    position: absolute;
-    top: 8rem; left: 8rem; right: 8rem; bottom: 8rem;
+    color: black;
+    background: white;
 }
 #s-join p {
     font-size: 3rem;
@@ -166,19 +330,21 @@
     margin-bottom: 3rem;
 }
 #s-join #action {
-    color: black;
-    background: white;
-    font-weight: bold;
+    cursor: pointer;
     display: table;
+    margin: auto;
     margin-top: 6rem;
-    margin-bottom: -2rem;
+    padding: 2rem 4rem;
+    background: var(--blue);
+    color: white;
     font-size: 2.5rem;
-    padding: 2rem 3rem;
-    border-radius: 0.5rem;
-    transition-duration: 0.3s;
-    transition-timing-function: cubic-bezier(.54,.25,.27,1);
+    font-weight: 700;
+    border-radius: 50rem;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.43,.71,.12,1);
 }
 #s-join #action:hover {
-    transform: scale(1.04);
-    box-shadow: 0 1rem 2rem -1rem rgb(77, 0, 219);
+    background: var(--orange);
+    box-shadow: 0 0 0 1rem var(--yellow); 
+    transform: translateY(-1rem);
 }
