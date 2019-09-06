@@ -1,14 +1,18 @@
 @media only screen and (max-width: 700px) {
 
-
     #s-next {
         padding: 10rem 5rem;
+        padding-top: 17rem;
     }
     #s-next .split {
         grid-template-columns: 1fr;
         grid-gap: 2rem;
     }
 
+
+    #s-list {
+        padding: 10rem 4rem;
+    }
     #s-list .events {
         grid-template-columns: 1fr 1fr;
         grid-gap: 4rem;

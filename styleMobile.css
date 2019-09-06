@@ -1,6 +1,13 @@
+@media only screen and (max-width: 900px) {
+    #s-splash {
+        background-position-x: -76rem;
+    }
+}
 @media only screen and (max-width: 700px) {
 
-    
+    #arrow {
+        display: none;
+    }
 
     #s-splash {
         height: 70rem;
@@ -16,7 +23,9 @@
         font-size: 2rem;
     }
 
-
+    #s-splash {
+        background-position-x: -24rem;
+    }
 
 
 #s-about {
