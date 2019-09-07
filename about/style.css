@@ -43,11 +43,11 @@ p {
 }
 .people {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 4rem;
 }
 .container {
-    height: 18rem;
+    height: 50rem;
 }
 .container:hover {
     z-index: 10;
@@ -58,46 +58,71 @@ p {
     background: white;
     color: black;
     border-radius: 2rem;
-    padding: 4rem;
-    max-height: 10rem;
-    transition-duration: 0.5s;
-    box-shadow: 0 1rem 5rem -1rem black;
+    padding: 0rem;
+    max-height: 50rem;
+    /* box-shadow: 0 1rem 5rem -1rem black; */
+    box-shadow: 0 0 0 0rem white, 0 0 2rem 1rem black;
 }
-.person .split {
-    font-weight: bold;
-    display: grid;
-    grid-template-columns: 10rem 1fr;
-    grid-gap: 4rem;
+.person .right {
+    transition-duration: 0.4s;
+    padding: 2rem;
+    padding-bottom: 0;
+}
+.person .right svg {
+    display: block;
+    overflow: visible;
+    stroke: var(--softGrey);
+    stroke-width: 1px;
+    stroke-linecap: round;
+    width: 3rem;
+    margin: 2rem auto;
+    transition-duration: 0.5s;
+}
+.container:hover .person .right svg {
+    opacity: 0;
 }
 .person .icon {
-    background: gainsboro;
-    width: 10rem;
-    height: 10rem;
-    border-radius: 100%;
+    overflow: hidden;
+    background: var(--softGrey);
+    padding-bottom: 36rem;
+    border-radius: 1rem;
+    transition-duration: 0.3s;
+    border-bottom-left-radius: 0; border-bottom-right-radius: 0;
     background-size: cover;
     background-position: center;
 }
 .person .name {
     color: black;
     font-size: 3rem;
-    margin-top: 0.5rem;
 }
 .person div {
     font-size: 2rem;
 }
 .person .bio {
-    margin-top: 4rem;
+    font-size: 1.75rem;
+    padding: 3rem;
+    padding-top: 0;
     text-align: justify;
-    transition-duration: 0.5s;
+    transition-duration: 0.7s;
+    transition-timing-function: cubic-bezier(.48,.01,.38,1);
 }
 
+.container:hover {
+    z-index: 10;
+}
 .container:hover .person {
-    transform: scale(1.02);
-    max-height: 200rem;
+    box-shadow: 0 0 0 1rem white, 0 0 2rem 1rem black;
+    max-height: 156rem;
+    transition-delay: 1s;
+    transition-duration: 0.7s;
 }
-.container:hover .person .bio {
-    z-index: 1;
+.container:hover .person .right {
+    transition-duration: 0.6s;
+    transition-delay: 0.8s;
+    padding: 4rem;
+    padding-top: 6rem;
 }
+
 
 .person .bio .label {
     margin-top: 3rem;

@@ -299,6 +299,7 @@
     grid-gap: 4rem;
 }
 #s-res .table > div {
+    overflow: hidden;
     position: relative;
     padding: 2rem;
     height: 16rem;
