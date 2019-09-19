@@ -1,5 +1,8 @@
 @media only screen and (max-width: 900px) {
 
+    .person .right {
+        padding: 2rem;
+    }
 
     #s-splash {
         padding-top: 18rem;
@@ -13,6 +16,10 @@
         max-width: 100%;
     }
 
+
+    .person {
+        max-height: 52rem;
+    }
 
     .people {
         grid-template-columns: 1fr 1fr;

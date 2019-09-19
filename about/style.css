@@ -43,8 +43,8 @@ p {
 }
 .people {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 4rem;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8rem;
 }
 .container {
     height: 50rem;
@@ -65,7 +65,7 @@ p {
 }
 .person .right {
     transition-duration: 0.4s;
-    padding: 2rem;
+    padding: 3rem;
     padding-bottom: 0;
 }
 .person .right svg {
@@ -75,7 +75,7 @@ p {
     stroke-width: 1px;
     stroke-linecap: round;
     width: 3rem;
-    margin: 2rem auto;
+    margin: 1rem auto;
     transition-duration: 0.5s;
 }
 .container:hover .person .right svg {
@@ -103,12 +103,17 @@ p {
     padding: 3rem;
     padding-top: 0;
     text-align: justify;
-    transition-duration: 0.7s;
+    transition-duration: 0.4s;
     transition-timing-function: cubic-bezier(.48,.01,.38,1);
+    margin-top: 2rem;
 }
 
 .container:hover {
     z-index: 10;
+}
+.container:hover .person .bio {
+    transition-delay: 1s;
+    margin-top: -4rem;
 }
 .container:hover .person {
     box-shadow: 0 0 0 1rem white, 0 0 2rem 1rem black;
