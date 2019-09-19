@@ -27,6 +27,7 @@
 #s-steps h1 {
     font-weight: bold;
     font-size: 3rem;
+    width: 100%;
 }
 #s-steps p {
     font-size: 2rem;
