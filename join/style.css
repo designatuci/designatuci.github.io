@@ -1,10 +1,12 @@
 
 #s-splash {
-    padding: 15rem 20rem;
+    padding: 12rem 20rem;
+    padding-bottom: 6rem;
 }
 #s-splash h1 {
     text-align: center;
     font-size: 6rem;
+    font-weight: 700;
 }
 #s-splash .img {
     display: block;
@@ -18,57 +20,103 @@
 
 
 
-
-#s-info {
-    padding: 4rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-bottom: 14rem;
+#s-steps {
+    padding: 5rem;
+    max-width: 96rem;
 }
-#s-info h1 {
+#s-steps h1 {
     font-weight: bold;
     font-size: 3rem;
 }
-#s-info #-name {
+#s-steps p {
+    font-size: 2rem;
+}
+
+#s-steps .head {
+    display: grid;
+    grid-template-columns: 6rem 1fr;
+}
+#s-steps .head .step {
+    box-sizing: border-box;
+    border-radius: 3rem;
+    width: 6rem;
+    height: 6rem;
+    font-size: 3rem;
+    padding: 1rem;
+    text-align: center;
+    /* background: var(--orange); */
+    color: black;
+    font-weight: 700;
+}
+#s-steps .head .title {
+    font-size: 4rem;
+    padding: 0.5rem;
+    padding-left: 2rem;
+}
+
+#-head1 .step { background: var(--blue); }
+#-head1 .title { color: var(--blue); }
+
+#-head2 .step { background: var(--orange); }
+#-head2 .title { color: var(--orange); }
+
+#-head3 .step { background: var(--yellow); }
+#-head3 .title { color: var(--yellow); }
+
+
+
+#s-steps .card {
+    background: white;
+    color: black;
+    padding: 4rem;
+    margin: 2rem 1rem;
+    margin-bottom: 8rem;
+    border-radius: 1rem;
+}
+
+
+
+
+
+#-name {
     margin-top: 4rem;
 }
-#s-info .left h2 {
+#-card1 h2 {
     font-size: 4rem;
     color: #01B7FF;
 }
-#s-info #-location {
+#-card1 #-location {
     font-size: 2.5rem;
     margin-top: 1rem;
 }
-#s-info .left h3 {
+#-card1 h3 {
     font-size: 2rem;
-    margin-top: 4rem;
+    margin-top: 1rem;
 }
-#s-info .left p {
+#-card1 p {
     font-size: 2rem;
-    max-width: 40rem;
     margin-top: 2rem;
 }
-#-date {
-    margin-top: 4rem;
-}
 
 
 
-#s-info .right input {
+
+#-card2 input {
+    cursor: pointer;
     display: block;
-    border-radius: 0.5rem;
-    margin-top: 2rem;
-    padding: 2rem;
+    margin-top: 3rem;
+    padding: 1rem;
     font-size: 2.5rem;
     outline: none;
     border: none;
     box-shadow: none;
-    width: 100%;
-    max-width: 50rem;
-    background: var(--softGrey);
+    width: 48rem;
+    border-bottom: 0.25rem solid var(--orange);
 }
-#s-info .right p {
+#-card2 input::placeholder {
+    color: var(--orange);
+}
+#-card2 p {
     font-size: 2rem;
     margin-top: 1rem;
 }
@@ -91,4 +139,50 @@
 }
 #-signup::placeholder {
     color: black;
+}
+
+
+
+#s-more {
+    text-align: center;
+    padding: 12rem 6rem;
+}
+#s-more h1 {
+    font-size: 4rem;
+}
+
+#s-more .table {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: left;
+    margin-top: 5rem;
+}
+#s-more a {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+
+
+#-card3 .links {
+    text-align: center;
+}
+#-card3 .links a {
+    display: inline-block;
+    padding-top: 10rem;
+    margin: 4rem;
+    font-size: 2rem;
+    background-size: 8rem;
+    background-position: top;
+    background-repeat: no-repeat;
+    transition-duration: 0.3s;
+}
+#-card3 .links .facebook { background-image: url(/src/img/socialMedia/facebook-black.svg); }
+#-card3 .links .instagram { background-image: url(/src/img/socialMedia/instagram-black.svg); }
+
+#-card3 .links a:hover {
+    transform: translateY(-0.5rem);
+    transition-timing-function: cubic-bezier(.24,1.65,.23,1);
+    transition-duration: 0.5s;
 }

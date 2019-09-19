@@ -26,7 +26,7 @@
 <body>
     
 
-    <div id="nav">
+    <div id="nav" class="light">
         <a href="/" class="logo"></a>
         <a href="/schedule/" class="link">schedule</a>
         <a href="/resources/" class="link">resources</a>
@@ -50,21 +50,21 @@
     </div>
 
 
-    <div id="s-first" class="max">
+    <div id="s-first" >
 
-        <p>If you have a question, comment, or want to coordinate something with us, plesae send us an email.</p>
-        <h4>EMAIL</h4>
-        <h1>contact@designatuci.com</h1>
+        <div class="max">
+            <p>If you have a question, comment, or want to coordinate something with us, plesae send us an email.</p>
+            <h4>EMAIL</h4>
+            <h1 id="m"></h1>
+        </div>
 
     </div>
 
-    <div class="maxLine"></div>
-
     <div id="s-more" class="max">
         <h1>Connect with us on social media</h1>
-        <div class="table">
-            <a href="" style="color:rgb(66, 142, 228);">FaceBook</a>
-            <a href="" style="color:rgb(233, 69, 145);">Instagram</a>
+        <div class="links">
+            <a href="https://www.facebook.com/designatuci/" class="socialMediaLink facebook">Facebook</a>
+            <a href="https://www.instagram.com/designatuci/" class="socialMediaLink instagram">Instagram</a>
         </div>
         
     </div>
@@ -87,12 +87,19 @@
                 <a href="/schedule/">Schedule</a>
                 <a href="/resources/">Resources</a>
                 <a href="/join/">Join</a>
-                <a href="/membership/">Membership</a>
+
                 <a href="/contact/">Contact</a>
                 <a href="/brand/">Brand</a>
             </div>
         </div>
     </div>
+
+    <script>
+
+    var someText = "cont" + "act@" + "designatuci" + ".com"
+    document.getElementById("m").innerHTML = someText
+    
+    </script>
 
 </body>
 </html>

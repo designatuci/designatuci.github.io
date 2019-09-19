@@ -5,6 +5,8 @@ p {
 
 #s-first {
     padding: 15rem 10rem;
+    background: white;
+    color: black;
 }
 #s-first h1 {
     font-size: 5rem;
@@ -20,6 +22,7 @@ p {
 
 
 #s-more {
+    text-align: center;
     padding: 12rem 6rem;
 }
 #s-more h1 {
@@ -37,4 +40,29 @@ p {
     font-weight: bold;
     font-size: 3rem;
     padding: 1rem 0;
+}
+
+
+#s-more .links {
+    text-align: center;
+}
+#s-more .links a {
+    display: inline-block;
+    padding-top: 10rem;
+    height: 8rem;
+    margin: 4rem;
+    font-size: 2rem;
+    color: white;
+    background-size: 8rem;
+    background-position: top;
+    background-repeat: no-repeat;
+    transition-duration: 0.3s;
+}
+#s-more .links .facebook { background-image: url(/src/img/socialMedia/facebook-white.svg); }
+#s-more .links .instagram { background-image: url(/src/img/socialMedia/instagram-white.svg); }
+
+#s-more .links a:hover {
+    transform: translateY(-0.5rem);
+    transition-timing-function: cubic-bezier(.24,1.65,.23,1);
+    transition-duration: 0.5s;
 }
