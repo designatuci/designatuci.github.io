@@ -29,10 +29,16 @@
     font-weight: bold;
     font-size: 3rem;
 }
-
+#s-info #-name {
+    margin-top: 4rem;
+}
 #s-info .left h2 {
     font-size: 4rem;
     color: #01B7FF;
+}
+#s-info #-location {
+    font-size: 2.5rem;
+    margin-top: 1rem;
 }
 #s-info .left h3 {
     font-size: 2rem;

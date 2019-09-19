@@ -90,7 +90,7 @@ h1 {
     transition-duration: 0.2s;
 }
 
-.event p {
+#s-list .event p {
     font-size: 2rem;
     font-weight: bold;
 }
@@ -101,7 +101,7 @@ h1 {
     font-size: 2rem;
 }
 .event h1 {
-    margin-top: 1rem;
+    margin-bottom: 2rem;
     font-size: 3rem;
     font-weight: normal;
 }
