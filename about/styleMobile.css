@@ -32,6 +32,7 @@
 @media only screen and (max-width: 700px) {
 
     #s-splash {
+        padding: 5rem;
         padding-top: 24rem;
     }
 
