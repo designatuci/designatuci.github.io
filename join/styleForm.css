@@ -1,0 +1,53 @@
+#mc_embed_signup * {
+    font-size: inherit;
+    font-size: 2rem;
+    vertical-align: top;
+}
+
+
+
+#mc_embed_signup input {
+    box-sizing: border-box;
+    background: var(--softGrey);
+    color: black;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    width: 100%;
+
+    cursor: pointer;
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 2.5rem;
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+#mc_embed_signup input::placeholder {
+    color: white;
+}
+
+.mc-field-group span {
+    color: var(--grey);
+    font-style: oblique;
+}
+
+#mc_embed_signup div.mce_inline_error {
+    color: red;
+    background: none;
+}
+
+#mc_embed_signup #mc-embedded-subscribe {
+    border-radius: rem;
+    margin-top: 2rem;
+    color: white;
+    background: var(--orange);
+}
+
+
+div#mce-success-response {
+    font-size: 3rem;
+    padding: 4rem;
+    text-align: center;
+}
