@@ -316,6 +316,63 @@
 
 
 
+
+
+
+#s-more {
+    text-align: center;
+    padding: 12rem 6rem;
+}
+#s-more h1 {
+    max-width: 64rem;
+    margin: auto;
+    font-size: 4rem;
+}
+
+#s-more .table {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: left;
+    margin-top: 5rem;
+}
+#s-more a {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+
+
+#s-more .links {
+    text-align: center;
+    margin-bottom: -4rem;
+}
+#s-more .links a {
+    display: inline-block;
+    padding-top: 10rem;
+    margin: 4rem;
+    font-size: 2rem;
+    color: white;
+    background-size: 8rem;
+    background-position: top;
+    background-repeat: no-repeat;
+    transition-duration: 0.3s;
+}
+#s-more .links .facebook { background-image: url(/src/img/socialMedia/facebook-white.svg); }
+#s-more .links .instagram { background-image: url(/src/img/socialMedia/instagram-white.svg); }
+
+#s-more .links a:hover {
+    transform: translateY(-0.5rem);
+    transition-timing-function: cubic-bezier(.24,1.65,.23,1);
+    transition-duration: 0.5s;
+}
+
+
+
+
+
+
+
 #s-join {
     margin: 0;
     padding: 20rem 15rem;
