@@ -21,9 +21,7 @@
         max-height: 52rem;
     }
 
-    .people {
-        grid-template-columns: 1fr 1fr;
-    }
+
     .people .person .right {
         padding: 4rem;
     }

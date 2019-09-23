@@ -1,8 +1,45 @@
-//
-//  Events below will be displayed at designatuci.com/schedule/
-//  - Each id MUST be UNIQUE from every id ever created
-//      > [YY]-[MEET#]
-//
+/*
+
+Design at UCI Event Data
+
+
+RULES (follow them or the website may break...)
+
+
+    • Events are not automatically displayed chronologically,
+    please carefully add events so they are in order. Closer
+    events are at the top.
+
+
+    • Include all attributes (you can copy paste the text below and change it)
+        {
+            "id":"unique identifier",
+            "name":"event name",
+            "start":"start time",
+            "end":"end time",
+            "date":"month, day",
+            "location":"event location",
+            "type":"workshop/industry speaker/live lesson",
+            "desc":"description of event"
+        },
+
+
+    • Each id MUST be UNIQUE from every id ever created
+        > [YY]-[MEET#]
+        (this is the format im using. i just it made up)
+
+        NOTE
+            The id will be visible in the link of an event when
+            viewing a single event
+            Example: http://designatuci.com/schedule/event/?id=EVENTID
+                                                               ↑ here
+
+
+    • NO " (double quotations) inside of fields
+
+
+*/
+
 var EVENTS = [
     {
         "id":"19fm1",
@@ -36,7 +73,7 @@ var EVENTS = [
     },
     {
         "id":"19fm4",
-        "name":"Speaker Hazel Jeon",
+        "name":"Intro to Usability Testing Workshop with UX Designer Hazel Jeon",
         "start":"6:00pm",
         "end":"7:15pm",
         "date":"October 22nd",
@@ -56,7 +93,7 @@ var EVENTS = [
     },
     {
         "id":"19fm6",
-        "name":"Speaker Jordan Sinclair",
+        "name":"Voice Design with Amazon UX Designer Jordan Sinclair",
         "start":"6:00pm",
         "end":"7:15pm",
         "date":"November 5th",
