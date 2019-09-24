@@ -12,7 +12,7 @@ $(function() {
 
     for (i in EVENTS) {
         var event = EVENTS[i]
-        $("#eventContainer").append('<a href="/schedule/event/?id='+event.id+'" class="event"><h1>'+event.name+'</h1><p class="type">'+event.type.toUpperCase()+'</p><p>'+event.date+'</p></a>')
+        $("#eventContainer").append('<a href="/schedule/event/?id='+event.id+'" class="event"><p class="type">'+event.type.toUpperCase()+'</p><p>'+event.date+'</p><h1>'+event.name+'</h1></a>')
 
     }
 
