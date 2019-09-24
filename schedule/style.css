@@ -71,6 +71,10 @@ h1 {
 #s-list .one {
     margin-top: 5rem;
     margin-bottom: 10rem;
+    vertical-align: top;
+}
+#s-list .one a {
+    text-decoration: none;
 }
 
 .event {
