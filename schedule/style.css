@@ -74,7 +74,7 @@ h1 {
     vertical-align: top;
 }
 #s-list .one a {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .event {
