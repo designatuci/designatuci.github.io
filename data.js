@@ -59,7 +59,7 @@ var EVENTS = [
         "date":"October 8th",
         "location":"Kay Lab, ICS 2 Room 110",
         "type":"workshop",
-        "desc":"Learn how we"
+        "desc":"Learn how effectively and optimally use color and typography in all of your digital designs"
     },
     {
         "id":"19fm3",
@@ -69,7 +69,7 @@ var EVENTS = [
         "date":"October 15th",
         "location":"Kay Lab, ICS 2 Room 110",
         "type":"workshop",
-        "desc":"Practice creating shapes with vector editing tools."
+        "desc":"Learn how to create complex shapes for designs and illustrations using vector software like Adobe Illustrator."
     },
     {
         "id":"19fm4",
@@ -79,7 +79,7 @@ var EVENTS = [
         "date":"October 22nd",
         "location":"Kay Lab, ICS 2 Room 110",
         "type":"industry speaker",
-        "desc":"Participate in a UX workshop lead by Hazel, a UCLA graduate working as a UX designer at Carvana."
+        "desc":"Hazel–a UCLA graduate working as a UX designer at Carvana–will show us her techniques for performing usability testing while creating designing user experiences for websites and apps."
     },
     {
         "id":"19fm5",
@@ -89,7 +89,7 @@ var EVENTS = [
         "date":"October 29th",
         "location":"Kay Lab, ICS 2 Room 110",
         "type":"workshop",
-        "desc":"Learn how to make good interfaces for websites, apps, and more."
+        "desc":"Learn the basics of making great interfaces for websites, apps, and other digital products."
     },
     {
         "id":"19fm6",
@@ -99,6 +99,6 @@ var EVENTS = [
         "date":"November 5th",
         "location":"Kay Lab, ICS 2 Room 110",
         "type":"industry speaker",
-        "desc":"Listen to Jordan talk about his job and methods as a UX designer at Amazon."
+        "desc":"Listen to Jordan–a UX designer at Amazon–talk about his techniques and work as a UX designer in an open presentation."
     }
 ]
