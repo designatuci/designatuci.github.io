@@ -17,7 +17,10 @@
         width: 20rem;
     }
 
-
+    #navMobile #join {
+        display: none;
+    }
+    
     #s-splash #action {
         padding: 1.5rem 2rem;
         font-size: 2rem;
