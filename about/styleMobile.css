@@ -1,3 +1,13 @@
+@media only screen and (max-width: 1000px) {
+
+    .people {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 6rem;
+        grid-column-gap: 4rem;
+        padding-bottom: 8rem;
+    }
+
+}
 @media only screen and (max-width: 900px) {
 
     .person .right {
@@ -16,14 +26,7 @@
         max-width: 100%;
     }
 
-    .people {
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 4rem;
-    }
 
-    .person {
-        max-height: 52rem;
-    }
 
 
     .people .person .right {
@@ -40,7 +43,6 @@
 
     .people {
         grid-template-columns: 1fr;
-        grid-gap: 3rem;
     }
     
 

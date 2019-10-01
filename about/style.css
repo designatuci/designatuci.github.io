@@ -89,6 +89,8 @@ p {
 
 .person {
     /* cursor: pointer; */
+    box-sizing: border-box;
+    display: block;
 }
 
 .person .icon {
