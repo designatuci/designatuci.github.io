@@ -1,7 +1,7 @@
 $(function() {
 
     $(".person").click(function() {
-        alert("Click "+$(this))
+        // alert("Click "+$(this))
     })
 
 })
