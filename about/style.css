@@ -73,11 +73,7 @@ p {
     background-size: cover;
     background-position: center;
 }
-.person:hover .icon {
-    transform: scale(1.02);
-    transition-duration: 0.6s;
-    transition-timing-function: cubic-bezier(.27,1.44,.21,1);
-}
+
 
 .person .name {
     font-size: 3rem;
