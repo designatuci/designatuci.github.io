@@ -33,40 +33,90 @@ p {
 }
 
 
-
-#modal, #modalExit {
+::-webkit-scrollbar {
+    display: default;
+}
+#modal {
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
 }
+#modalExit {
+    z-index: -10;
+    cursor: pointer;
+}
 #modal {
-    padding: 4rem;
+    overflow-y: scroll;
     z-index: 100;
     background: rgba(0, 0, 0, 0.6);
+    animation: in-Modal 0.2s linear;
 }
+@keyframes in-Modal {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 #modal .container {
+    overflow: visible;
+    padding: 8rem;
+}
+#modal .container .window {
+    overflow: hidden;
     position: relative;
-    max-width: 96rem;
-    padding: 2rem;
+    max-width: 64rem;
     margin: auto;
     background: white;
     border-radius: 2rem;
+    box-shadow: 0 1rem 10rem -1rem black;
+    animation: in-Window 0.4s cubic-bezier(.17,.67,.2,1);
+}
+@keyframes in-Window {
+    0% { transform: scale(0.8); }
+    100% { transform: none; }
+}
+
+#modal .exit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(/src/img/cross.svg) center no-repeat;
+    background-size: 4rem;
+    width: 12rem;
+    height: 12rem;
+    z-index: 10;
 }
 
 #modal .icon {
     margin: auto;
     position: relative;
-    width: 16rem;
-    padding-bottom: 100%;
+    background-color: #f0e3dd;
     background-size: cover;
+    top: 0; left: 0; right: 0;
+    padding-bottom: 100%;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    animation: in-Icon 0.5s cubic-bezier(.2,.6,0,1);
 }
+@keyframes in-Icon {
+    0% { padding-bottom: 0%; }
+    100% { padding-bottom: 100%; }
+}
+
 #modal .name {
     font-size: 4rem;
+    color: black;
+    padding: 3rem 5rem 1rem 5rem;
 }
 #modal .position {
     font-size: 3rem;
+    color: black;
+    padding: 0rem 5rem 1rem 5rem;
 }
 #modal .bio {
+    display: block;
     font-size: 2rem;
+    color: black;
+    text-align: justify;
+    padding: 2rem 5rem 6rem 5rem;
 }
 
 
@@ -88,7 +138,7 @@ p {
 
 
 .person {
-    /* cursor: pointer; */
+    cursor: pointer;
     box-sizing: border-box;
     display: block;
 }
@@ -115,12 +165,10 @@ p {
     margin: 0 2rem;
 }
 .person .bio {
-    font-size: 1.75rem;
+    display: none;
     padding: 3rem;
     padding-top: 0;
     text-align: justify;
-    transition-duration: 0.4s;
-    transition-timing-function: cubic-bezier(.48,.01,.38,1);
     margin-top: 2rem;
 }
 
