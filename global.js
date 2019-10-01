@@ -1,6 +1,8 @@
 // Redirect to HTTPS
 if (location.protocol != 'https:') {
-    location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+    if (window.location.hostname != "localhost") {
+        location.href = "https://" + window.location.hostname + window.location.pathname
+    }
 }
 
 

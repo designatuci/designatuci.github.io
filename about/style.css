@@ -19,6 +19,7 @@ p {
     background: url(/src/logoBlack.svg) no-repeat center;
 }
 #s-splash {
+    overflow: hidden;
     background: white;
     color: black;
     padding: 15rem 10rem;
@@ -29,6 +30,13 @@ p {
 }
 #s-splash h1 {
     color: var(--blue);
+}
+
+
+
+#modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
 }
 
 
@@ -44,59 +52,41 @@ p {
 .people {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 8rem;
-}
-.container {
-    height: 50rem;
-}
-.container:hover {
-    z-index: 10;
+    grid-gap: 6rem;
+    color: white;
 }
 
+
+
 .person {
-    overflow: hidden;
-    background: white;
-    color: black;
-    border-radius: 1rem;
-    padding: 0rem;
-    max-height: 50rem;
-    /* box-shadow: 0 1rem 5rem -1rem black; */
-    box-shadow: 0 0 0 0rem white, 0 0 2rem 1rem black;
+    cursor: pointer;
 }
-.person .right {
-    transition-duration: 0.4s;
-    padding: 3rem;
-    padding-bottom: 0;
-}
-.person .right svg {
-    display: block;
-    overflow: visible;
-    stroke: var(--softGrey);
-    stroke-width: 1px;
-    stroke-linecap: round;
-    width: 3rem;
-    margin: 1rem auto;
-    transition-duration: 0.5s;
-}
-.container:hover .person .right svg {
-    opacity: 0;
-}
+
 .person .icon {
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 100%;
     overflow: hidden;
-    background: var(--softGrey);
-    padding-bottom: 36rem;
+    background: #f0e3dd;
     border-radius: 1rem;
     transition-duration: 0.3s;
-    border-bottom-left-radius: 0; border-bottom-right-radius: 0;
     background-size: cover;
     background-position: center;
 }
-.person .name {
-    color: black;
-    font-size: 3rem;
+.person:hover .icon {
+    transform: scale(1.02);
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(.27,1.44,.21,1);
 }
-.person div {
+
+.person .name {
+    font-size: 3rem;
+    margin: 0 2rem;
+    margin-top: 2rem;
+}
+.person .position {
     font-size: 2rem;
+    margin: 0 2rem;
 }
 .person .bio {
     font-size: 1.75rem;
@@ -106,26 +96,6 @@ p {
     transition-duration: 0.4s;
     transition-timing-function: cubic-bezier(.48,.01,.38,1);
     margin-top: 2rem;
-}
-
-.container:hover {
-    z-index: 10;
-}
-.container:hover .person .bio {
-    transition-delay: 1s;
-    margin-top: -4rem;
-}
-.container:hover .person {
-    box-shadow: 0 0 0 1rem white, 0 0 2rem 1rem black;
-    max-height: 156rem;
-    transition-delay: 1s;
-    transition-duration: 0.7s;
-}
-.container:hover .person .right {
-    transition-duration: 0.6s;
-    transition-delay: 0.8s;
-    padding: 4rem;
-    padding-top: 6rem;
 }
 
 
