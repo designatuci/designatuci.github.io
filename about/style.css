@@ -34,11 +34,40 @@ p {
 
 
 
-#modal {
+#modal, #modalExit {
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
 }
+#modal {
+    padding: 4rem;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.6);
+}
+#modal .container {
+    position: relative;
+    max-width: 96rem;
+    padding: 2rem;
+    margin: auto;
+    background: white;
+    border-radius: 2rem;
+}
 
+#modal .icon {
+    margin: auto;
+    position: relative;
+    width: 16rem;
+    padding-bottom: 100%;
+    background-size: cover;
+}
+#modal .name {
+    font-size: 4rem;
+}
+#modal .position {
+    font-size: 3rem;
+}
+#modal .bio {
+    font-size: 2rem;
+}
 
 
 #s-team {
@@ -59,11 +88,10 @@ p {
 
 
 .person {
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .person .icon {
-    cursor: pointer;
     position: relative;
     padding-bottom: 100%;
     overflow: hidden;
