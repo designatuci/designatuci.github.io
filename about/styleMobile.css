@@ -36,6 +36,7 @@
 
     .people {
         grid-template-columns: 1fr;
+        grid-gap: 3rem;
     }
     
 
