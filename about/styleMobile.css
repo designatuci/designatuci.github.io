@@ -16,6 +16,10 @@
         max-width: 100%;
     }
 
+    .people {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 4rem;
+    }
 
     .person {
         max-height: 52rem;
