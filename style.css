@@ -177,9 +177,9 @@
     border-radius: 100rem;
     background-size: cover;
 }
-#s-about .portrait.one { background-image: url(/src/img/team/tiffany.jpg); }
-#s-about .portrait.two { background-image: url(/src/img/team/nguyen.jpg); }
-#s-about .portrait.three { background-image: url(/src/img/team/kai.png); }
+#s-about .portrait.one { background-image: url(/src/img/friend1.png); }
+#s-about .portrait.two { background-image: url(/src/img/friend2.png); }
+#s-about .portrait.three { background-image: url(/src/img/friend3.png); }
 
 #s-about a.portrait {
     font-size: 2.5rem;
