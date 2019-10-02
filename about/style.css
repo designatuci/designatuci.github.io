@@ -81,7 +81,7 @@ p {
     width: 12rem;
     height: 12rem;
     z-index: 10;
-    opacity: 0;
+    opacity: 1;
     animation: in-Exit 1.8s cubic-bezier(.2,.6,0,0.9);
 }
 @keyframes in-Exit {
