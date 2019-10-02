@@ -113,7 +113,14 @@ p {
     display: block;
     font-size: 2rem;
     color: black;
-    text-align: justify;
+    text-align: left;
+    padding: 2rem 5rem 6rem 5rem;
+}
+#modal .bio .label {
+    display: block;
+    font-size: 2.5rem;
+    color: black;
+    text-align: left;
     padding: 2rem 5rem 6rem 5rem;
 }
 
