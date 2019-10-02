@@ -41,16 +41,18 @@ RULES (follow them or the website may break...)
 */
 
 var EVENTS = [
-    {
-        "id":"19fm1",
-        "name":"Introduction Workshop",
-        "start":"6:30pm",
-        "end":"7:30pm",
-        "date":"October 1st",
-        "location":"DBH 1300",
-        "type":"workshop",
-        "desc":"Meet the members of the club and learn about what we'll be up to this quarter."
-    },
+    // ARCHIVED
+    // {
+    //     "id":"19fm1",
+    //     "name":"Introduction Workshop",
+    //     "start":"6:30pm",
+    //     "end":"7:30pm",
+    //     "date":"October 1st",
+    //     "location":"DBH 1300",
+    //     "type":"workshop",
+    //     "desc":"Meet the members of the club and learn about what we'll be up to this quarter."
+    // },
+    // ARCHIVED
     {
         "id":"19fm2",
         "name":"Color & Typography",
