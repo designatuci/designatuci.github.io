@@ -1,5 +1,6 @@
 h1 {
-    font-size: 5rem;
+    font-size: 4rem;
+    font-weight: bold;
 }
 p {
     font-size: 2.5rem;
@@ -11,9 +12,108 @@ p {
 }
 #s-splash p {
     margin-top: 2rem;
+    vertical-align: top;
+}
+#s-splash span {
+    font-size: inherit;
+    vertical-align: top;
 }
 
 
-#s-list {
+#s-splash .caption .one { color: var(--orange); }
+#s-splash .caption .two { color: var(--blue); }
+#s-splash .caption .three { color: var(--yellow); }
+
+
+
+
+.section {
     padding: 10rem 8rem;
+    background: white;
+}
+
+.section .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 6rem;
+    margin-top: 4rem;
+}
+
+.card h1 {
+    color: black;
+    font-size: 3rem;
+    margin-top: 2rem;
+    font-weight: normal;
+    padding: 1rem 2rem;
+}
+
+.img {
+    display: block;
+}
+
+.section .img {
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 2rem -1rem var(--grey);
+    padding-bottom: 60%;
+    cursor: pointer;
+}
+
+
+.section > .max > h1 {
+    text-align: center;
+}
+#s-inspiration > .max > h1 {
+    color: var(--orange);
+}
+#s-tools > .max > h1 {
+    color: var(--blue);
+}
+#s-guides > .max > h1 {
+    color: var(--yellow);
+}
+
+
+
+.card > .img {
+    background-size: cover;
+    background-position: left top;
+    transition-duration: 0.7s;
+    transition-timing-function: cubic-bezier(.34,1.56,.2,1.01);
+}
+.card .img:hover {
+    transition-duration: 0.5s;
+    transform: scale(1.02);
+    transition-timing-function: cubic-bezier(.55,.69,.2,1.01);
+}
+.card h1 {
+    transition-duration: 0.2s;
+}
+.card p {
+    color: var(--grey);
+    font-size: 2rem;
+    padding: 0 2rem;
+    transition-duration: 0.2s;
+}
+.card:hover p {
+    color: black;
+}
+
+
+#c-dribbble .img {
+    background-image: url(/src/img/dribbbleThumb.png);
+}
+#c-behance .img {
+    background-image: url(/src/img/behanceThumb.png);
+}
+#c-coolors .img {
+    background-image: url(/src/img/coolorsThumb.png);
+}
+#c-googleFonts .img {
+    background-image: url(/src/img/googleFontsThumb.png);
+}
+#c-designSystems .img {
+    background-image: url(/src/img/designSystemsThumb.png);
+}
+#c-medium .img {
+    background-image: url(/src/img/mediumThumb.png);
 }

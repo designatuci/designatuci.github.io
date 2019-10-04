@@ -1,7 +1,11 @@
-
+#nav {
+    background: white;
+}
 #s-splash {
-    padding: 12rem 20rem;
+    padding: 8rem 20rem;
     padding-bottom: 6rem;
+    background: white;
+    color: black;
 }
 #s-splash h1 {
     text-align: center;
@@ -22,7 +26,7 @@
 
 #s-steps {
     padding: 5rem;
-    max-width: 96rem;
+    max-width: 80rem;
 }
 #s-steps h1 {
     font-weight: bold;
@@ -34,25 +38,10 @@
 }
 
 #s-steps .head {
-    display: grid;
-    grid-template-columns: 6rem 1fr;
-}
-#s-steps .head .step {
-    box-sizing: border-box;
-    border-radius: 3rem;
-    width: 6rem;
-    height: 6rem;
     font-size: 3rem;
-    padding: 1rem;
+    font-weight: bold;
     text-align: center;
-    /* background: var(--orange); */
-    color: black;
-    font-weight: 700;
-}
-#s-steps .head .title {
-    font-size: 4rem;
     padding: 0.5rem;
-    padding-left: 2rem;
 }
 
 #-head1 .step { background: var(--blue); }
