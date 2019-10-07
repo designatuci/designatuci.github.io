@@ -55,13 +55,13 @@ var EVENTS = [
     // ARCHIVED
     {
         "id":"19fm2",
-        "name":"Color & Typography",
+        "name":"Color Theory",
         "start":"6:30pm",
         "end":"7:30pm",
         "date":"October 8th",
         "location":"DBH 1300",
         "type":"workshop",
-        "desc":"Learn how effectively and optimally use color and typography in all of your digital designs"
+        "desc":"Learn more about color theory and its magical impact on a design. This week we will bring the fundamental principles of color theory to the table. The science and art behind this concept is key to a good eye-catching design piece. We will be using Figma, so be sure you have an account setup and ready to go!"
     },
     {
         "id":"19fm3",
