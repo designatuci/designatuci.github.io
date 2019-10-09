@@ -108,6 +108,13 @@
     margin: 0.5rem;
     font-weight: 500;
 }
+#bottom .alert {
+    color: white;
+}
+#bottom .alert a {
+    text-decoration: underline;
+    vertical-align: top;
+}
 
 
 .socialMedia {
