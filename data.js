@@ -53,16 +53,17 @@ var EVENTS = [
     //     "desc":"Meet the members of the club and learn about what we'll be up to this quarter."
     // },
     // ARCHIVED
-    {
-        "id":"19fm2",
-        "name":"Color & Typography",
-        "start":"6:30pm",
-        "end":"7:30pm",
-        "date":"October 8th",
-        "location":"DBH 1300",
-        "type":"workshop",
-        "desc":"Learn how effectively and optimally use color and typography in all of your digital designs"
-    },
+    // {
+    //     "id":"19fm2",
+    //     "name":"Color & Typography",
+    //     "start":"6:30pm",
+    //     "end":"7:30pm",
+    //     "date":"October 8th",
+    //     "location":"DBH 1300",
+    //     "type":"workshop",
+    //     "desc":"Learn how effectively and optimally use color and typography in all of your digital designs"
+    // },
+    // END OF ARCHIVES
     {
         "id":"19fm3",
         "name":"Pen & Shapes",
@@ -71,7 +72,7 @@ var EVENTS = [
         "date":"October 15th",
         "location":"DBH 1300",
         "type":"workshop",
-        "desc":"Learn how to create complex shapes for designs and illustrations using vector software like Adobe Illustrator."
+        "desc":"Learn how to create complex shapes for designs and illustrations using vector software like Figma, Adobe Illustrator, Sketch, and more."
     },
     {
         "id":"19fm4",
