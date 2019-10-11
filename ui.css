@@ -115,6 +115,10 @@
     text-decoration: underline;
     vertical-align: top;
 }
+#bottom .credit a {
+    vertical-align: top;
+    text-decoration: underline;
+}
 
 
 .socialMedia {
