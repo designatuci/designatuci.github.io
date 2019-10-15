@@ -99,6 +99,12 @@ p {
 }
 
 
+#c-cofolios .img {
+    background-image: url(/src/img/cofoliosThumb.png);
+}
+#c-dailyui .img {
+    background-image: url(/src/img/dailyuiThumb.png);
+}
 #c-dribbble .img {
     background-image: url(/src/img/dribbbleThumb.png);
 }
