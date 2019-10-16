@@ -63,17 +63,18 @@ var EVENTS = [
     //     "type":"workshop",
     //     "desc":"Learn how effectively and optimally use color and typography in all of your digital designs"
     // },
+    // ARCHIVED
+    // {
+    //     "id":"19fm3",
+    //     "name":"Pen & Shapes",
+    //     "start":"6:30pm",
+    //     "end":"7:30pm",
+    //     "date":"October 15th",
+    //     "location":"DBH 1300",
+    //     "type":"workshop",
+    //     "desc":"Learn how to create complex shapes for designs and illustrations using vector software like Figma, Adobe Illustrator, Sketch, and more."
+    // },
     // END OF ARCHIVES
-    {
-        "id":"19fm3",
-        "name":"Pen & Shapes",
-        "start":"6:30pm",
-        "end":"7:30pm",
-        "date":"October 15th",
-        "location":"DBH 1300",
-        "type":"workshop",
-        "desc":"Learn how to create complex shapes for designs and illustrations using vector software like Figma, Adobe Illustrator, Sketch, and more."
-    },
     {
         "id":"19fm4",
         "name":"Intro to Usability Testing Workshop with UX Designer Hazel Jeon",
@@ -82,7 +83,7 @@ var EVENTS = [
         "date":"October 22nd",
         "location":"DBH 1300",
         "type":"industry speaker",
-        "desc":"Hazel–a UCLA graduate working as a UX designer at Carvana–will show us her techniques for performing usability testing while creating designing user experiences for websites and apps."
+        "desc":"Hazel Jeon–a UCLA graduate and UX designer at Carvana–will show us her techniques for performing usability testing while creating designing user experiences."
     },
     {
         "id":"19fm5",
