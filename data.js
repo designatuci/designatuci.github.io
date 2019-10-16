@@ -83,7 +83,7 @@ var EVENTS = [
         "date":"October 22nd",
         "location":"DBH 1300",
         "type":"industry speaker",
-        "desc":"Hazel Jeon–a UCLA graduate and UX designer at Carvana–will show us her techniques for performing usability testing while creating designing user experiences."
+        "desc":"Hazel Jeon–a UCLA graduate and UX designer at Carvana–will show us her techniques for performing usability testing while designing user experiences."
     },
     {
         "id":"19fm5",
