@@ -34,17 +34,25 @@ p {
 
 .section .cards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 6rem;
+    grid-row-gap: 10rem;
     margin-top: 4rem;
 }
 
 .card h1 {
     color: black;
     font-size: 3rem;
-    margin-top: 2rem;
     font-weight: normal;
     padding: 1rem 2rem;
+}
+.card h2 {
+    margin-top: 4rem;
+    padding: 0 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--orange);
 }
 
 .img {
@@ -104,6 +112,12 @@ p {
 }
 #c-dailyui .img {
     background-image: url(/src/img/dailyuiThumb.png);
+}
+#c-19fm3 .img {
+    background-image: url(/src/img/19fm3-thumb.png);
+}
+#c-19fm2 .img {
+    background-image: url(/src/img/19fm2-thumb.png);
 }
 #c-dribbble .img {
     background-image: url(/src/img/dribbbleThumb.png);
