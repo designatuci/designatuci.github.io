@@ -41,43 +41,43 @@ RULES (follow them or the website may break...)
 */
 
 var EVENTS = [
-    // ARCHIVED
-    // {
-    //     "id":"19fm1",
-    //     "name":"Introduction Workshop",
-    //     "start":"6:30pm",
-    //     "end":"7:30pm",
-    //     "date":"October 1st",
-    //     "location":"DBH 1300",
-    //     "type":"workshop",
-    //     "desc":"Meet the members of the club and learn about what we'll be up to this quarter."
-    // },
-    // ARCHIVED
-    // {
-    //     "id":"19fm2",
-    //     "name":"Color & Typography",
-    //     "start":"6:30pm",
-    //     "end":"7:30pm",
-    //     "date":"October 8th",
-    //     "location":"DBH 1300",
-    //     "type":"workshop",
-    //     "desc":"Learn how effectively and optimally use color and typography in all of your digital designs"
-    // },
-    // ARCHIVED
-    // {
-    //     "id":"19fm3",
-    //     "name":"Pen & Shapes",
-    //     "start":"6:30pm",
-    //     "end":"7:30pm",
-    //     "date":"October 15th",
-    //     "location":"DBH 1300",
-    //     "type":"workshop",
-    //     "desc":"Learn how to create complex shapes for designs and illustrations using vector software like Figma, Adobe Illustrator, Sketch, and more."
-    // },
-    // END OF ARCHIVES
+    {
+        "id":"19fm1",
+        "name":"Introduction Workshop",
+        "epoch":1569979800,
+        "start":"6:30pm",
+        "end":"7:30pm",
+        "date":"October 1st",
+        "location":"DBH 1300",
+        "type":"workshop",
+        "desc":"Meet the members of the club and learn about what we'll be up to this quarter."
+    },
+    {
+        "id":"19fm2",
+        "name":"Color & Typography",
+        "epoch":1570584600,
+        "start":"6:30pm",
+        "end":"7:30pm",
+        "date":"October 8th",
+        "location":"DBH 1300",
+        "type":"workshop",
+        "desc":"Learn how effectively and optimally use color and typography in all of your digital designs"
+    },
+    {
+        "id":"19fm3",
+        "name":"Pen & Shapes",
+        "epoch":1571189400,
+        "start":"6:30pm",
+        "end":"7:30pm",
+        "date":"October 15th",
+        "location":"DBH 1300",
+        "type":"workshop",
+        "desc":"Learn how to create complex shapes for designs and illustrations using vector software like Figma, Adobe Illustrator, Sketch, and more."
+    },
     {
         "id":"19fm4",
         "name":"Intro to Usability Testing Workshop with UX Designer Hazel Jeon",
+        "epoch":1571794200,
         "start":"6:30pm",
         "end":"7:30pm",
         "date":"October 22nd",
@@ -88,6 +88,7 @@ var EVENTS = [
     {
         "id":"19fm5",
         "name":"User Interaction Design",
+        "epoch":1572399000,
         "start":"6:30pm",
         "end":"7:30pm",
         "date":"October 29th",
@@ -98,6 +99,7 @@ var EVENTS = [
     {
         "id":"19fm6",
         "name":"Voice Design with Amazon UX Designer Jordan Sinclair",
+        "epoch":1573007400,
         "start":"6:30pm",
         "end":"7:30pm",
         "date":"November 5th",
