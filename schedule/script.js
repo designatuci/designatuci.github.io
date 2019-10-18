@@ -2,15 +2,24 @@ $(function() {
 
 
     var timeNow = Math.round(new Date() / 1000);
+    var nextEvent
+    // Find and display next event
+    for (i in EVENTS) {
+        if (EVENTS[i].epoch > timeNow) {
+            nextEvent = EVENTS[i]
+            break
+        }
+    }
+
 
     $("#s-next .split").attr("href", "/schedule/event/?id="+EVENTS[0].id )
     $("#eventContainer").empty()
 
-    $("#s-next .name").text(EVENTS[0].name)
-    $("#s-next .date").text(EVENTS[0].date)
-    $("#s-next .start").text(EVENTS[0].start)
-    $("#s-next .location").text(EVENTS[0].location)
-    $("#s-next .desc").text(EVENTS[0].desc)
+    $("#s-next .name").text(nextEvent.name)
+    $("#s-next .date").text(nextEvent.date)
+    $("#s-next .start").text(nextEvent.start)
+    $("#s-next .location").text(nextEvent.location)
+    $("#s-next .desc").text(nextEvent.desc)
 
     for (i in EVENTS) {
         var event = EVENTS[i]
