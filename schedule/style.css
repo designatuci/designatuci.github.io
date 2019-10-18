@@ -73,7 +73,14 @@ h1 {
     margin-bottom: 10rem;
     vertical-align: top;
 }
+#s-list .one span {
+    font-size: inherit;
+    color: inherit;
+    display: block;
+    margin-top: 2rem;
+}
 #s-list .one a {
+    vertical-align: top;
     text-decoration: underline;
 }
 
