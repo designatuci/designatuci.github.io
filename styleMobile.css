@@ -14,16 +14,16 @@
     }
 
     #logoFont {
-        width: 20rem;
+        width: 32rem;
+    }
+
+    #s-splash #action {
+        padding: 1.5rem 2rem;
+        font-size: 3rem;
     }
 
     #navMobile #join {
         display: none;
-    }
-    
-    #s-splash #action {
-        padding: 1.5rem 2rem;
-        font-size: 2rem;
     }
 
     #s-splash {
@@ -91,5 +91,18 @@
     padding: 12rem 8rem;
 }
     
+    
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    #logoFont {
+        width: 26rem;
+    }
+
+    #s-splash #action {
+        font-size: 2.5rem;
+    }
     
 }
