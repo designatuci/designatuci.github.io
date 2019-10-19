@@ -26,8 +26,20 @@
         max-width: 100%;
     }
 
+    #modal .container {
+        overflow: visible;
+        padding: 4rem;
+    }
+    #modal .container .window {
+        width: 100%;
+    }
 
-
+    #modal .bio {
+        font-size: 2.5rem;
+    }
+    #modal .bio .label {
+        font-size: 3rem;
+    }
 
     .people .person .right {
         padding: 4rem;

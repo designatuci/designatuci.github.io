@@ -53,13 +53,14 @@ p {
 }
 
 #modal .container {
+    box-sizing: border-box;
     overflow: visible;
     padding: 8rem;
 }
 #modal .container .window {
     overflow: hidden;
     position: relative;
-    max-width: 64rem;
+    max-width: 72rem;
     margin: auto;
     background: white;
     border-radius: 2rem;
