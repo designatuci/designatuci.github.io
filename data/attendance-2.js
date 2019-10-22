@@ -1,0 +1,45 @@
+attendance[1] = `
+Garry Fanata
+Garry Fanata
+Garry Fanata
+Garry Fanata
+Justin Nguyen
+Justin Nguyen
+Justin Nguyen
+Justin Nguyen
+Randy Quilala
+Randy Quilala
+Randy Quilala
+Randy Quilala
+Chad De Vera
+Alan Pham
+Howard lam
+Taik Wang
+Alyssa Rietsch
+Justin Lock
+Miyuki Ozawa
+Andrea Lam
+Ricky Thai
+Dongwoo Yoon
+Jonathan Fung
+Alyssa Rodriguez
+Michel Ramirez
+Nia Wyman 
+Adrian Perez
+Matt Garcia
+Lyss Noma 
+Kevin Hanst
+Esmeralda Juarez
+Vivian Ling
+Stella Adriana
+Evelyn Liang
+Angela Ung 
+Hawnii Shin
+Sabrina Lee
+Jaewon Jeong 
+Meow Zhang
+Saki Tanaka
+Laney Dang
+Ana Nguyen
+Yuki Nagasaku
+`

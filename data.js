@@ -40,6 +40,8 @@ RULES (follow them or the website may break...)
 
 */
 
+// ^ A ditionary with names of the people who attended
+
 var EVENTS = [
     {
         "id":"19fm1",
