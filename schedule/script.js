@@ -12,7 +12,7 @@ $(function() {
     }
 
 
-    $("#s-next .split").attr("href", "/schedule/event/?id="+EVENTS[0].id )
+    $("#s-next .split").attr("href", "/schedule/event/?id="+nextEvent.id )
     $("#eventContainer").empty()
 
     $("#s-next .name").text(nextEvent.name)
