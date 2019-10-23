@@ -89,14 +89,14 @@ var EVENTS = [
     },
     {
         "id":"19fm5",
-        "name":"User Interaction Design",
+        "name":"To be Announced",
         "epoch":1572399000,
-        "start":"6:30pm",
-        "end":"7:30pm",
-        "date":"October 29th",
-        "location":"DBH 1300",
-        "type":"workshop",
-        "desc":"Learn the basics of making great interfaces for websites, apps, and other digital products."
+        "start":"",
+        "end":"",
+        "date":"",
+        "location":"",
+        "type":"TBA",
+        "desc":"Please allow us time to sort out our schedule."
     },
     {
         "id":"19fm6",
