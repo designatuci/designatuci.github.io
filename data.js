@@ -89,14 +89,14 @@ var EVENTS = [
     },
     {
         "id":"19fm5",
-        "name":"To be Announced",
+        "name":"No Meeting Week 5",
         "epoch":1572399000,
         "start":"",
         "end":"",
         "date":"",
         "location":"",
-        "type":"TBA",
-        "desc":"Please allow us time to sort out our schedule."
+        "type":"MIDTERM SEASON",
+        "desc":"We will not be meeting during week 5 so you can focus on your midterms."
     },
     {
         "id":"19fm6",
