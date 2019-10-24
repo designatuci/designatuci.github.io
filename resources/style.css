@@ -107,6 +107,9 @@ p {
 }
 
 
+#c-hazel .img {
+    background-image: url(/src/img/hazelThumb.png);
+}
 #c-cofolios .img {
     background-image: url(/src/img/cofoliosThumb.png);
 }

@@ -4,8 +4,11 @@ $(function() {
     var scores = {}
 
     for (i in attendance) {
-        var people = attendance[i].split("\n")
+        var people = Array.from(new Set(attendance[i].split("\n")))
+        people = people.values()
+        console.log(people)
         for (j in people) {
+            console.log(j)
             const name = people[j]
             if (name in scores) {
                 scores[name] += 1

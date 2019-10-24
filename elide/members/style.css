@@ -1,0 +1,26 @@
+html {
+    background: white;
+    color: black;
+}
+body {
+    padding: 6rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+p {
+    font-size: 2rem;
+}
+.guest div {
+    font-size: 2rem;
+}
+
+#tickets {
+    padding: 2rem;
+}
+
+.guest {
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+}
