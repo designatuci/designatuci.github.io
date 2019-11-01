@@ -17,11 +17,11 @@ Alessandro Cardoni
 Angela Martin
 Kajohn Chen
 Laurane Gerber
-Hawnii shin
+Hawnii Shin
 Evelyn Liang
 Miyuki Ozawa
 Yuki Nagasaku
-Laney dang 
+Laney Dang
 Ada Lo
 Saki Tanaka
 Talon Love
@@ -30,7 +30,7 @@ Jalen Jones
 Kevin Hanst
 Zhenjiang Wang
 Michael Wong
-Kayla yee 
+Kayla Yee 
 Dachelle Alo
 Nick Schneider
 Meow Zhang
