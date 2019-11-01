@@ -88,17 +88,6 @@ var EVENTS = [
         "desc":"Hazel Jeon–a UCLA graduate and UX designer at Carvana–will show us her techniques for performing usability testing while designing user experiences."
     },
     {
-        "id":"19fm5",
-        "name":"No Meeting Week 5",
-        "epoch":1572399000,
-        "start":"",
-        "end":"",
-        "date":"",
-        "location":"",
-        "type":"MIDTERM SEASON",
-        "desc":"We will not be meeting during week 5 so you can focus on your midterms."
-    },
-    {
         "id":"19fm6",
         "name":"Voice Design with Amazon UX Designer Jordan Sinclair",
         "epoch":1573007400,
