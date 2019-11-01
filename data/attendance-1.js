@@ -1,15 +1,11 @@
+winners[0] = [
+    { name: "Amie Le", winnings: 3 },
+    { name: "Kamille Suayan", winnings: 3 },
+    { name: "Kacy Diep", winnings: 3 }
+]
 attendance[0] = `
 Amie Le
-Amie Le
-Amie Le
-Amie Le
 Kamille Suayan
-Kamille Suayan
-Kamille Suayan
-Kamille Suayan
-Kacy Diep
-Kacy Diep
-Kacy Diep
 Kacy Diep
 Chad De Vera
 Dongwoo Yoon

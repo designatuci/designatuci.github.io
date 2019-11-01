@@ -1,15 +1,11 @@
+winners[1] = [
+    { name: "Garry Fanata", winnings: 3 },
+    { name: "Justin Nguyen", winnings: 3 },
+    { name: "Randy Quilala", winnings: 3 }
+]
 attendance[1] = `
 Garry Fanata
-Garry Fanata
-Garry Fanata
-Garry Fanata
 Justin Nguyen
-Justin Nguyen
-Justin Nguyen
-Justin Nguyen
-Randy Quilala
-Randy Quilala
-Randy Quilala
 Randy Quilala
 Chad De Vera
 Alan Pham
