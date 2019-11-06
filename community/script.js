@@ -17,13 +17,12 @@ $(function() {
     }
 
     // Winnings
-    for (i in winners) { var people = winners[i]
-        for (j in people) {
-            const name = people[j]
-            if (people.name in scores) {
-                scores[people.name] += people.winnings
+    for (i in winners) { var wins = winners[i]
+        for (j in wins) { var p = wins[j]
+            if (p.name in scores) {
+                scores[p.name] += p.winnings
             } else {
-                scores[people.name] = people.winnings
+                scores[p.name] = p.winnings
             }
         }
     }
