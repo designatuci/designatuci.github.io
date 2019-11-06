@@ -3,8 +3,21 @@ $(function() {
 
     var scores = {}
 
+    // Attendace
     for (i in attendance) {
         var people = attendance[i].split("\n")
+        for (j in people) {
+            const name = people[j]
+            if (name in scores) {
+                scores[name] += 1
+            } else {
+                scores[name] = 1
+            }
+        }
+    }
+
+    // Winnings
+    for (i in winners) { var people = winners[i]
         for (j in people) {
             const name = people[j]
             if (name in scores) {
