@@ -20,10 +20,10 @@ $(function() {
     for (i in winners) { var people = winners[i]
         for (j in people) {
             const name = people[j]
-            if (name in scores) {
-                scores[name] += 1
+            if (people.name in scores) {
+                scores[people.name] += people.winnings
             } else {
-                scores[name] = 1
+                scores[people.name] = people.winnings
             }
         }
     }
