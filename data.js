@@ -97,16 +97,16 @@ var EVENTS = [
         "location":"DBH 1300",
         "type":"industry speaker",
         "desc":"Listen to Jordan–a UX designer at Amazon–talk about his techniques and work as a UX designer in an open presentation."
+    },
+    {
+        "id":"19fm7",
+        "name":"Game Night",
+        "epoch":1573569000,
+        "start":"6:30pm",
+        "end":"7:30pm",
+        "date":"November 12th",
+        "location":"DBH 1300",
+        "type":"community",
+        "desc":"Get to know your fellow designers through fun, design-oriented games!"
     }
-    // {
-    //     "id":"19fm7",
-    //     "name":"Game Night",
-    //     "epoch":1573569000,
-    //     "start":"6:30pm",
-    //     "end":"7:30pm",
-    //     "date":"November 12th",
-    //     "location":"DBH 1300",
-    //     "type":"community",
-    //     "desc":"Get to know your fellow designers through fun, design-oriented games!"
-    // }
 ]
