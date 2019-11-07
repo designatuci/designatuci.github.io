@@ -9,6 +9,14 @@ winners[2] = [
     { name: "Emily Lee", winnings: 3 }
 ]
 attendance[2] = `
+Emily Lee
+Jonathan Fung
+Jessica Li
+Justine Chou
+Stella Adriana
+Minh Nhu Tran
+Lyss Noma
+Matt Garcia
 Esmeralda Juarez
 Randy Quilala
 Sabrina Lee
