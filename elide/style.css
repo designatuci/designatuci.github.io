@@ -1,0 +1,32 @@
+#top {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 4rem;
+}
+
+#top .logo {
+    background: url(/src/logo.svg) no-repeat center;
+    display: block;
+    margin: auto;
+    width: 6rem;
+    height: 6rem;
+}
+
+#links {
+    padding: 2rem;
+}
+
+#links .content {
+    margin: auto;
+    width: 100%;
+    max-width: 64rem;
+    text-align: left;   
+}
+#links a {
+    cursor: pointer;
+    display: block;
+    font-size: 3rem;
+    padding: 2rem;
+    color: white;
+    border-top: 0.5px solid var(--white);
+}
