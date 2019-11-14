@@ -108,5 +108,38 @@ var EVENTS = [
         "location":"DBH 1300",
         "type":"community",
         "desc":"Get to know your fellow designers through fun, design-oriented games!"
+    },
+    {
+        "id":"19fm7",
+        "name":"Typography",
+        "epoch":1574130600,
+        "start":"6:30pm",
+        "end":"8:00pm",
+        "date":"November 12th",
+        "location":"DBH 1300",
+        "type":"community",
+        "desc":"Learn how to effectively use typography in your graphic and UI/UX designs."
+    },
+    {
+        "id":"19fm7",
+        "name":"Portfolios",
+        "epoch":1574735400,
+        "start":"6:30pm",
+        "end":"8:00pm",
+        "date":"November 12th",
+        "location":"DBH 1300",
+        "type":"community",
+        "desc":"Get advice and inspiration for creating your portfolio."
+    },
+    {
+        "id":"a",
+        "name":"TBA",
+        "epoch":99573569000,
+        "start":"",
+        "end":"",
+        "date":"",
+        "location":"",
+        "type":"",
+        "desc":"We are always working on creating useful and fun events for our members!"
     }
 ]
