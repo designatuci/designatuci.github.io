@@ -115,7 +115,7 @@ var EVENTS = [
         "epoch":1574130600,
         "start":"6:30pm",
         "end":"8:00pm",
-        "date":"November 12th",
+        "date":"November 18th",
         "location":"DBH 1300",
         "type":"community",
         "desc":"Learn how to effectively use typography in your graphic and UI/UX designs."
@@ -126,20 +126,20 @@ var EVENTS = [
         "epoch":1574735400,
         "start":"6:30pm",
         "end":"8:00pm",
-        "date":"November 12th",
+        "date":"November 25th",
         "location":"DBH 1300",
         "type":"community",
         "desc":"Get advice and inspiration for creating your portfolio."
     },
     {
         "id":"a",
-        "name":"TBA",
+        "name":"More Soon",
         "epoch":99573569000,
         "start":"",
         "end":"",
         "date":"",
         "location":"",
-        "type":"",
+        "type":"TBA",
         "desc":"We are always working on creating useful and fun events for our members!"
     }
 ]
