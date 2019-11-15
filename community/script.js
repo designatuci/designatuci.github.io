@@ -30,7 +30,7 @@ $(function() {
 
     delete scores[""]
     display = Object.entries(scores)
-    display = display.sort((a,b)=>{
+    display = display.sort(function(a,b){
         if (a[1] == b[1]) {
             return a[0] > b[0]
         } else {
