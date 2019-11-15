@@ -117,7 +117,7 @@ var EVENTS = [
         "end":"8:00pm",
         "date":"November 18th",
         "location":"DBH 1300",
-        "type":"community",
+        "type":"workshop",
         "desc":"Learn how to effectively use typography in your graphic and UI/UX designs."
     },
     {
@@ -128,7 +128,7 @@ var EVENTS = [
         "end":"8:00pm",
         "date":"November 25th",
         "location":"DBH 1300",
-        "type":"community",
+        "type":"workshop",
         "desc":"Get advice and inspiration for creating your portfolio."
     },
     {
