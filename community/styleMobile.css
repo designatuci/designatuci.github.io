@@ -1,0 +1,14 @@
+@media only screen and (max-width: 700px) {
+    #s-main {
+        max-width: 64rem;
+    }
+    #s-main .split {
+        grid-template-columns: 1fr;
+    }
+    #s-first {
+        padding-bottom: 24rem;
+     }
+    #s-first h1 {
+        padding-left: 0;
+    }
+}

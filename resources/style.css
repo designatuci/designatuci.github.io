@@ -9,6 +9,7 @@ p {
 
 #s-splash {
     padding: 10rem 8rem;
+    padding-bottom: 0rem;
 }
 #s-splash p {
     margin-top: 2rem;
@@ -20,8 +21,8 @@ p {
 }
 
 
-#s-splash .caption .one { color: var(--orange); }
-#s-splash .caption .two { color: var(--blue); }
+#s-splash .caption .one { color: var(--blue); }
+#s-splash .caption .two { color: var(--orange); }
 #s-splash .caption .three { color: var(--yellow); }
 
 
@@ -29,19 +30,19 @@ p {
 
 .section {
     padding: 10rem 8rem;
-    background: white;
+    background: black;
 }
 
 .section .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 6rem;
-    grid-row-gap: 10rem;
+    grid-gap: 2rem;
+    grid-row-gap: 4rem;
     margin-top: 4rem;
 }
 
 .card h1 {
-    color: black;
+    color: white;
     font-size: 3rem;
     font-weight: normal;
     padding: 1rem 2rem;
@@ -55,13 +56,16 @@ p {
     color: var(--orange);
 }
 
+.card .blue { color: var(--blue); }
+.card .orange { color: var(--orange); }
+.card .yellow { color: var(--yellow); }
+
 .img {
     display: block;
 }
 
 .section .img {
     border-radius: 1rem;
-    box-shadow: 0 0.5rem 2rem -1rem var(--grey);
     padding-bottom: 60%;
     cursor: pointer;
 }
@@ -85,13 +89,6 @@ p {
 .card > .img {
     background-size: cover;
     background-position: left top;
-    transition-duration: 0.7s;
-    transition-timing-function: cubic-bezier(.34,1.56,.2,1.01);
-}
-.card .img:hover {
-    transition-duration: 0.5s;
-    transform: scale(1.02);
-    transition-timing-function: cubic-bezier(.55,.69,.2,1.01);
 }
 .card h1 {
     transition-duration: 0.2s;
@@ -103,7 +100,7 @@ p {
     transition-duration: 0.2s;
 }
 .card:hover p {
-    color: black;
+    color: var(--softGrey);
 }
 
 

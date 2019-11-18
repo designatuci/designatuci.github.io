@@ -45,6 +45,11 @@
     transform: scaleX(1);
     background: #01B7FF;
 }
+#nav .link.deepSelected:after {
+    transform: scaleX(1);
+    background: var(--yellow);
+}
+
 
 #nav #join {
     position: absolute;
@@ -121,8 +126,8 @@
     vertical-align: top;
 }
 #bottom .credit a {
+    text-decoration: underline;
     vertical-align: top;
-    color: white;
 }
 
 

@@ -39,9 +39,7 @@ $(function() {
     })
     console.log(display)
 
-    const max = 9
     for (i in display) { const entry = display[i]
-        if (i > max) break
         $("#tickets").append(`
         <div class="guest">
             <div class="count">${entry[1]}</div>

@@ -4,55 +4,213 @@
 
 #s-first {
     position: relative;
-    padding: 32rem 6rem 6rem 6rem;
-    background: url(/src/img/audience.png);
-    background-size: cover;
-    background-position: center;
+    background: black;
+    padding: 8rem 4rem;
+    padding-top: 16rem;
 }
 #s-first h1 {
+    color: white;
     font-size: 5rem;
     font-weight: bold;
     text-align: center;
-    text-shadow: 0 0 2rem black, 0 0 4rem black;
+    padding-left: 45rem;
 }
 
 
 
 
 
-#s-tickets {
-    padding: 12rem 4rem;
+#s-main {
+    max-width: 130rem;
+    margin: auto;
 }
-#s-tickets h1 {
-    font-size: 4rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 2rem;
+#s-main .split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    grid-column-gap: 1rem;
 }
 
-
-#tickets {
+.card {
+    box-sizing: border-box;
+    position: relative;
     background: white;
     color: black;
-    max-width: 64rem;
-    margin: auto;
-    border-radius: 1rem;
     padding: 4rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+.card > h1 {
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+
+
+
+
+
+.photo .caption {
+    padding: 1rem 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: white;
+    text-shadow: 2px 2px 0 black;
+}
+
+
+
+
+
+#c-img1 {
+    z-index: 1;
+    margin-top: -15rem;
+    position: relative;
+    background: url(img1.png) center no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#c-img1 .background {
+    padding-bottom: 40%;
+}
+
+
+
+
+
+#c-ticket a {
+    display: table;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--orange);
+    cursor: pointer;
+    margin: auto;
+    margin-top: 3rem;
+    border-radius: 4rem;
+    margin-bottom: -1rem;
+}
+#c-ticket a:hover {
+    text-decoration: underline;
+}
+#tickets {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 #tickets .guest {
     display: grid;
     grid-gap: 3rem;
-    grid-template-columns: 4rem 1fr;
+    grid-template-columns: 0rem 1fr;
 }
 #tickets .guest .name {
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 0.5rem;
-    color: black;
-    text-align: left;
 }
 #tickets .guest .count {
-    text-align: right;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
-    color: black;
+}
+
+
+
+
+
+#c-stickers {
+    background: #00007D;
+    color: white;
+}
+#c-stickers .img {
+    position: relative;
+    width: 100%;
+    margin: -2rem;
+    margin-top: 0;
+    background: url(img-stickers.png) center no-repeat;
+    background-size: contain;
+}
+#c-stickers .img > div {
+    padding-bottom: 60%;
+}
+
+
+
+
+
+
+#c-showtell.card p {
+    font-size: 2rem;
+}
+#c-showtell.card a {
+    cursor: pointer;
+    display: table;
+    margin: auto;
+    margin-top: 3rem;
+    padding: 2rem 4rem;
+    background: var(--blue);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-radius: 50rem;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.43,.71,.12,1);
+    text-align: center;
+}
+#c-showtell.card a:hover {
+    background: var(--orange);
+    box-shadow: 0 0 0 1rem var(--yellow); 
+    transform: translateY(-0.5rem);
+}
+#c-showtell .img {
+    height: 8rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    width: 100%;
+    background: url(img-showtell.svg) center no-repeat;
+    background-size: contain;
+}
+
+
+
+
+
+
+#c-img2 {
+    position: relative;
+    background: url(img-taco.png) center no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#c-img2 .background {
+    padding-bottom: 35%;
+}
+
+
+
+
+
+
+#c-img3 {
+    position: relative;
+    background: url(img-pizza.png) center no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#c-img3 .background {
+    padding-bottom: 40%;
+}
+
+
+
+#c-img4 {
+    position: relative;
+    background: url(img2.png) center no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#c-img4 .background {
+    padding-bottom: 40%;
 }
