@@ -110,7 +110,7 @@ var EVENTS = [
         "desc":"Get to know your fellow designers through fun, design-oriented games!"
     },
     {
-        "id":"19fm7",
+        "id":"19fm8",
         "name":"Typography",
         "epoch":1574217000,
         "start":"6:30pm",
@@ -121,7 +121,7 @@ var EVENTS = [
         "desc":"Learn how to effectively use typography in your graphic and UI/UX designs."
     },
     {
-        "id":"19fm7",
+        "id":"19fm9",
         "name":"Portfolios",
         "epoch":1574735400,
         "start":"6:30pm",
