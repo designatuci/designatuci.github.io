@@ -115,7 +115,7 @@ var EVENTS = [
         "epoch":1574217000,
         "start":"6:30pm",
         "end":"8:00pm",
-        "date":"November 18th",
+        "date":"November 19th",
         "location":"DBH 1300",
         "type":"workshop",
         "desc":"Learn how to effectively use typography in your graphic and UI/UX designs."
@@ -123,10 +123,10 @@ var EVENTS = [
     {
         "id":"19fm9",
         "name":"Portfolios",
-        "epoch":1574735400,
+        "epoch":1574793000,
         "start":"6:30pm",
         "end":"8:00pm",
-        "date":"November 25th",
+        "date":"November 26th",
         "location":"DBH 1300",
         "type":"workshop",
         "desc":"Get advice and inspiration for creating your portfolio."
