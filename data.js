@@ -101,7 +101,7 @@ var EVENTS = [
     {
         "id":"19fm7",
         "name":"Game Night",
-        "epoch":1573569000,
+        "epoch":1574188200,
         "start":"6:30pm",
         "end":"7:30pm",
         "date":"November 12th",
