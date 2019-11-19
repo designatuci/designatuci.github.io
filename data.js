@@ -56,7 +56,7 @@ var EVENTS = [
     },
     {
         "id":"19fm2",
-        "name":"Color & Typography",
+        "name":"Color Theory",
         "epoch":1570584600,
         "start":"6:30pm",
         "end":"7:30pm",

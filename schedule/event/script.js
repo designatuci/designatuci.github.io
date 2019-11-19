@@ -8,11 +8,15 @@ $(function() {
         if (EVENTS[i].id == eventId) {
             event = EVENTS[i]
             found = true
+            break
         }
     }
     if (!found) {
         console.log("redirecting")
         window.location.replace("/schedule/#allEvents")
+    } else {
+        console.log("URIEventId="+eventId)
+        console.log("Event="+event)
     }
     $("#-title").text(event.name)
     $("#-type").text(event.type)
