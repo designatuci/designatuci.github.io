@@ -112,7 +112,7 @@ var EVENTS = [
     {
         "id":"19fm7",
         "name":"Typography",
-        "epoch":1574130600,
+        "epoch":1574217000,
         "start":"6:30pm",
         "end":"8:00pm",
         "date":"November 18th",
@@ -123,7 +123,7 @@ var EVENTS = [
     {
         "id":"19fm7",
         "name":"Portfolios",
-        "epoch":1574735400,
+        "epoch":91574735400,
         "start":"6:30pm",
         "end":"8:00pm",
         "date":"November 25th",
