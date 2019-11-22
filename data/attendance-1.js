@@ -1,12 +1,10 @@
 winners[0] = [
     { name: "Amie Le", winnings: 3 },
-    { name: "Kamille Suayan", winnings: 3 },
-    { name: "Kacy Diep", winnings: 3 }
+    { name: "Kamille Suayan", winnings: 3 }
 ]
 attendance[0] = `
 Amie Le
 Kamille Suayan
-Kacy Diep
 Chad De Vera
 Dongwoo Yoon
 Alan Pham
@@ -22,11 +20,9 @@ Alaina Loo
 Minh Nhu Tran
 Ana Nguyen
 Andrew Su
-Kacy Diep
 Kamille Suayan
 Amie Le
 Alyssa Rodriguez
-Jonathan Fung
 Emiru Okada
 Hawnii Shin
 Sydney Huang
@@ -54,5 +50,4 @@ Adrien Huynh Huu
 Saki Tanaka
 Soomin Son
 Miyuki Ozawa
-Laney Dang
 `

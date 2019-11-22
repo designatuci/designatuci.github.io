@@ -17,7 +17,6 @@ Miyuki Ozawa
 Andrea Lam
 Ricky Thai
 Dongwoo Yoon
-Jonathan Fung
 Alyssa Rodriguez
 Michel Ramirez
 Nia Wyman 
@@ -27,7 +26,6 @@ Lyss Noma
 Kevin Hanst
 Esmeralda Juarez
 Vivian Ling
-Stella Adriana
 Evelyn Liang
 Angela Ung 
 Hawnii Shin
@@ -35,7 +33,6 @@ Sabrina Lee
 Jaewon Jeong 
 Meow Zhang
 Saki Tanaka
-Laney Dang
 Ana Nguyen
 Yuki Nagasaku
 `
