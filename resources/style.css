@@ -104,6 +104,12 @@ p {
 }
 
 
+#c-kernGame .img {
+    background-image: url(/src/img/kernGameThumb.png);
+}
+#c-19fm8 .img {
+    background-image: url(/src/img/19fm8-thumb.png);
+}
 #c-hazel .img {
     background-image: url(/src/img/hazelThumb.png);
 }

@@ -123,7 +123,7 @@ var EVENTS = [
     {
         "id":"19fm9",
         "name":"Portfolios",
-        "epoch":1574793000,
+        "epoch":1574821800,
         "start":"6:30pm",
         "end":"8:00pm",
         "date":"November 26th",
