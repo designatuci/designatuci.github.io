@@ -1,6 +1,6 @@
 winners[4] = [
-    { name: "Justin Nugyen", winnings: 4 },
-    { name: "Cat Vo", winnings: 4 }
+    { name: "Justin Nguyen", winnings: 3 },
+    { name: "Cat Vo", winnings: 3 }
 ]
 
 
@@ -29,5 +29,4 @@ Alan Pham
 matt garcia
 Andrea Lam
 Cat Vo
-Sabrina Lee
 `

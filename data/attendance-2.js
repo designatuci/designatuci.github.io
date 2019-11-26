@@ -29,7 +29,6 @@ Vivian Ling
 Evelyn Liang
 Angela Ung 
 Hawnii Shin
-Sabrina Lee
 Jaewon Jeong 
 Meow Zhang
 Saki Tanaka

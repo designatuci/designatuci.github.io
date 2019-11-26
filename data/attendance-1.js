@@ -14,7 +14,6 @@ Alyssa Rietsch
 Chell Lê
 Nia Wyman 
 Nick Schneider
-Dachelle Alo 
 Ryan Chum
 Alaina Loo
 Minh Nhu Tran
@@ -30,7 +29,7 @@ Michel Ramirez
 Ali youmagul
 Nahom Ayalew 
 Matthew Corpus
-Fern Lukban 
+Fernan Lukban 
 Angie Rubio 
 Angel Ge
 Kaylee Sun
@@ -43,7 +42,6 @@ Adrian Perez
 Jessica Li
 Kavi Mathur
 Diana La
-Sabrina Lee
 Garry Fanata
 Esmeralda Juarez
 Adrien Huynh Huu

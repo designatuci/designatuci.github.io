@@ -15,7 +15,6 @@ Lyss Noma
 Matt Garcia
 Esmeralda Juarez
 Randy Quilala
-Sabrina Lee
 Emily Le
 Alessandro Cardoni 
 Angela Martin
@@ -34,7 +33,6 @@ Kevin Hanst
 Zhenjiang Wang
 Michael Wong
 Kayla Yee 
-Dachelle Alo
 Nick Schneider
 Meow Zhang
 Julianne Palad
