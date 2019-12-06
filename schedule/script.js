@@ -11,15 +11,14 @@ $(function() {
         }
     }
 
-
-    $("#s-next .split").attr("href", "/schedule/event/?id="+nextEvent.id )
     $("#eventContainer").empty()
 
-    $("#s-next .name").text(nextEvent.name)
-    $("#s-next .date").text(nextEvent.date)
-    $("#s-next .start").text(nextEvent.start)
-    $("#s-next .location").text(nextEvent.location)
-    $("#s-next .desc").text(nextEvent.desc)
+    // $("#s-next .split").attr("href", "/schedule/event/?id="+nextEvent.id )
+    // $("#s-next .name").text(nextEvent.name)
+    // $("#s-next .date").text(nextEvent.date)
+    // $("#s-next .start").text(nextEvent.start)
+    // $("#s-next .location").text(nextEvent.location)
+    // $("#s-next .desc").text(nextEvent.desc)
 
     for (i in EVENTS) {
         var event = EVENTS[i]
