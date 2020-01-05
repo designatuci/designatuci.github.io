@@ -145,6 +145,7 @@ p {
     display: none;
 }
 #navMobile #join {
+    z-index: 3;
     position: absolute;
     top: 3rem;
     right: 3rem;
