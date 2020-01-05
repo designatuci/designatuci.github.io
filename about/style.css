@@ -1,36 +1,48 @@
-h1 {
-    font-size: 5rem;
-    font-weight: bold;
+#first {
+    padding: 10%;
+    padding-bottom: 5%;
 }
-h2 {
-    font-size: 4rem;
-}
-p {
-    font-size: 2.5rem;
-}
-
-.max.small {
-    max-width: 96rem;
-    padding-right: 32rem;
-}
-
-
-#nav .logo {
-    background: url(/src/logoBlack.svg) no-repeat center;
-}
-#s-splash {
-    overflow: hidden;
-    background: white;
-    color: black;
-    padding: 15rem 10rem;
-    padding-top: 12rem;
-}
-#s-splash p {
-    margin-top: 5rem;
-}
-#s-splash h1 {
+#first h1 {
     color: var(--blue);
+    font-size: 5rem;
+    margin-bottom: 5rem;
+    opacity: 0;
 }
+.ready #first h1 { animation: title-in 1s cubic-bezier(.12,.58,.13,1) forwards; }
+.ready #first p { animation: title-in 1s 0.1s cubic-bezier(.12,.58,.13,1) forwards; }
+@keyframes title-in {
+    0% { opacity: 0; transform: translateY(2rem); }
+    100% { opacity: 1; transform: none; }
+}
+#first p {
+    opacity: 0;
+    max-width: 100rem;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+#first a {
+    padding: 0 0.25rem;
+    text-decoration: underline;
+}
+#first a:hover {
+    color: white;
+    background: black;
+    text-decoration: none;
+}
+
+
+
+
+
+
+#team {
+    background: black;
+    text-align: center;
+    padding: 5%;
+}
+
+
+
 
 
 ::-webkit-scrollbar {
@@ -77,7 +89,7 @@ p {
     position: absolute;
     top: 0;
     right: 0;
-    background: url(/src/img/cross.svg) center no-repeat;
+    background: url(src/cross.svg) center no-repeat;
     background-size: 4rem;
     width: 12rem;
     height: 12rem;
@@ -134,17 +146,17 @@ p {
 }
 
 
-#s-team {
+#team {
     padding: 10rem 10rem;
 }
-#s-team > h1:first-of-type {
-    margin-top: 2rem;
-    margin-bottom: 12rem;
+#team > h1 {
+    color: white;
+    margin-bottom: 5rem;
     text-align: center;
 }
 .people {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 6rem;
     color: white;
 }
@@ -155,6 +167,9 @@ p {
     cursor: pointer;
     box-sizing: border-box;
     display: block;
+}
+.person > * {
+    cursor: pointer;
 }
 
 .person .icon {

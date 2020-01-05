@@ -11,19 +11,29 @@
     font-weight: normal; font-style: normal;
 }
 
+:root {
+    --blue: #01B7FF;
+    --orange: #EC673F;
+    --yellow: #FFCC45;
+    --deepBlue: #00007D;
+
+    --grey: #7A7A8D;
+    --softGrey: #E4E4E6;
+
+    --lightBlue: #CEF2FF;
+}
+
 * {
-    font-family: DMSans, sans-serif;
+    font-family: 'DMSans', sans-serif;
     font-size: 0;
     margin: 0;
     padding: 0;
-    vertical-align: middle;
+    cursor: default;
 }
 
 html {
-    scroll-behavior: smooth;
-    background: black;
-    color: white;
     font-size: 8px;
+    background: white;
 }
 
 
@@ -34,6 +44,7 @@ p {
     font-weight: normal;
 }
 a {
+    cursor: pointer;
     font-size: inherit;
     color: inherit;
     text-decoration: inherit;
@@ -54,6 +65,6 @@ a {
     html {
         font-size: 6px;
     }
-    
+
     
 }

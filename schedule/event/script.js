@@ -20,10 +20,17 @@ $(function() {
     }
     $("#-title").text(event.name)
     $("#-type").text(event.type)
-    $("#-date").html(event.start+"–"+event.end+"<span>"+event.date+"</span>")
+    $("#-date").html(event.start+"–"+event.end+" "+event.date)
     $("#-location").text(event.location)
     $("#-desc").text(event.desc)
 
 
 })
 
+
+
+function ready(wait = 0) {
+    setTimeout(() => {
+        document.body.className = "ready"
+    }, 300+wait);
+}

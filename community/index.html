@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Design at UCI is the community on campus for passionate designers.">  
+    <meta name="description" content="Design at UCI is the community on campus for passionate designers. We love graphic, UX, UI, and motion design. Join us at our next meeting!">    
     <meta name="author" content="Kailer Garcia">
     <meta name="keywords" content="design,at,UCI,university,irvine,UC,motion,graphic,UX,UI,learn,club,group,community,organization">
     
@@ -15,21 +15,20 @@
 
     <script src="/jq.js"></script>
     <script src="/global.js"></script>
+    <script src="/main.js"></script>
+    <script src="script.js"></script>
+    <script src="/data/schedule.js?v=0"></script>
+
     <script>var attendance = []; var winners = [];</script>
-    <script src="/data/attendance-1.js"></script>
-    <script src="/data/attendance-2.js"></script>
-    <script src="/data/attendance-3.js"></script>
-    <script src="/data/attendance-4.js"></script>
-    <script src="/data/attendance-5.js"></script>
-    <script src="script.js?v=20"></script>
+    <script src="/data/attendance/W20-1.js"></script>
 
     <link rel="stylesheet" href="/global.css">
-    <link rel="stylesheet" href="/tokens.css">
     <link rel="stylesheet" href="/ui.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styleMobile.css">
+    <link rel="stylesheet" href="styleS.css">
+
 </head>
-<body>
+<body onscroll="scroll()">
     
 
     <div id="nav">
@@ -39,102 +38,90 @@
         <a href="/community/" class="link selected">community</a>
         <a href="/about/" class="link">about</a>
         <a href="/contact/" class="link">contact</a>
-        <a href="/join/" id="join" class="link button">join</a>
+        <a href="/join/" id="join">get involved</a>
     </div>
     <div id="navMobile">
-        <div class="ui">
-            <div class="logo"></div>
-            <div id="navButton" onclick="toggleMobileNav()">
-                <div class="one"></div>
-                <div class="two"></div>
-            </div>
+        <div class="container">
+            <a href="/" class="logo"></a>
+            <div class="toggle" onclick="toggleMobileNav()"><div class="one"></div><div class="two"></div></div>
             <div class="links">
-                <a href="/" class="link">home</a>
                 <a href="/schedule/" class="link">schedule</a>
                 <a href="/resources/" class="link">resources</a>
                 <a href="/community/" class="link">community</a>
                 <a href="/about/" class="link">about</a>
-                <a href="/contact/" class="link">contact</a>
+                <a href="/contact/" class="link selected">contact</a>
             </div>
+            <a href="/join/" id="join">get involved</a>
         </div>
-        <a href="/join/" id="join" class="link button">join</a>
+        
+    </div>
+    <div id="navGhost"></div>
+
+
+    <div id="page">
+        <h1 class="title">Community</h1>
+
+
+        <div class="prelide elide section" style="transition-delay:0.2s;">
+            <div class="header">Show & Tell</div>
+            <div class="img one"></div>
+            <p>Want to share what you've been working on lately during a meeting? Give us a file or link to an image or site!</p>
+            <a class="button" href="https://forms.gle/LeVagH3ko6qFaFuU6">Submit Work</a>        
+        </div>
+
+
+        <div class="prelide elide section" style="transition-delay:0.4s;">
+            <div class="header">Social Events</div>
+            <p>Look out for our social events happening after meetings and other times on our <a href="https://wwww.facebook.com/designatuci" target="_blank" class="fblink">facebook</a> to meet fellow designers.</p>
+            <div class="photo" style="background-image:url(src/photo-taco.png)"><div style="padding-bottom:40%;"></div></div>
+            <div class="caption">Taco Social</div>
+        </div>
+
+
+        <div class="prelide elide section" id="ticketSection">
+            <div class="header">Ticket Holdings</div>
+            <div id="tickets"></div>
+            <a class="button" href="/community/tickets/">view full leaderboard</a> 
+        </div>
+
+
+        <div class="prelide elide section">
+            <div class="header">New Stickers Coming Soon</div>
+            <div class="img two"></div>
+        </div>
+
+
+
     </div>
 
-
-    <div id="s-first">
-
-        <h1>Community</h1>
-
-    </div>
 
     
-    <div id="s-main">
+
+    
+    <div id="bottom">
         <div class="split">
             <div class="left">
-                <div id="c-img1" class="card">
-                    <div class="background"></div>
+                <div class="logo"></div>
+                <p>Copyright 2019 Design at UCI</p>
+                <p class="credit">Designed and developed by <a href="https://www.kailerg.com">Kailer Garcia</a></p>
+                <p class="alert">This website uses primitive Google Analytics, their privacy policy can be found <a href="https://policies.google.com/privacy">here</a></p>
+                
+                <div class="socialMedia">
+                    <a href="https://www.facebook.com/designatuci/" target="_blank" class="socialMediaLink facebook"></a>
+                    <a href="https://www.instagram.com/designatuci/" target="_blank" class="socialMediaLink instagram"></a>
                 </div>
-                <div id="c-ticket" class="card">
-                    <h1>Ticket Holdings</h1>
-                    <div id="tickets">
-                    </div>
-                    <a href="/community/tickets/">view full leaderboard</a>
-                </div>
-                <div id="c-img2" class="card photo"><div class="background"></div><h1 class="caption">taco social</h1></div>
-                <div id="c-img3" class="card photo"><div class="background"></div><h1 class="caption">ice breaker</h1></div>
+
             </div>
             <div class="right">
-                <div id="c-showtell" class="card">
-                    <div class="img"></div>
-                    <h1>Show & Tell</h1>
-                    <p>Want to share what you've been working on lately during a meeting? Give us a file or link to an image or site!</p>
-                    <a href="https://forms.gle/LeVagH3ko6qFaFuU6">Submit Work</a>
-                </div>
-                <div id="c-stickers" class="card">
-                    <h1>New Stickers Coming</h1>
-                    <div class="img"><div></div></div>
-                </div>
-                <div id="c-img4" class="card photo"><div class="background"></div><h1 class="caption">workshop activity</h1></div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-    <div id="bottom">
-        <div class="max">
-            <div>
-                <div class="logo"></div>
-                <div>
-                    <p>Copyright 2019 Design at UCI.</p>
-                    <p class="credit">This website was designed by <a href="https://www.kailerg.com">Kailer Garcia</a>.</p>
-                    <p class="alert">This website uses Google Analytics, their privacy policy can be found <a href="https://policies.google.com/privacy">here</a>.</p>
-                </div>
-                <div class="socialMedia">
-                    <a href="https://www.facebook.com/designatuci/" class="socialMediaLink facebook"></a>
-                    <a href="https://www.instagram.com/designatuci/" class="socialMediaLink instagram"></a>
-                </div>
-            </div>
-            <div class="links">
-                <a href="/" class="selected">Homepage</a>
-                <a href="/schedule/">Schedule</a>
-                <a href="/resources/">Resources</a><a href="/community/">Community</a>
+                <a href="https://designatuci.com/">Design at UCI</a>
                 <a href="/join/">Join</a>
+                <a href="/schedule/">Schedule</a>
+                <a href="/resources/">Resources</a>
+                <a href="/community/">Community</a>
+                <a href="/about/">About</a>
                 <a href="/contact/">Contact</a>
-                <a href="/brand/">Brand</a>
             </div>
         </div>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149706209-1"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-149706209-1');
-        </script>
     </div>
 
 

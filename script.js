@@ -1,14 +1,35 @@
-window.onload = function() {
-    setTimeout(function () {
-        document.body.classList.add('ready')
-    }, 600);
+//
+// Vars
+//
+
+var s = 0
+
+
+
+
+//
+// Ready
+//
+function ready(wait = 0) {
+    setTimeout(() => {
+        document.body.className = "ready"
+    }, wait);
 }
 
 
-function scrollDown() {
-    
-    $('html, body').animate({
-        scrollTop: window.innerHeight
-    }, 1200)
+//
+// Functions
+//
+
+function scroll() { s = window.pageYOffset
+
+    $('.elide').each(function(i, obj) {
+        if ( s > $(this).offset().top - window.innerHeight + 20 ) {
+            $(this).removeClass("elide")
+        }
+    });
+
 
 }
+
+

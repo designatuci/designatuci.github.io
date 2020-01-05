@@ -1,94 +1,147 @@
-#nav {
-    background: #00007D;
+#next {
+    position: relative;
+    padding: 10%;
+    text-align: center;
 }
 
-h1 {
-    font-size: 4rem;
-    font-weight: bold;
-}
-
-
-#s-next {
-    padding: 10rem 10rem;
-}
-#s-next .split {
-    background: white;
-    color: black;
-    cursor: pointer;
-    margin-top: 5rem;
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    grid-gap: 4rem;
-    padding: 4rem;
-    border-radius: 1rem;
-    transition-duration: 0.2s;
-}
-#s-next .split:hover {
-    box-shadow: 0 0 0 0.5rem var(--blue);
-}
-
-
-
-#s-next .left h1 {
-    font-size: 4rem;
-    color: #01B7FF;
-}
-#s-next .left h2 {
-    font-weight: bold;
-    margin-top: 2rem;
+#next .title {
+    color: var(--orange);
     font-size: 3rem;
-    color: #01B7FF;
+    font-weight: bold;
+    transition-duration: 0.8s;
+    transition-delay: 0.1s;
+    transition-timing-function: cubic-bezier(.24,.76,.36,1);
+    opacity: 0;
+    transform: translateY(2rem);
+}
+.ready #next .title {
+    opacity: 1;
+    transform: none;
 }
 
-#s-next .right h1 {
-    font-size: 4rem;
+
+#next .loadAnimation {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
-#s-next .right p {
-    margin-top: 2rem;
-    font-size: 2.5rem;
-    font-weight: 500;
+#next .loadAnimation svg {
+    width: 12rem;
+    height: 12rem;
+    z-index: 1;
+}
+.ready #next .loadAnimation svg {
+    transition-duration: 0.2s;
+    opacity: 0;
+}
+#ballL { animation: ballBounce 0.45s linear -0.16s infinite; }
+#ballM { animation: ballBounce 0.45s linear -0.08s infinite; }
+#ballR { animation: ballBounce 0.45s linear -0.0s infinite; }
+
+@keyframes ballBounce {
+    0% {
+        opacity: 1;
+        animation-timing-function: cubic-bezier(0,.6,.4,1);
+    }
+    50% {
+        opacity: 0;
+        animation-timing-function: cubic-bezier(.6,0,1,.4);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+#next .container * {
+    cursor: pointer;
+}
+#next .container {
+    display: block;
+    margin: 5rem auto;
+    max-width: 100rem;
+    transition-duration: 0.8s;
+    transition-delay: 0.2s;
+    transition-timing-function: cubic-bezier(.24,.76,.36,1);
+    opacity: 0;
+    transform: translateY(2rem);
+}
+
+.ready #next .container {
+    transform: none;
+    opacity: 1;
+}
+#next.announcement {
+    grid-template-columns: 1fr;
+}
+#next.announcement #-date, #next.announcement #-location {
+    display: none;
+}
+#next h1.name {
+    font-size: 5rem;
+    font-weight: bold;
+}
+#next p {
+    font-weight: bold;
+    font-size: 3rem;
+}
+#next .name {
+    margin-bottom: 3rem;
+}
+#next .desc {
+    font-weight: normal;
+    margin-bottom: 3rem;
+    text-align: justify;
+}
+#next .container .left p {
+    font-weight: bold;
+}
+#next .location, #next .date {
+    margin-right: 3rem;
+    display: inline-block;
 }
 
 
 
 
-#s-list {
-    padding: 10rem;
+
+#info {
+    padding: 10%;
+    padding-bottom: 0;
     background: black;
     color: white;
+    min-height: 100rem;
 }
-#s-list .events {
+
+#info p.one {
+    margin-bottom: 10rem;
+}
+#info p.one a {
+    padding: 0 0.5rem;
+    color: var(--blue);
+}
+#info p.one a:hover {
+    color: black;
+    background: var(--blue);
+}
+
+
+
+
+.events {
     padding: 4rem 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 4rem;
+    grid-gap: 3rem;
     padding-bottom: 8rem;
 }
-
-#s-list p {
-    font-size: 2.5rem;
-}
-#s-list .one {
-    margin-top: 5rem;
-    margin-bottom: 10rem;
-    vertical-align: top;
-}
-#s-list .one span {
-    font-size: inherit;
-    color: inherit;
-    display: block;
-    margin-top: 2rem;
-}
-#s-list .one a {
-    vertical-align: top;
-    text-decoration: underline;
-}
-
+.event * { cursor: pointer; }
+#next.announcement .event * { cursor: default; }
 .event {
     cursor: pointer;
     padding: 3rem;
     transition-duration: 0.2s;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     background: white;
     color: black;
 }
@@ -96,16 +149,16 @@ h1 {
     background: var(--blue);
     color: white;
 }
-#s-list .event:hover p.type {
-    color: black;
+.event:hover p.type {
     transition-duration: 0.2s;
+    color: white;
 }
 
-#s-list .event p {
+.event p {
     font-size: 2rem;
     font-weight: bold;
 }
-#s-list .event p.type {
+.event p.type {
     color: #FC593D;
     font-weight: 700;
     letter-spacing: 1px;
@@ -116,4 +169,3 @@ h1 {
     font-size: 3rem;
     font-weight: normal;
 }
-

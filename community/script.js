@@ -1,5 +1,4 @@
-$(function() {
-
+$(()=>{
 
     var scores = {}
 
@@ -37,11 +36,13 @@ $(function() {
             return a[1] < b[1]
         }
     })
-    console.log(display)
 
+    if (display.length == 0) {
+        $("#ticketSection").remove()
+    }
     const max = 9
     for (i in display) { const entry = display[i]
-        if (i > max) break
+        if (i >= max) break
         $("#tickets").append(`
         <div class="guest">
             <div class="count">${entry[1]}</div>
@@ -51,4 +52,29 @@ $(function() {
 
     }
 
+
 })
+
+
+
+function ready(wait = 0) {
+
+    setTimeout(() => {
+        document.body.className = "ready"
+        scroll()
+    }, 100+wait);
+
+}
+
+
+
+
+function scroll() { s = window.pageYOffset
+
+    $('.elide').each(function(i, obj) {
+        if ( s > $(this).offset().top - window.innerHeight + 20 ) {
+            $(this).removeClass("elide")
+        }
+    });
+
+}

@@ -1,0 +1,16 @@
+@media only screen and (max-width: 600px) {
+
+    #page {
+        padding: 5%;
+    }
+
+
+    #tickets {
+        max-width: 100rem;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+}

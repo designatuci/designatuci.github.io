@@ -1,5 +1,4 @@
-$(function() {
-
+$(()=>{
 
     var scores = {}
 
@@ -37,7 +36,10 @@ $(function() {
             return a[1] < b[1]
         }
     })
-    console.log(display)
+
+    if (display.length == 0) {
+        window.location = "/community/"
+    }
 
     for (i in display) { const entry = display[i]
         $("#tickets").append(`
@@ -48,5 +50,6 @@ $(function() {
         `)
 
     }
+
 
 })

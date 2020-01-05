@@ -1,0 +1,22 @@
+@media only screen and (max-width: 900px) {
+
+    #info {
+        padding: 5%;
+    }
+
+    #next .split {
+        padding: 4rem;
+        grid-template-columns: 1fr;
+    }
+
+    .events {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 600px) {
+
+    .events {
+        grid-template-columns: 1fr;
+    }
+
+}

@@ -1,0 +1,21 @@
+@media only screen and (max-width: 900px) {
+
+    .people {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+}
+@media only screen and (max-width: 600px) {
+
+    #team {
+        padding: 5%;
+    }
+    .people {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+}
