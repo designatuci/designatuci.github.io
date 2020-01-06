@@ -48,7 +48,7 @@
 
 
 #event {
-    margin-top: 6rem;
+    margin-top: 2rem;
     min-height: 60vh;
     padding: 8%;
     color: black;
@@ -86,7 +86,7 @@
 }
 #event #-desc {
     text-align: justify;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 #event p {
     font-size: 3rem;
