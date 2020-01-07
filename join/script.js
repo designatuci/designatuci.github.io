@@ -19,7 +19,7 @@ function ready(wait = 0) {
         $("#nextSection").remove()
     } else {
         $("#-name").text(nextEvent.name)
-        $("#-date").text(nextEvent.date + " " + nextEvent.start)
+        $("#-date").text(nextEvent.start + " " + nextEvent.date)
         $("#-desc").text(nextEvent.desc)
         $("#-location").text(nextEvent.location)
     }

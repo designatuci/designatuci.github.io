@@ -51,5 +51,5 @@ $(function() {
 function ready(wait = 0) {
     setTimeout(() => {
         document.body.className = "ready"
-    }, 300+wait);
+    }, 100+wait);
 }
