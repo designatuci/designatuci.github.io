@@ -17,7 +17,7 @@ $(function() {
     $("#next .container").attr("href", "/schedule/event/?id="+nextEvent.id )
     $("#next .name").text(nextEvent.name)
     $("#next .date").text(nextEvent.date)
-    $("#next .start").text(nextEvent.start)
+    $("#next .time").text(nextEvent.start)
     if (nextEvent.start == "") {
         $("#next").addClass("announcement")
         $("#next .title").text("Announcement")

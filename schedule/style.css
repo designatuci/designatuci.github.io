@@ -97,7 +97,7 @@
 #next .container .left p {
     font-weight: bold;
 }
-#next .location, #next .date {
+#next .location, #next .date, #next .time {
     margin-right: 3rem;
     display: inline-block;
 }
