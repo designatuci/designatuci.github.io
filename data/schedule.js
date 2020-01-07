@@ -91,7 +91,7 @@ var EVENTS = [
     {
         "id":"19WM9",
         "name":"Welcome Back Meeting",
-        "epoch":1578421800,
+        "epoch":1578450600,
         "start":"6:30pm",
         "end":"8:00pm",
         "date":"Janurary 7th",

@@ -108,10 +108,12 @@
 .content .color h1, .content .color p {
     margin: 0;
 }
-.content .color.light h1, .content .color.light p {
-    color: black;
+.content .color.dark h1, .content .color.dark p {
+    color: white;
 }
-
+.content .color.white {
+    box-shadow: 0 0 0 2px var(--softGrey);
+}
 
 
 
