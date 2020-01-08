@@ -31,9 +31,17 @@
     transform: translateY(5rem) scale(0.9);
     transition-timing-function: cubic-bezier(.24,1.41,.52,1);
 }
+
 .ready .img {
     opacity: 1;
     transform: none;
+}
+
+#first #mural .main {
+    transform: translate(-50%,-50%);
+}
+.ready #first #mural .main {
+    transform: translate(-50%,-50%);
 }
 
 
