@@ -1,32 +1,6 @@
-#page {
-    text-align: center;
-    padding: 10%;
-}
-#page .title {
-    padding-bottom: 5rem;
-    transition-duration: 1s;
-    transition-timing-function: cubic-bezier(.42,1.55,.36,1);
-    transform: translateY(5rem);
-    opacity: 0;
-}
-.ready #page .title {
-    transform: none;
-    opacity: 1;
-}
-
-
 .prelide {
     transition-duration: 0.8s;
     transition-timing-function: cubic-bezier(.28,.49,.31,1);
-}
-
-
-#first .header {
-    display: table;
-    margin: 2rem auto;
-    color: var(--blue);
-    font-size: 3rem;
-    
 }
 
 
@@ -41,18 +15,20 @@
 }
 
 
-#page p {
-    font-size: 3rem;
-    max-width: 100rem;
+h1 {
+    font-size: 5rem;
+}
+p {
+    text-align: center;
+    font-size: 2.5rem;
     margin: auto;
 }
 
 
-#page .button {
+.button {
     display: table;
     margin: auto;
     margin-top: 3rem;
-    margin-bottom: 5rem;
     padding: 1rem 2rem;
     padding-bottom: 1.25rem;
     font-size: 2rem;
@@ -63,7 +39,7 @@
     transition-duration: 0.4s;
     transition-timing-function: cubic-bezier(.43,.71,.12,1);
 }
-#page .button:hover {
+.button:hover {
     background: var(--blue);
     transform: translateY(-0.5rem);
 }
@@ -71,22 +47,6 @@
 
 
 
-#page .img.one {
-    height: 5rem;
-    padding-bottom: 3rem;
-    margin: 2rem auto;
-    background: url(src/img-showtell.svg) center no-repeat;
-    background-size: contain;
-}
-
-
-#page .img.two {
-    height: 30rem;
-    padding-top: 5rem;
-    margin: auto;
-    background: url(src/img-stickers.png) center no-repeat;
-    background-size: contain;
-}
 
 
 
@@ -111,16 +71,76 @@
 }
 
 
-
-#page p .fblink {
+.fblink {
     text-decoration: underline;
     padding: 0 0.5rem;
 }
-#page p .fblink:hover {
+.fblink:hover {
     text-decoration: none;
     color: white;
     background: var(--blue);
 }
+
+
+
+
+
+#first {
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10%;
+}
+#first .title {
+    padding-bottom: 5rem;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.42,1.55,.36,1);
+    transform: translateY(5rem);
+    opacity: 0;
+}
+.ready #first .title {
+    margin-top: 3rem;
+    transform: none;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+#showtell {
+    padding: 5% 10%;
+    background: var(--blue);
+    color: white;
+}
+#showtell .title {
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+}
+#showtell .img.one {
+    height: 5rem;
+    padding-bottom: 3rem;
+    margin: auto;
+    margin-bottom: 4rem;
+    background: url(src/img-showtell.svg) center no-repeat;
+    background-size: contain;
+}
+#showtell p {
+    max-width: 80rem;
+}
+#showtell .button {
+    background: white;
+    color: black;
+}
+
+
+
+
+
 
 
 
@@ -161,4 +181,31 @@
 
 #tickets.empty {
     padding-bottom: 10rem;
+}
+
+
+
+
+
+#tease {
+    padding: 5%;
+}
+#tease h1 {
+    font-size: 3rem;
+    font-weight: normal;
+    text-align: center;
+    color: black;
+}
+#tease .icon {
+    display: table;
+    margin: auto;
+    margin-top: 3rem;
+    width: 100%;
+    max-width: 80rem;
+    position: relative;
+    background: url(src/img-stickers.png) center no-repeat;
+    background-size: contain;
+}
+#tease .icon > div {
+    padding-bottom: 50%
 }
