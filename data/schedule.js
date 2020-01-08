@@ -89,7 +89,7 @@ var EVENTS = [
         "desc":"Get advice and inspiration for creating your portfolio."
     },
     {
-        "id":"19WM9",
+        "id":"19WM1",
         "name":"Welcome Back Meeting",
         "epoch":1578450600,
         "start":"6:30pm",
@@ -100,15 +100,15 @@ var EVENTS = [
         "desc":"Learn about what workshops, professional speakers, and other exciting things we have in store for this new quarter. We will also be having a board game social afterwards, join us if you're free!"
     },
     {
-        "id":"X",
-        "name":"Enjoy your winter break",
-        "epoch":99573568000,
-        "start":"",
-        "end":"",
-        "date":"",
-        "location":"",
-        "type":"",
-        "desc":"Thank you for all of those who came to our meetings, we hope to see you next year."
+        "id":"19WM2",
+        "name":"How to Land a Design Job with Nick Araujo",
+        "epoch":1579012200,
+        "start":"6:30pm",
+        "end":"8:00pm",
+        "date":"Janurary 14th",
+        "location":"Social Ecology 1306",
+        "type":"industry speaker",
+        "desc":"Nick Araujo, a professional recruiter, is going to give a presentation about the steps you can take to get a design job."
     },
     {
         "id":"a",

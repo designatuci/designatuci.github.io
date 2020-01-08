@@ -214,8 +214,10 @@ p {
 }
 #bottom .split .left p {
     font-size: 2rem;
+    text-align: left;
 }
 #bottom .split .left a {
+    text-align: left;
     padding: 0.25rem 0.5rem;
     text-decoration: underline;
 }

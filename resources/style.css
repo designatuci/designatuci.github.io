@@ -2,9 +2,9 @@
     padding: 5%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2rem;
+    grid-gap: 3rem;
     grid-row-gap: 6rem;
-    margin-top: 4rem;
+    margin: auto;
 }
 
 .card h1 {

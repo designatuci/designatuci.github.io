@@ -98,7 +98,7 @@
     font-weight: bold;
 }
 #next .location, #next .date, #next .time {
-    margin-right: 3rem;
+    margin: 2rem;
     display: inline-block;
 }
 
