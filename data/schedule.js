@@ -102,7 +102,7 @@ var EVENTS = [
     {
         "id":"19WM2",
         "name":"How to Land a Design Job with Nick Araujo",
-        "epoch":1579012200,
+        "epoch":1579055400,
         "start":"6:30pm",
         "end":"8:00pm",
         "date":"Janurary 14th",
