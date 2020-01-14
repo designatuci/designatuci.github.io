@@ -116,7 +116,7 @@ var EVENTS = [
         "epoch":1579660740,
         "start":"6:30pm",
         "end":"8:00pm",
-        "date":"Janurary 21th",
+        "date":"Janurary 21st",
         "location":"Social Ecology 1306",
         "type":"workshop",
         "desc":"An introduction to using texture, depth, and hierachy in your designs. Learn how to guide the viewer's eye to important elements and make your designs more exciting."
