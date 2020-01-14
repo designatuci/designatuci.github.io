@@ -111,6 +111,28 @@ var EVENTS = [
         "desc":"Nick Araujo, a professional recruiter, is going to give a presentation about the steps you can take to get a design job."
     },
     {
+        "id":"19WM3",
+        "name":"Texture, Depth, and Hierarchy",
+        "epoch":1579660740,
+        "start":"6:30pm",
+        "end":"8:00pm",
+        "date":"Janurary 21th",
+        "location":"Social Ecology 1306",
+        "type":"workshop",
+        "desc":"An introduction to using texture, depth, and hierachy in your designs. Learn how to guide the viewer's eye to important elements and make your designs more exciting."
+    },
+    // {
+    //     "id":"19WM4",
+    //     "name":"Ryan Bell",
+    //     "epoch":1580265540,
+    //     "start":"6:30pm",
+    //     "end":"8:00pm",
+    //     "date":"Janurary 28th",
+    //     "location":"Social Ecology 1306",
+    //     "type":"workshop",
+    //     "desc":"???"
+    // },
+    {
         "id":"a",
         "name":"More Soon",
         "epoch":99573569000,
