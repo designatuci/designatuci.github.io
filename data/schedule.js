@@ -133,7 +133,7 @@ var EVENTS = [
     //     "desc":"???"
     // },
     {
-        "id":"a",
+        "id":"x",
         "name":"More Soon",
         "epoch":99573569000,
         "start":"",

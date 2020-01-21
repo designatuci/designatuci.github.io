@@ -37,9 +37,13 @@ $(()=>{
         }
     })
 
+    console.log(display.length)
+
     if (display.length == 0) {
         $("#ticketSection").remove()
+        console.log("deleting thing")
     }
+    
     const max = 9
     for (i in display) { const entry = display[i]
         if (i >= max) break

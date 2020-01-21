@@ -145,11 +145,16 @@ p {
 
 
 #tickets {
+    text-align: center;
     position: relative;
     max-width: 100rem;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+#ticketSection .header {
+    text-align: center;
 }
 
 #tickets .guest {
