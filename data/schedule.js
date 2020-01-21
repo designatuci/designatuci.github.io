@@ -112,7 +112,7 @@ var EVENTS = [
     },
     {
         "id":"19WM3",
-        "name":"Design Concepts",
+        "name":"Diving into Design Fundamentals",
         "epoch":1579660740,
         "start":"6:30pm",
         "end":"8:00pm",
