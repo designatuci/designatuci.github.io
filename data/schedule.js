@@ -134,13 +134,13 @@ var EVENTS = [
     // },
     {
         "id":"x",
-        "name":"More Soon",
+        "name":"More Events Coming out Soon",
         "epoch":99573569000,
         "start":"",
         "end":"",
         "date":"",
         "location":"",
-        "type":"TBA",
+        "type":"we're working on it",
         "desc":"We are currently working on creating useful and fun events for our members!"
     }
 ]
