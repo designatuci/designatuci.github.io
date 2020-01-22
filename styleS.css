@@ -3,6 +3,9 @@
         height: 100rem !important;
         grid-template-rows: 1fr 2fr; 
     }
+    #overlay .icon.two {
+        transform: translate(-9rem,8rem);
+    }
 }
 @media only screen and (max-width: 650px) {
 
@@ -19,6 +22,10 @@
     #splash .top {
         background: url(/name.svg) bottom no-repeat;
         background-size: 60%;
+    }
+
+    #overlay .icon.two {
+        transform: translate(-6rem,8rem);
     }
 
 }

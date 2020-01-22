@@ -118,7 +118,7 @@
     background-size: contain;
     left: 37%;
     top: 62%;
-    transform: translate(-12rem,8rem);
+    transform: translate(-11rem,8rem);
     transition-timing-function: cubic-bezier(.47,.34,.45,1);
 }
 .ready #overlay .icon.two {
