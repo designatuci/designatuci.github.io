@@ -121,6 +121,17 @@ var EVENTS = [
         "type":"workshop",
         "desc":"An introduction to using concepts like depth and hierachy in your designs. Learn how to guide the viewer's eye to important elements and make your designs more exciting."
     },
+    {
+        "id":"19WM4",
+        "name":"Product Designer, Ryan Bell",
+        "epoch":1580266800,
+        "start":"6:30pm",
+        "end":"8:00pm",
+        "date":"Janurary 28th",
+        "location":"Social Ecology 1306",
+        "type":"industry speaker",
+        "desc":"More details soon."
+    },
     // {
     //     "id":"19WM4",
     //     "name":"Ryan Bell",
