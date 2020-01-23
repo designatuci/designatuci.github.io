@@ -3,7 +3,7 @@ winners[0] = [
     { name: "Justine Chou", winnings: 1 },
 ]
 attendance[0] = `
-Michel
+Michel R
 Justin Lock
 Talon Love
 Christopher Villanueva

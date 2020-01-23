@@ -18,4 +18,5 @@ Justin Nguyen
 Cat Vo
 Danny Pham(why?)
 Christiana Ma
+Talon Love
 `

@@ -15,7 +15,7 @@ Ryan Chum
 Sophia Huang 
 Sruthi Ramabadran
 Kayla Le
-Michel R.
+Michel R
 Kevin Hanst
 Hailey Karter
 Amie Le
