@@ -123,14 +123,14 @@ var EVENTS = [
     },
     {
         "id":"19WM4",
-        "name":"Product Designer, Ryan Bell",
+        "name":"From Student to Designer with Ryan Bell",
         "epoch":1580266800,
         "start":"6:30pm",
         "end":"8:00pm",
         "date":"Janurary 28th",
         "location":"Social Ecology 1306",
         "type":"industry speaker",
-        "desc":"More details soon."
+        "desc":"Ryan Bell, a product designer, will be talking about transitioning from a student in college to a designer working in the real world."
     },
     // {
     //     "id":"19WM4",
