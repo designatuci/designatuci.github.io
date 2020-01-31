@@ -132,6 +132,17 @@ var EVENTS = [
         "type":"industry speaker",
         "desc":"Ryan Bell, a product designer, will be talking about transitioning from a student in college to a designer working in the real world."
     },
+    {
+        "id":"19WM5",
+        "name":"Social social social!",
+        "epoch":1580871600,
+        "start":"6:30pm",
+        "end":"8:00pm",
+        "date":"Janurary 28th",
+        "location":"Social Ecology 1306",
+        "type":"industry speaker",
+        "desc":"Come with us to UTC to get some boba and food, to hang out and de-stress!"
+    },
     // {
     //     "id":"19WM4",
     //     "name":"Ryan Bell",
