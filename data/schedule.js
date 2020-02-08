@@ -138,10 +138,21 @@ var EVENTS = [
         "epoch":1580871600,
         "start":"6:30pm",
         "end":"8:00pm",
-        "date":"Janurary 28th",
+        "date":"Feburary 4th",
         "location":"Social Ecology 1306",
         "type":"industry speaker",
         "desc":"Come with us to UTC to get some boba and food, to hang out and de-stress!"
+    },
+    {
+        "id":"19WM6",
+        "name":"Prototyping in Figma ",
+        "epoch":1581476400,
+        "start":"6:30pm",
+        "end":"8:00pm",
+        "date":"Feburary 11th",
+        "location":"Social Ecology 1306",
+        "type":"workshop",
+        "desc":"Learn how to use the prototyping feature in Figma and turn your mockups into clickable prototypes. Remember to bring your laptops to be able to participate!"
     },
     // {
     //     "id":"19WM4",
