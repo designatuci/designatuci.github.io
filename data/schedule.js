@@ -154,6 +154,17 @@ var EVENTS = [
         "type":"workshop",
         "desc":"Learn how to use the prototyping feature in Figma and turn your mockups into clickable prototypes. Remember to bring your laptops to be able to participate!"
     },
+    {
+        "id":"19WM7",
+        "name":"Animation and Micro Interactions",
+        "epoch":1582038000,
+        "start":"6:30pm",
+        "end":"8:00pm",
+        "date":"Feburary 18th",
+        "location":"Social Ecology 1306",
+        "type":"workshop",
+        "desc":"Learn how to prototype simple animations, and how they can be used to make your designs feel more alive!"
+    },
     // {
     //     "id":"19WM4",
     //     "name":"Ryan Bell",
