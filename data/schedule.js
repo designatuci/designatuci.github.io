@@ -89,7 +89,7 @@ var EVENTS = [
         "desc":"Get advice and inspiration for creating your portfolio."
     },
     {
-        "id":"19WM1",
+        "id":"20WM1",
         "name":"Welcome Back Meeting",
         "epoch":1578450600,
         "start":"6:30pm",
@@ -100,7 +100,7 @@ var EVENTS = [
         "desc":"Learn about what workshops, professional speakers, and other exciting things we have in store for this new quarter. We will also be having a board game social afterwards, join us if you're free!"
     },
     {
-        "id":"19WM2",
+        "id":"20WM2",
         "name":"How to Land a Design Job with Nick Araujo",
         "epoch":1579055400,
         "start":"6:30pm",
@@ -111,7 +111,7 @@ var EVENTS = [
         "desc":"Nick Araujo, a professional recruiter, is going to give a presentation about the steps you can take to get a design job."
     },
     {
-        "id":"19WM3",
+        "id":"20WM3",
         "name":"Diving into Design Fundamentals",
         "epoch":1579660740,
         "start":"6:30pm",
@@ -122,7 +122,7 @@ var EVENTS = [
         "desc":"An introduction to using concepts like depth and hierachy in your designs. Learn how to guide the viewer's eye to important elements and make your designs more exciting."
     },
     {
-        "id":"19WM4",
+        "id":"20WM4",
         "name":"From Student to Designer with Ryan Bell",
         "epoch":1580266800,
         "start":"6:30pm",
@@ -133,7 +133,7 @@ var EVENTS = [
         "desc":"Ryan Bell, a product designer, will be talking about transitioning from a student in college to a designer working in the real world."
     },
     {
-        "id":"19WM5",
+        "id":"20WM5",
         "name":"Social social social!",
         "epoch":1580871600,
         "start":"6:30pm",
@@ -144,7 +144,7 @@ var EVENTS = [
         "desc":"Come with us to UTC to get some boba and food, to hang out and de-stress!"
     },
     {
-        "id":"19WM6",
+        "id":"20WM6",
         "name":"Prototyping in Figma ",
         "epoch":1581476400,
         "start":"6:30pm",
@@ -155,7 +155,7 @@ var EVENTS = [
         "desc":"Learn how to use the prototyping feature in Figma and turn your mockups into clickable prototypes. Remember to bring your laptops to be able to participate!"
     },
     {
-        "id":"19WM7",
+        "id":"20WM7",
         "name":"Animation and Micro Interactions",
         "epoch":1582038000,
         "start":"6:30pm",
