@@ -1,8 +1,8 @@
-winners[3] = [
+winners[4] = [
     // { name: "Justin Nguyen", winnings: 1 },
     // { name: "Sophia Huang", winnings: 1 },
 ]
-attendance[3] = `
+attendance[4] = `
 Andrew Benson
 Sophie Wong
 Richard Magdaluyo
