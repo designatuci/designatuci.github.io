@@ -1,6 +1,7 @@
 winners[2] = [
-    { name: "Justin Nguyen", winnings: 1 },
-    { name: "Sophia Huang", winnings: 1 },
+    { name: "Justin Nguyen", winnings: 2 },
+    { name: "Sophia Huang", winnings: 2 },
+    { name: "Christiana Ma", winnings: 2 },
 ]
 attendance[2] = `
 Christopher Villanueva

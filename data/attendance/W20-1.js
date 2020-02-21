@@ -1,6 +1,6 @@
 winners[0] = [
-    { name: "Sophia Huang", winnings: 1 },
-    { name: "Justine Chou", winnings: 1 },
+    { name: "Sophia Huang", winnings: 2 },
+    { name: "Justine Chou", winnings: 2 },
 ]
 attendance[0] = `
 Michel R
