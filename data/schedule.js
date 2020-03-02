@@ -165,6 +165,28 @@ var EVENTS = [
         "type":"workshop",
         "desc":"Learn how to prototype simple animations, and how they can be used to make your designs feel more alive!"
     },
+    {
+        "id":"20WM8",
+        "name":"Cracking the Design Interview",
+        "epoch":1582048000,
+        "start":"6:30pm",
+        "end":"8:00pm",
+        "date":"Feburary 25th",
+        "location":"Social Ecology 1306",
+        "type":"workshop",
+        "desc":"Hear about some tips and tricks you can use to help get through the interviewing process for design jobs."
+    },
+    {
+        "id":"20WM8",
+        "name":"Game Night",
+        "epoch":1583290800,
+        "start":"6:30pm",
+        "end":"8:00pm",
+        "date":"March 3rd",
+        "location":"Social Ecology 1306",
+        "type":"workshop",
+        "desc":"Yup, it's game night again! Come over to distress and have fun with other designers. Bring your computer to participate in our last acitivity."
+    },
     // {
     //     "id":"19WM4",
     //     "name":"Ryan Bell",
