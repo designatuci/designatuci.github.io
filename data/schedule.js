@@ -200,13 +200,24 @@ var EVENTS = [
     // },
     {
         "id":"x",
-        "name":"More Events Coming out Soon",
+        "name":"Meetings Suspended",
         "epoch":99573569000,
         "start":"",
         "end":"",
         "date":"",
         "location":"",
-        "type":"we're working on it",
-        "desc":"We are currently working on creating useful and fun events for our members!"
+        "type":"announcement",
+        "desc":"Due to the corona virus, UCI has shutdown its campus and switched to online mode. Our meetings have thus been suspended until further notice. Look out for any online events we may hold!"
     }
+    // {
+    //     "id":"x",
+    //     "name":"More Events Coming out Soon",
+    //     "epoch":99573569000,
+    //     "start":"",
+    //     "end":"",
+    //     "date":"",
+    //     "location":"",
+    //     "type":"we're working on it",
+    //     "desc":"We are currently working on creating useful and fun events for our members!"
+    // }
 ]
