@@ -274,6 +274,84 @@
 
 
 
+#banner {
+    z-index: 10;
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: #727ee8;
+    padding: 3rem;
+    padding-bottom: 3.5rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    transition-duration: 1.2s;
+    transition-delay: 0.8s;
+    transform: translateY(80px);
+}
+.ready #banner {
+    transform: none;
+}
+
+
+
+
+#notice {
+    position: relative;
+    height: 60vh;
+    background: #727ee8;
+}
+
+#notice .icon {
+    margin: auto;
+    margin-bottom: 3rem;
+    margin-top: -5rem;
+    width: 12rem;
+    height: 12rem;
+    background: url(/src/Discord-Logo-White.svg) center no-repeat;
+    background-size: contain;
+}
+#notice h1 {
+    color: white;
+    font-size: 5rem;
+    max-width: 96rem;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+#notice p {
+    font-size: 3rem;
+    max-width: 96rem;
+    margin: auto;
+    text-align: center;
+}
+
+#notice a {
+    display: table;
+    margin: auto;
+    padding: 1rem 2rem;
+    padding-bottom: 1.25rem;
+    font-size: 2rem;
+    font-weight: bold;
+    background: var(--yellow);
+    color: white;
+    background: black;
+    border-radius: 4rem;
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(.43,.71,.12,1);
+}
+#notice a:hover {
+    background: #46c0f8;
+    color: white;
+    transform: translateY(-0.5rem);
+}
+
+
+
+
+
+
 
 #about {
     background: black;
