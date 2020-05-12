@@ -6,12 +6,6 @@ var resourceList = [
         img:"LawsOfUx.png",
         desc:"Learn more about the fundamental concepts and rules to make good UX and UI."
     }, {
-        title:"Design Thinking for Kids",
-        link:"https://praxent.com/blog/ux-design-thinking-for-kids-guide",
-        type:"guide",
-        img:"designThinkingKids.png",
-        desc:"Get an overhead view of how you can start exploring digital design futures with lots of resources. Thanks to Dylan for sharing this with us."
-    }, {
         title:"Cracking the Design Interview",
         type:"workshop",
         link:"/files/W20W8.pdf",
@@ -96,17 +90,17 @@ var resourceList = [
         img:"behanceThumb.png",
         desc:"Discover beautiful projects and explore the processes used to create them in depth."
     }, {
-        title:"Design Systems by Figma",
-        link:"https://www.designsystems.com",
-        type:"guide",
-        img:"designSystemsThumb.png",
-        desc:"Comprehensive articles that go into the details on how to make great UI and UX design systems."
-    }, {
         title:"Medium Design Articles",
         link:"https://medium.com/topic/design",
         type:"guide",
         img:"mediumThumb.png",
         desc:"Regularly new articles on all aspects of design, including UI, UX, graphic design, and more."
+    }, {
+        title:"Design Systems by Figma",
+        link:"https://www.designsystems.com",
+        type:"guide",
+        img:"designSystemsThumb.png",
+        desc:"Comprehensive articles that go into the details on how to make great UI and UX design systems."
     }, {
         title:"Figma",
         link:"https://www.figma.com",
@@ -119,6 +113,12 @@ var resourceList = [
         type:"tool",
         img:"coolorsThumb.png",
         desc:"Automatically generate and explore color palettes for your designs."
-    },
+    }, {
+        title:"Design Thinking for Kids",
+        link:"https://praxent.com/blog/ux-design-thinking-for-kids-guide",
+        type:"guide",
+        img:"designThinkingKids.png",
+        desc:"Get an overhead view of how you can start exploring digital design futures with lots of resources. Thanks to Dylan for sharing this with us."
+    }
 ]
 

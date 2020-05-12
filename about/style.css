@@ -207,6 +207,27 @@
     background-position: center;
 }
 
+.person .icon .links {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+}
+.person .icon .links .soic {
+    font-size: 0;
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.person .icon .links .soic.linkedin { background-image: url(src/icon-linkedin.svg); }
+.person .icon .links .soic.dribbble { background-image: url(src/icon-dribbble.svg); }
+.person .icon .links .soic.personal { background-image: url(src/icon-personal.svg); }
+.person .icon .links .soic.instagram { background-image: url(src/icon-instagram.svg); }
+
+
 
 .person .name {
     font-size: 3rem;

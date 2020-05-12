@@ -140,15 +140,20 @@ a.event * { cursor: pointer; }
 #next.announcement .event * { cursor: default; }
 a.event {
     cursor: pointer;
-} .event {
+}
+.event {
     padding: 3rem;
-    transition-duration: 0.2s;
     border-radius: 1rem;
     background: white;
     color: black;
+    background: linear-gradient(white 33%, var(--blue) 66%);
+    background-position-y: 0%;
+    background-size: 300%;
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(.44,.57,.08,1.01);
 }
 .event:hover {
-    background: var(--blue);
+    background-position-y: 100%;
     color: white;
 }
 .event:hover p.type {
