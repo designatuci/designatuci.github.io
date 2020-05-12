@@ -2,30 +2,30 @@ $(function() {
 
     $(".person").click(function() {
 
-        $(this).attr("hidden","true")
+        $(this).attr("hide","true")
         $("body").css({
             overflow: 'hidden'
         })
         $("#modal").removeAttr("hidden")
         $("#modal .container .window").html($(this).html())
 
-        // Enable exiting
-        $("#modal .exit").click(function() {
+        var exitFunc = () => {
+            $(this).removeAttr("hide")
             $("#modal").attr("hidden","true")
-            $(this).removeAttr("hidden")
             $("body").css({
                 overflow: ''
             })
+        }
+        
+        // Enable exiting
+        $("#modal .exit").click(function() {
+            exitFunc()
         })
         // Background click exiting 
         $("#modal .container").click(function(e) {
-            const a = Math.abs(e.clientX - window.innerWidth/2) - $("#modal .icon").innerWidth()/2
-            if (a > 0 ) {
-                $("#modal").attr("hidden","true")
-                $(this).removeAttr("hidden")
-                $("body").css({
-                    overflow: ''
-                })
+            var rect = $("#modal .window")[0].getBoundingClientRect();
+            if (!(e.clientX >= rect.left && e.clientX <= rect.right && e.clientY >= rect.top && e.clientY <= rect.bottom)) {
+                exitFunc()
             }            
         })
 

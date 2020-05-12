@@ -96,7 +96,8 @@ p {
     background-size: 30px;
 }
 #first .center {
-    width: 100%
+    box-sizing: border-box;
+    width: 90%
 }
 #first .title {
     padding-bottom: 5rem;
@@ -115,7 +116,7 @@ p {
     position: relative;
     background: url(src/teaser.png) center no-repeat;
     background-size: cover;
-    width: 300%;
+    width: 100%;
     max-width: 72rem;
     border-radius: 2rem;
     margin: auto;

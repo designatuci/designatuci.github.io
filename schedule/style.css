@@ -1,6 +1,7 @@
 #next {
     position: relative;
-    padding: 10%;
+    padding: 5%;
+    padding-top: 10%;
     text-align: center;
 }
 
@@ -53,9 +54,6 @@
 }
 
 
-#next .container * {
-    cursor: pointer;
-}
 #next .container {
     display: block;
     margin: 5rem auto;
@@ -136,22 +134,40 @@
     grid-gap: 3rem;
     padding-bottom: 8rem;
 }
-a.event * { cursor: pointer; }
 #next.announcement .event * { cursor: default; }
 a.event {
     cursor: pointer;
 }
 .event {
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
     padding: 3rem;
     border-radius: 1rem;
-    background: white;
-    color: black;
-    background: linear-gradient(white 33%, var(--blue) 66%);
-    background-position-y: 0%;
-    background-size: 300%;
+    background: none;
+    color: black;    
+}.event .bg {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; height: 300%;
     transition-duration: 0.3s;
     transition-timing-function: cubic-bezier(.44,.57,.08,1.01);
+    background: linear-gradient(white 33%, var(--blue) 66%);
 }
+.event:hover .bg {
+    top: -200%;
+}
+.event[hide=true] {
+    background: var(--blue);
+    opacity: 0;
+}
+.event[hide=true] .bg { top: -200%; }
+.event.expandable {
+    cursor: pointer;
+}
+.event.expandable * { cursor: pointer; }
 .event:hover {
     background-position-y: 100%;
     color: white;
@@ -176,8 +192,137 @@ a.event {
     letter-spacing: 1px;
     font-size: 2rem;
 }
+.event p.desc {
+    display: none;
+}
 .event h1 {
     margin-top: 2rem;
     font-size: 3rem;
     font-weight: normal;
+}
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+    display: default;
+}
+#modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+}
+
+#modal {
+    overflow-y: scroll;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.8);
+    animation: in-Modal 0.2s linear;
+}
+@keyframes in-Modal {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#modal .container {
+    cursor: zoom-out;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    box-sizing: border-box;
+    overflow: visible;
+    padding: 8rem;
+}
+#modal .container .window {
+    cursor: default;
+    overflow: hidden;
+    position: relative;
+    max-width: 72rem;
+    margin: auto;
+    background: white;
+    border-radius: 2rem;
+    box-shadow: 0 1rem 10rem -1rem black;
+    animation: in-Window 0.6s cubic-bezier(.1,.94,0,.99);
+    padding: 5rem;
+}
+@keyframes in-Window {
+    0% { transform: scale(0.8); }
+    100% { transform: none; }
+}
+
+#modal .exit {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(/src/cross.svg) center no-repeat;
+    background-size: 4rem;
+    width: 12rem;
+    height: 12rem;
+    z-index: 10;
+    opacity: 1;
+    animation: in-Exit 1.8s cubic-bezier(.2,.6,0,0.9);
+}
+@keyframes in-Exit {
+    0% { transform: scale(0.7) translateY(3rem); }
+    40% { opacity: 1; }
+    100% { transform: none; opacity: 1; }
+}
+
+
+#modal .icon {
+    margin: auto;
+    position: relative;
+    background-color: white;
+    background-size: cover;
+    top: 0; left: 0; right: 0;
+    padding-bottom: 100%;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    animation: in-Icon 0.5s cubic-bezier(.2,.6,0,1);
+}
+@keyframes in-Icon {
+    0% { padding-bottom: 0%; }
+    100% { padding-bottom: 100%; }
+}
+
+
+#modal {
+    font-size: 4rem;
+    color: black;
+    padding: 3rem 5rem 1rem 5rem;
+}
+#modal p.type { color: white; }
+
+#modal p {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+#modal p.type {
+    color: var(--blue);
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+}
+#modal h1 {
+    margin-top: 2rem;
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+#modal p.desc {
+    font-weight: normal;
+    font-size: 3rem;
+    line-height: 4rem;
+}
+#modal a.slides {
+    display: table;
+    padding: 1rem 2rem;
+    background: var(--orange);
+    color: white;
+    font-size: 2rem;
+    border-radius: 5rem;
+    font-weight: bold;
+    margin: 3rem 0;
 }

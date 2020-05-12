@@ -14,7 +14,6 @@ $(function() {
 
     $("#eventContainer").empty()
 
-    $("#next .container").attr("href", "/schedule/event/?id="+nextEvent.id )
     $("#next .name").text(nextEvent.name)
     $("#next .date").text(nextEvent.date)
     $("#next .time").text(nextEvent.start)
@@ -29,16 +28,50 @@ $(function() {
     for (i in EVENTS) {
         var event = EVENTS[i]
         if (event.id == "x" || event.start != "") {
+            // check for slide link
+            var slidelink = ""
+            if (event.slides != null) {
+                slidelink = `<a class="slides" href="${event.slides}" target="_blank">View slides</a>`
+            }
             if (event.epoch > timeNow) {
                 // Future event
                 if (event.id == "x") {
-                    $("#eventContainer").append('<div class="event announce"><p class="type">'+event.type.toUpperCase()+'</p><p>'+event.date+'</p><h1>'+event.name+'</h1></div>')
+                    var element = `
+                    <div class="event announce">
+                        <div class="exit"></div>
+                        <p class="type">${event.type.toUpperCase()}</p>
+                        <p>${event.date}</p>
+                        <h1>${event.name}</h1>
+                    </div>
+                    `
+                    $("#eventContainer").append(element)
                 } else {
-                    $("#eventContainer").append('<a href="/schedule/event/?id='+event.id+'" class="event"><p class="type">'+event.type.toUpperCase()+'</p><p>'+event.date+'</p><h1>'+event.name+'</h1></a>')
+                    var element = `
+                    <div href="/schedule/event/?id=${event.id}" class="event expandable">
+                        <div class="exit"></div>
+                        <p class="type">${event.type.toUpperCase()}</p>
+                        <p>${event.date}</p>
+                        <h1>${event.name}</h1>
+                        ${slidelink}
+                        <p class="desc">${event.desc}</p>
+                        <div class="bg"></div>
+                    </div>`
+                    $("#eventContainer").append(element)
                 }
             } else {
                 // Past event
-                $("#pastEventContainer").prepend('<a href="/schedule/event/?id='+event.id+'" class="event"><p class="type">'+event.type.toUpperCase()+'</p><p>'+event.date+'</p><h1>'+event.name+'</h1></a>')
+                var element = `
+                <div href="/schedule/event/?id=${event.id}" class="event expandable">
+                    <div class="exit"></div>
+                    <p class="type">${event.type.toUpperCase()}</p>
+                    <p>${event.date}</p>
+                    <h1>${event.name}</h1>
+                    ${slidelink}
+                    <p class="desc">${event.desc}</p>
+                    <div class="bg"></div>
+                </div>
+                `
+                $("#pastEventContainer").prepend(element)
             }
         }
 
@@ -48,7 +81,45 @@ $(function() {
 
 
 
-})
+    $(".event.expandable").click(function() {
+
+        $(this).attr("hide","true")
+        $("body").css({
+            overflow: 'hidden'
+        })
+        $("#modal").removeAttr("hidden")
+        $("#modal .container .window").html($(this).html())
+
+        var exitFunc = () => {
+            $(this).removeAttr("hide")
+            $("#modal").attr("hidden","true")
+            $("body").css({
+                overflow: ''
+            })
+        }
+
+        // Enable exiting
+        $("#modal .exit").click(function() {
+            exitFunc()
+        })
+        // Background click exiting 
+        $("#modal .container").click(function(e) {
+            var rect = $("#modal .window")[0].getBoundingClientRect();
+            if (!(e.clientX >= rect.left && e.clientX <= rect.right && e.clientY >= rect.top && e.clientY <= rect.bottom)) {
+                exitFunc()
+            }            
+        })
+
+        
+    })
+
+
+
+
+
+
+
+}) // End of init func
 
 
 

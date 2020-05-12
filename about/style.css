@@ -47,6 +47,9 @@
     background-repeat: no-repeat;
     transition-duration: 0.3s;
 }
+#first .links a:first-of-type {
+    margin-left: 0;
+}
 #first .links .facebook { background-image: url(/src/socialMedia/facebook-black.svg); }
 #first .links .instagram { background-image: url(/src/socialMedia/instagram-black.svg); }
 
@@ -80,7 +83,7 @@
 #modal {
     overflow-y: scroll;
     z-index: 100;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.8);
     animation: in-Modal 0.2s linear;
 }
 @keyframes in-Modal {
@@ -89,14 +92,16 @@
 }
 
 #modal .container {
+    cursor: zoom-out;
     box-sizing: border-box;
     overflow: visible;
-    padding: 8rem;
+    padding: 5%;
 }
 #modal .container .window {
+    cursor: default;
     overflow: hidden;
     position: relative;
-    max-width: 72rem;
+    max-width: 96rem;
     margin: auto;
     background: white;
     border-radius: 2rem;
@@ -113,7 +118,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    background: url(src/cross.svg) center no-repeat;
+    background: url(/src/cross.svg) center no-repeat;
     background-size: 4rem;
     width: 12rem;
     height: 12rem;
@@ -132,39 +137,61 @@
     margin: auto;
     position: relative;
     background-color: white;
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     top: 0; left: 0; right: 0;
-    padding-bottom: 100%;
+    padding-bottom: 60%;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
-    animation: in-Icon 0.5s cubic-bezier(.2,.6,0,1);
 }
-@keyframes in-Icon {
-    0% { padding-bottom: 0%; }
-    100% { padding-bottom: 100%; }
+
+
+#modal .icon .links {
+    padding: 3rem;
 }
+#modal .icon .links .soic {
+    font-size: 3rem;
+    font-weight: bold;
+    display: table;
+    height: 4rem;
+    padding-left: 6rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    background-position: 0 0;
+    background-size: 3.5rem;
+    background-repeat: no-repeat;
+}
+#modal .icon .links .soic.linkedin { color: #2867B2 }
+#modal .icon .links .soic.dribbble { color: #EA4C89 }
+#modal .icon .links .soic.personal { color: #009A4B }
+#modal .icon .links .soic.instagram { color: #C6328A }
+
 
 #modal .name {
     font-size: 4rem;
     color: black;
+    background: linear-gradient(#e6f5ff,white);
     padding: 3rem 5rem 1rem 5rem;
 }
 #modal .position {
     font-size: 3rem;
-    color: black;
+    color: var(--orange);
     padding: 0rem 5rem 1rem 5rem;
 }
 #modal .bio {
     display: block;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
     color: black;
     text-align: left;
     padding: 2rem 5rem 6rem 5rem;
 }
 #modal .bio .label {
+    color: var(--blue);
     display: block;
     font-size: 2.5rem;
-    color: black;
+    font-weight: bold;
     text-align: left;
     padding: 2.5rem 0 1rem 0;
 }
@@ -181,7 +208,7 @@
 .people {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 6rem;
+    grid-gap: 4rem;
     color: white;
 }
 
@@ -191,6 +218,9 @@
     cursor: pointer;
     box-sizing: border-box;
     display: block;
+}
+.person[hide=true] {
+    opacity: 0;
 }
 .person > * {
     cursor: pointer;
@@ -222,10 +252,10 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
-.person .icon .links .soic.linkedin { background-image: url(src/icon-linkedin.svg); }
-.person .icon .links .soic.dribbble { background-image: url(src/icon-dribbble.svg); }
-.person .icon .links .soic.personal { background-image: url(src/icon-personal.svg); }
-.person .icon .links .soic.instagram { background-image: url(src/icon-instagram.svg); }
+.soic.linkedin { background-image: url(src/icon-linkedin.svg); }
+.soic.dribbble { background-image: url(src/icon-dribbble.svg); }
+.soic.personal { background-image: url(src/icon-personal.svg); }
+.soic.instagram { background-image: url(src/icon-instagram.svg); }
 
 
 

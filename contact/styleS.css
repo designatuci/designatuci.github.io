@@ -1,0 +1,8 @@
+@media only screen and (max-width: 600px) {
+    
+    #first h1 {
+        font-size: 3.5rem;
+        font-weight: bold;
+    }
+
+}

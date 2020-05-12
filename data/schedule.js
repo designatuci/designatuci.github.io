@@ -20,7 +20,8 @@ var EVENTS = [
         "date":"October 8th",
         "location":"DBH 1300",
         "type":"workshop",
-        "desc":"Learn how effectively and optimally use color and typography in all of your digital designs"
+        "desc":"Learn how effectively and optimally use color and typography in all of your digital designs",
+        "slides":"/files/19fm2-slides.pdf"
     },
     {
         "id":"19fm3",
@@ -31,7 +32,8 @@ var EVENTS = [
         "date":"October 15th",
         "location":"DBH 1300",
         "type":"workshop",
-        "desc":"Learn how to create complex shapes for designs and illustrations using vector software like Figma, Adobe Illustrator, Sketch, and more."
+        "desc":"Learn how to create complex shapes for designs and illustrations using vector software like Figma, Adobe Illustrator, Sketch, and more.",
+        "slides":"/files/19fm3-slides.pdf"
     },
     {
         "id":"19fm4",
@@ -42,7 +44,8 @@ var EVENTS = [
         "date":"October 22nd",
         "location":"DBH 1300",
         "type":"industry speaker",
-        "desc":"Hazel Jeon–a UCLA graduate and UX designer at Carvana–will show us her techniques for performing usability testing while designing user experiences."
+        "desc":"Hazel Jeon–a UCLA graduate and UX designer at Carvana–will show us her techniques for performing usability testing while designing user experiences.",
+        "slides":"/files/Usability-Testing-Hazel-Jeon.pdf"
     },
     {
         "id":"19fm6",
@@ -75,7 +78,8 @@ var EVENTS = [
         "date":"November 19th",
         "location":"DBH 1300",
         "type":"workshop",
-        "desc":"Learn how to effectively use typography in your graphic and UI/UX designs."
+        "desc":"Learn how to effectively use typography in your graphic and UI/UX designs.",
+        "slides":"/files/19fm8-slides.pdf"
     },
     {
         "id":"19fm9",
@@ -86,7 +90,8 @@ var EVENTS = [
         "date":"November 26th",
         "location":"DBH 1300",
         "type":"workshop",
-        "desc":"Get advice and inspiration for creating your portfolio."
+        "desc":"Get advice and inspiration for creating your portfolio.",
+        "slides":"/files/19fm9-slides.pdf"
     },
     {
         "id":"20WM1",
@@ -130,7 +135,8 @@ var EVENTS = [
         "date":"Janurary 28th",
         "location":"Social Ecology 1306",
         "type":"industry speaker",
-        "desc":"Ryan Bell, a product designer, will be talking about transitioning from a student in college to a designer working in the real world."
+        "desc":"Ryan Bell, a product designer, will be talking about transitioning from a student in college to a designer working in the real world.",
+        "slides":"/files/20wm5-slides.pdf"
     },
     {
         "id":"20WM5",
@@ -145,14 +151,15 @@ var EVENTS = [
     },
     {
         "id":"20WM6",
-        "name":"Prototyping in Figma ",
+        "name":"Prototyping in Figma",
         "epoch":1581476400,
         "start":"6:30pm",
         "end":"8:00pm",
         "date":"Feburary 11th",
         "location":"Social Ecology 1306",
         "type":"workshop",
-        "desc":"Learn how to use the prototyping feature in Figma and turn your mockups into clickable prototypes. Remember to bring your laptops to be able to participate!"
+        "desc":"Learn how to use the prototyping feature in Figma and turn your mockups into clickable prototypes. Remember to bring your laptops to be able to participate!",
+        "slides":"/files/20WM6-slides.pdf"
     },
     {
         "id":"20WM7",
@@ -174,10 +181,11 @@ var EVENTS = [
         "date":"Feburary 25th",
         "location":"Social Ecology 1306",
         "type":"workshop",
-        "desc":"Hear about some tips and tricks you can use to help get through the interviewing process for design jobs."
+        "desc":"Hear about some tips and tricks you can use to help get through the interviewing process for design jobs.",
+        "slides":"/files/W20W8.pdf"
     },
     {
-        "id":"20WM8",
+        "id":"20WM9",
         "name":"Game Night",
         "epoch":1583290800,
         "start":"6:30pm",

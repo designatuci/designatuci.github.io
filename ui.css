@@ -324,3 +324,14 @@ p {
 
 #bottom .socialMediaLink.facebook { background: url(/src/socialMedia/facebook-white.svg) center no-repeat; }
 #bottom .socialMediaLink.instagram { background: url(/src/socialMedia/instagram-white.svg) center no-repeat; }
+
+@media only screen and (max-width: 700px) {
+    #bottom {
+        padding: 10%;
+    }
+    #bottom .split {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5rem;
+    }
+}

@@ -14,7 +14,15 @@
     font-weight: bold;
     color: black;
 }
-
+#first .label, #first .miniseries {
+    opacity: 0;
+    transition-duration: 0.6s;
+    transform: translateY(1rem);
+}
+.ready #first .label, .ready #first .miniseries {
+    transform: none;
+    opacity: 1;
+}
 
 
 
@@ -101,7 +109,6 @@
 .ready .animCard {
     animation: card-in 1s cubic-bezier(.12,1,.36,1) forwards;
 }
-.ready .animCard:nth-of-type(1) { animation-delay: 0s; }
 .ready .animCard:nth-of-type(2) { animation-delay: 0.05s; }
 .ready .animCard:nth-of-type(3) { animation-delay: 0.10s; }
 .ready .animCard:nth-of-type(4) { animation-delay: 0.15s; }
