@@ -5,6 +5,15 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    #modal .name {
+        padding: 6rem 6rem 1rem 6rem;
+    }
+    #modal .position {
+        padding: 0rem 6rem 1rem 6rem;
+    }
+    #modal .bio {
+        padding: 2rem 6rem 10rem 6rem;
+    }
 
 }
 @media only screen and (max-width: 600px) {
