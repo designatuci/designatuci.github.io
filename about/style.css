@@ -141,12 +141,15 @@
     background-position: center;
     background-repeat: no-repeat;
     top: 0; left: 0; right: 0;
+    padding-bottom: 60%;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
 }
 
 
 #modal .icon .links {
+    position: absolute;
+    top: 0; left: 0;
     padding: 3rem;
 }
 #modal .icon .links .soic {
