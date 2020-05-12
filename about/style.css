@@ -24,13 +24,37 @@
     padding: 0 0.25rem;
     text-decoration: underline;
 }
-#first a:hover {
+#first p a:hover {
     color: white;
     background: black;
     text-decoration: none;
 }
 
 
+#first .links {
+    opacity: 0;
+    text-align: left;
+}
+.ready #first .links { animation: title-in 1.2s 0.2s cubic-bezier(.12,.58,.13,1) forwards; }
+
+#first .links a {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    margin: 2rem;
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    transition-duration: 0.3s;
+}
+#first .links .facebook { background-image: url(/src/socialMedia/facebook-black.svg); }
+#first .links .instagram { background-image: url(/src/socialMedia/instagram-black.svg); }
+
+#first .links a:hover {
+    transform: translateY(-0.5rem);
+    transition-timing-function: cubic-bezier(.24,1.65,.23,1);
+    transition-duration: 0.5s;
+}
 
 
 
@@ -107,7 +131,7 @@
 #modal .icon {
     margin: auto;
     position: relative;
-    background-color: #f0e3dd;
+    background-color: white;
     background-size: cover;
     top: 0; left: 0; right: 0;
     padding-bottom: 100%;
@@ -176,7 +200,7 @@
     position: relative;
     padding-bottom: 100%;
     overflow: hidden;
-    background: #f0e3dd;
+    background: white;
     border-radius: 1rem;
     transition-duration: 0.3s;
     background-size: cover;

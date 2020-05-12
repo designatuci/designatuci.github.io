@@ -18,10 +18,10 @@
     <script src="/main.js"></script>
     <script src="script.js"></script>
 
-    <link rel="stylesheet" href="/global.css?v=12">
-    <link rel="stylesheet" href="/ui.css?v=12">
-    <link rel="stylesheet" href="style.css?v=12?v=12">
-    <link rel="stylesheet" href="styleS.css?v=12">
+    <link rel="stylesheet" href="/global.css?v=13">
+    <link rel="stylesheet" href="/ui.css?v=13">
+    <link rel="stylesheet" href="style.css?v=13?v=13">
+    <link rel="stylesheet" href="styleS.css?v=13">
 
 </head>
 <body onscroll="scroll()">
@@ -29,11 +29,11 @@
 
     <div id="nav">
         <a href="/" class="logo"></a>
-        <a href="/schedule/" class="link">schedule</a>
-        <a href="/resources/" class="link">resources</a>
-        <a href="/community/" class="link">community</a>
-        <a href="/about/" class="link">about</a>
-        <a href="/contact/" class="link">contact</a>
+        <a href="/schedule/" class="link">Schedule</a>
+        <a href="/resources/" class="link noti">Resources</a>
+        <a href="/community/" class="link noti">Community</a>
+        <a href="/about/" class="link">About</a>
+        <a href="/contact/" class="link">Contact</a>
         <a href="/join/" id="join">get involved</a>
     </div>
     <div id="navMobile">
@@ -41,11 +41,11 @@
             <a href="/" class="logo"></a>
             <div class="toggle" onclick="toggleMobileNav()"><div class="one"></div><div class="two"></div></div>
             <div class="links">
-                <a href="/schedule/" class="link">schedule</a>
-                <a href="/resources/" class="link">resources</a>
-                <a href="/community/" class="link">community</a>
-                <a href="/about/" class="link">about</a>
-                <a href="/contact/" class="link selected">contact</a>
+                <a href="/schedule/" class="link">Schedule</a>
+                <a href="/resources/" class="link noti">Resources</a>
+                <a href="/community/" class="link noti">Community</a>
+                <a href="/about/" class="link">About</a>
+                <a href="/contact/" class="link selected">Contact</a>
             </div>
             <a href="/join/" id="join">get involved</a>
         </div>  
@@ -89,16 +89,8 @@
                 </div>
             </div>
         </div>
-        <div id="banner">We may not be meeting, but you can still connect with the design community.</div>
     </div>
 
-    <div id="notice">
-        <div class="center">
-            <div class="icon"></div>
-            <h1>Join us on Discord</h1>
-            <a href="https://discord.gg/HKt4JCF" target="_blank">invitation link</a>
-        </div>
-    </div>
 
     <div id="about">
         <div class="wrapper">
@@ -109,9 +101,18 @@
             </div>
             <div class="prelide elide">
                 <h1>A community for designers of all skill levels and backgrounds to create, innovate, and ultimately grow as digital designers</h1>
-                <a href="/about/">meet our club</a>
+                <a href="/community/">See our community</a>
+                <a href="/about/">Meet our board</a>
             </div>
         </div>
+    </div>
+
+
+    <div id="notice">
+        <div class="icon"></div>
+        <h1>Join us on Discord</h1>
+        <p>We may not be meeting, but you can still connect with the design community.</p>
+        <a href="https://discord.gg/HKt4JCF" target="_blank">invitation link</a>
     </div>
 
 
@@ -140,7 +141,7 @@
                     <div class="title">And More</div>
                 </div>
             </div>
-            <a href="/schedule/">see this week's event</a>
+            <a href="/schedule/">See this week's event</a>
         </div>
         
     </div>
@@ -151,48 +152,46 @@
         <div class="img prelide elide"></div>
         <div class="prelide elide">
             <h1>If you love design,<br>there's no reason not to join us</h1>
-            <a href="/join/">join Design at UCI</a>
+            <a href="/join/">Join Design at UCI</a>
         </div>
         
     </div>
 
 
 
-    <div id="bottom">
-        <div class="split">
-            <div class="left">
-                <div class="logo"></div>
-                <p>Copyright 2019 Design at UCI</p>
-                <p class="credit">Designed and developed by <a href="https://www.kailerg.com">Kailer Garcia</a></p>
-                <p class="alert">This website uses primitive Google Analytics, their privacy policy can be found <a href="https://policies.google.com/privacy">here</a></p>
-                
-                <div class="socialMedia">
-                    <a href="https://www.facebook.com/designatuci/" target="_blank" class="socialMediaLink facebook"></a>
-                    <a href="https://www.instagram.com/designatuci/" target="_blank" class="socialMediaLink instagram"></a>
-                </div>
-
+<!-- bottom-2 -->
+<div id="bottom">
+    <div class="split">
+        <div class="left">
+            <div class="logo"></div>
+            <div class="copyright"></div>
+            <p>Copyright Design at UCI</p>
+            <p class="credit">Designed and developed by <a href="https://www.kailerg.com" target="_blank">Kailer Garcia</a></p>
+            <div class="socialMedia">
+                <a href="https://www.facebook.com/designatuci/" target="_blank" class="socialMediaLink facebook"></a>
+                <a href="https://www.instagram.com/designatuci/" target="_blank" class="socialMediaLink instagram"></a>
             </div>
-            <div class="right">
-                <a href="https://designatuci.com/">Design at UCI</a>
-                <a href="/join/">Join</a>
-                <a href="/schedule/">Schedule</a>
-                <a href="/resources/">Resources</a>
-                <a href="/community/">Community</a>
-                <a href="/about/">About</a>
-                <a href="/contact/">Contact</a>
-            </div>
+            <p class="alert">This website uses primitive Google Analytics, their privacy policy can be found <a href="https://policies.google.com/privacy" target="_blank">here</a></p>
         </div>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149706209-1"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-149706209-1');
-        </script>
+        <div class="right">
+            <a href="/contact/" class="contact">Contact</a>
+            <a href="https://designatuci.com/">Design at UCI</a>
+            <a href="/join/">Join</a>
+            <a href="/schedule/">Schedule</a>
+            <a href="/resources/">Resources</a>
+            <a href="/community/">Community</a>
+            <a href="/about/">About</a>
+        </div>
     </div>
-
-
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149706209-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-149706209-1');
+    </script>
+</div>
 
 </body>
 </html>

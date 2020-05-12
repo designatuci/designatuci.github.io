@@ -16,13 +16,14 @@
     <script src="/jq.js"></script>
     <script src="/global.js"></script>
     <script src="/main.js"></script>
+    <script src="/data/schedule.js?v=13"></script>
+    <script src="/data/resources.js?v=13"></script>
     <script src="script.js"></script>
-    <script src="/data/schedule.js?v=12"></script>
 
-    <link rel="stylesheet" href="/global.css?v=12">
-    <link rel="stylesheet" href="/ui.css?v=12">
-    <link rel="stylesheet" href="style.css?v=12">
-    <link rel="stylesheet" href="styleS.css?v=12">
+    <link rel="stylesheet" href="/global.css?v=13">
+    <link rel="stylesheet" href="/ui.css?v=13">
+    <link rel="stylesheet" href="style.css?v=13">
+    <link rel="stylesheet" href="styleS.css?v=13">
 
 </head>
 <body>
@@ -30,11 +31,11 @@
 
     <div id="nav">
         <a href="/" class="logo"></a>
-        <a href="/schedule/" class="link">schedule</a>
-        <a href="/resources/" class="link selected">resources</a>
-        <a href="/community/" class="link">community</a>
-        <a href="/about/" class="link">about</a>
-        <a href="/contact/" class="link">contact</a>
+        <a href="/schedule/" class="link">Schedule</a>
+        <a href="/resources/" class="link selected">Resources</a>
+        <a href="/community/" class="link">Community</a>
+        <a href="/about/" class="link">About</a>
+        <a href="/contact/" class="link">Contact</a>
         <a href="/join/" id="join">get involved</a>
     </div>
     <div id="navMobile">
@@ -42,11 +43,11 @@
             <a href="/" class="logo"></a>
             <div class="toggle" onclick="toggleMobileNav()"><div class="one"></div><div class="two"></div></div>
             <div class="links">
-                <a href="/schedule/" class="link">schedule</a>
-                <a href="/resources/" class="link">resources</a>
-                <a href="/community/" class="link">community</a>
-                <a href="/about/" class="link">about</a>
-                <a href="/contact/" class="link selected">contact</a>
+                <a href="/schedule/" class="link">Schedule</a>
+                <a href="/resources/" class="link">Resources</a>
+                <a href="/community/" class="link">Community</a>
+                <a href="/about/" class="link">About</a>
+                <a href="/contact/" class="link selected">Contact</a>
             </div>
             <a href="/join/" id="join">get involved</a>
         </div>
@@ -55,148 +56,55 @@
     <div id="navGhost"></div>
 
 
-    <div id="cards">
-        <div class="card">
-            <a href="https://lawsofux.com" style="background-image: url(src/LawsOfUx.png);" target="_blank" class="img"></a>
-            <h2 class="yellow">guide</h2>
-            <h1>Laws of UX</h1>
-            <p>Learn more about the fundamental concepts and rules to make good UX and UI.</p>
-        </div>
-        <div class="card">
-            <a href="https://praxent.com/blog/ux-design-thinking-for-kids-guide" style="background-image: url(src/designThinkingKids.png);" target="_blank" class="img"></a>
-            <h2 class="yellow">guide</h2>
-            <h1>Design Thinking for Kids</h1>
-            <p>Get an overhead view of how you can start exploring digital design futures with lots of resources. Thanks to Dylan for sharing this with us.</p>
-        </div>
-        <div class="card">
-            <a href="/files/W20W8.pdf" style="background-image: url(src/W20W8.png);" target="_blank" class="img"></a>
-            <h2 class="yellow">workshop</h2>
-            <h1>Cracking the Design Interview</h1>
-            <p>Learn how to prepare for the interview of your new design job.</p>
+    <div id="first">
+        
+        <div class="miniseries"> <div class="title"><div></div></div> </div>
+        <div class="cards">
+            <a class="seriesCard animCard" href="/resources/miniseries/prototyping-with-akshita/">
+                <div class="img" style="background-image:url(prototyping.png);"><div></div></div>
+            </a>
+            <a class="seriesCard animCard" href="/resources/miniseries/figma-fundamentals/">
+                <div class="img" style="background-image:url(figmaFundamentals.png);"><div></div></div>
+            </a>
         </div>
 
-        <div class="card">
-            <a href="/files/20WM6-slides.pdf" style="background-image: url(src/20WM6-thumb.png);" target="_blank" class="img"></a>
-            <h2 class="yellow">workshop</h2>
-            <h1>Prototyping in Figma</h1>
-            <p>View the slides for our workshop about creating interative prototypes with Figma.</p>
-        </div>
-        <div class="card">
-            <a href="/files/20wm5-slides.pdf" style="background-image: url(src/ryanbellThumb.png);" target="_blank" class="img"></a>
-            <h2 class="yellow">workshop</h2>
-            <h1>From Student to Designer with Ryan Bell</h1>
-            <p>View the slides created by our guest speaker about his experience and advice for transition to the real world.</p>
-        </div>
-        <div class="card">
-            <a href="/files/19fm9-slides.pdf" style="background-image: url(src/19fm9-thumb.png);" target="_blank" class="img"></a>
-            <h2 class="yellow">workshop</h2>
-            <h1>Portfolio Workshop</h1>
-            <p>View the slides to our guide to creating your design portfolio.</p>
-        </div>
-        <div class="card">
-            <a href="https://type.method.ac" style="background-image: url(src/kernGameThumb.png);" target="_blank" class="img"></a>
-            <h2 class="orange">fun</h2>
-            <h1>Kerning Game</h1>
-            <p>Practice your kerning abilities with an online game.</p>
-        </div>
-        <div class="card">
-            <a href="/files/19fm8-slides.pdf" style="background-image: url(src/19fm8-thumb.png);" target="_blank" class="img"></a>
-            <h2 class="yellow">workshop</h2>
-            <h1>Typography Workshop</h1>
-            <p>View the slides to our beginner's guide to typography.</p>
-        </div>
-        <div class="card">
-            <a href="/files/Usability-Testing-Hazel-Jeon.pdf" style="background-image: url(src/hazelThumb.png);" target="_blank" class="img"></a>
-            <h2 class="yellow">workshop</h2>
-            <h1>Intro to Usability Testing with Hazel Jeon</h1>
-            <p>Hazel Jeon, a UX designer at Carvana, taught us how to test your UX design. These are her slides!</p>
-        </div>
-        <div class="card">
-            <a href="https://www.dailyui.co" style="background-image: url(src/dailyuiThumb.png);" target="_blank" class="img"></a>
-            <h2 class="blue">inspiration</h2>
-            <h1>Daily UI</h1>
-            <p>Most designers agree–nothing improves your ability more than getting experience. Challenge yourself to do UI every day to improve fast.</p>
-        </div>
-        <div class="card">
-            <a href="https://cofolios.com" style="background-image: url(src/cofoliosThumb.png);" target="_blank" class="img"></a>
-            <h2 class="blue">inspiration</h2>
-            <h1>Cofolios</h1>
-            <p>See how the latest interns at the top tech companies display themselves in their online portfolios.</p>
-        </div>
-        <div class="card">
-            <a href="/files/19fm3-slides.pdf" style="background-image: url(src/19fm3-thumb.png);" target="_blank" class="img"></a>
-            <h2 class="yellow">workshop</h2>
-            <h1>Pen & Shapes Workshop</h1>
-            <p>View the slides to our beginner's guide to using the pen & shapes tools.</p>
-        </div>
-        <div class="card" id="c-19fm2">
-            <a href="/files/19fm2-slides.pdf" style="background-image: url(src/19fm2-thumb.png);" target="_blank" class="img"></a>
-            <h2 class="yellow">workshop</h2>
-            <h1>Color Theory Workshop</h1>
-            <p>View the slides to our beginner's guide to color theory in design.</p>
-        </div>
-        <div class="card" id="c-dribbble">
-            <a href="https://dribbble.com/shots" style="background-image: url(src/dribbbleThumb.png);" target="_blank" class="img"></a>
-            <h2 class="blue">inspiration</h2>
-            <h1>Dribbble</h1>
-            <p>Get inpiration quickly with endless snapshots of UI designs, logos, illustrations, websites, and more.</p>
-        </div>
-        <div class="card" id="c-googleFonts">
-            <a href="https://fonts.google.com" style="background-image: url(src/googleFontsThumb.png);" target="_blank" class="img"></a>
-            <h2 class="orange">Free stuff</h2>
-            <h1>Google Fonts</h1>
-            <p>Explore a huge collection of completely free fonts to use in your designs.</p>
-        </div>
-        <div class="card" id="c-behance">
-            <a href="https://www.behance.net" style="background-image: url(src/behanceThumb.png);" target="_blank" class="img"></a>
-            <h2 class="blue">inspiration</h2>
-            <h1>Behance</h1>
-            <p>Discover beautiful projects and explore the processes used to create them in depth.</p>
-        </div>
-        <div class="card" id="c-designSystems">
-            <a href="https://www.designsystems.com" style="background-image: url(src/designSystemsThumb.png);" target="_blank" class="img"></a>
-            <h2 class="yellow">guide</h2>
-            <h1>Design Systems by Figma</h1>
-            <p>Comprehensive articles that go into the details on how to make great UI and UX design systems.</p>
-        </div>
-        <div class="card" id="c-medium">
-            <a href="https://medium.com/topic/design" style="background-image: url(src/mediumThumb.png);" target="_blank" class="img"></a>
-            <h2 class="yellow">guide</h2>
-            <h1>Medium Design Articles</h1>
-            <p>Regularly new articles on all aspects of design, including UI, UX, graphic design, and more.</p>
-        </div>
-        <div class="card" id="c-coolors">
-            <a href="https://coolors.co/app" style="background-image: url(src/coolorsThumb.png);" target="_blank" class="img"></a>
-            <h2 class="orange">tool</h2>
-            <h1>Coolors</h1>
-            <p>Automatically generate and explore color palettes for your designs.</p>
-        </div>
+        <div class="label">Guides</div>
+        <div id="guideCards" class="cards"></div>
+
+        <div class="label">Tools</div>
+        <div id="toolCards" class="cards"></div>
+
+        <div class="label">Inspiration</div>
+        <div id="inspirationCards" class="cards"></div>
+
+        <div class="label">Past Workshop Slides</div>
+        <div id="workshopCards" class="cards"></div>
         
     </div>
 
     
-    <div id="bottom">
+<!-- bottom-2 -->
+<div id="bottom">
         <div class="split">
             <div class="left">
                 <div class="logo"></div>
-                <p>Copyright 2019 Design at UCI</p>
-                <p class="credit">Designed and developed by <a href="https://www.kailerg.com">Kailer Garcia</a></p>
-                <p class="alert">This website uses primitive Google Analytics, their privacy policy can be found <a href="https://policies.google.com/privacy">here</a></p>
-                
+                <div class="copyright"></div>
+                <p>Copyright Design at UCI</p>
+                <p class="credit">Designed and developed by <a href="https://www.kailerg.com" target="_blank">Kailer Garcia</a></p>
                 <div class="socialMedia">
                     <a href="https://www.facebook.com/designatuci/" target="_blank" class="socialMediaLink facebook"></a>
                     <a href="https://www.instagram.com/designatuci/" target="_blank" class="socialMediaLink instagram"></a>
                 </div>
-
+                <p class="alert">This website uses primitive Google Analytics, their privacy policy can be found <a href="https://policies.google.com/privacy" target="_blank">here</a></p>
             </div>
             <div class="right">
+                <a href="/contact/" class="contact">Contact</a>
                 <a href="https://designatuci.com/">Design at UCI</a>
                 <a href="/join/">Join</a>
                 <a href="/schedule/">Schedule</a>
                 <a href="/resources/">Resources</a>
                 <a href="/community/">Community</a>
                 <a href="/about/">About</a>
-                <a href="/contact/">Contact</a>
             </div>
         </div>
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -208,8 +116,6 @@
         gtag('config', 'UA-149706209-1');
         </script>
     </div>
-
-
 
 </body>
 </html>

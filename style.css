@@ -193,6 +193,7 @@
 #splash .grid.three {
     z-index: 1;
     background: var(--orange);
+    background: linear-gradient(var(--orange),var(--yellow));
     transform: translateY(0rem) translateX(0rem);
     border-radius: 1rem;
 }
@@ -266,7 +267,6 @@
     grid-row: 3/4;
 }
 #splash .grid.one .f {
-    background: var(--orange);
     border: solid 0.5rem white;
     grid-column: 3/5;
     grid-row: 5/9;
@@ -297,22 +297,22 @@
 
 
 #notice {
+    box-sizing: border-box;
     position: relative;
-    height: 60vh;
-    background: #727ee8;
+    padding: 10% 3%;
+    color: #727ee8;
 }
 
 #notice .icon {
     margin: auto;
     margin-bottom: 3rem;
-    margin-top: -5rem;
     width: 12rem;
     height: 12rem;
-    background: url(/src/Discord-Logo-White.svg) center no-repeat;
+    background: url(/src/Discord-Logo.svg) center no-repeat;
     background-size: contain;
 }
 #notice h1 {
-    color: white;
+    color: black;
     font-size: 5rem;
     max-width: 96rem;
     margin: auto;
@@ -322,8 +322,9 @@
 }
 #notice p {
     font-size: 3rem;
-    max-width: 96rem;
+    max-width: 64rem;
     margin: auto;
+    margin-bottom: 5rem;
     text-align: center;
 }
 
@@ -342,7 +343,7 @@
     transition-timing-function: cubic-bezier(.43,.71,.12,1);
 }
 #notice a:hover {
-    background: #46c0f8;
+    background: #727ee8;
     color: white;
     transform: translateY(-0.5rem);
 }
@@ -361,6 +362,7 @@
     max-width: 128rem;
     margin: auto;
 }
+
 
 
 #portraits {
@@ -423,17 +425,20 @@
     margin-bottom: 5rem;
 }
 #about a {
-    display: table;
+    display: inline-block;
     padding: 1rem 2rem;
     padding-bottom: 1.25rem;
     font-size: 2rem;
     font-weight: bold;
-    background: var(--yellow);
+    background: var(--blue);
     color: black;
     border-radius: 4rem;
 }
+#about a:first-of-type {
+    background: var(--pink);
+    margin-right: 3rem;
+}
 #about a {
-    background: #ff9ff4;
     transition-duration: 0.4s;
     transition-timing-function: cubic-bezier(.43,.71,.12,1);
 }
@@ -447,9 +452,9 @@
 
 
 #learn {
-    background: #00007D;
+    background: linear-gradient(black,#00007D);
     color: white;
-    padding: 15%;
+    padding: 15% 5%;
     text-align: center;
 }
 #learn .wrapper {
@@ -457,39 +462,33 @@
     margin: auto;
 }
 #learn h1 {
+    width: 100%;
+    max-width: 128rem;
     font-size: 5rem;
     margin: auto;
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
 }
-
-
 
 
 #learn .list.one {
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
 }
 #learn .list.one .item {
     display: inline-block;
-    margin: 0.25rem;
+    margin: 0.5rem;
     font-family: Menlo, monospace;
     font-weight: bold;
     background: var(--blue);
-    color: var(--deepBlue);
+    color: black;
     padding: 2rem 3rem;
-    border-radius: 0.5rem;
-    font-size: 3rem;
+    border-radius: 1rem;
+    font-size: 2.5rem;
 }
 #learn .list.one .item:first-of-type {
-    border-top-left-radius: 4rem;
-    border-bottom-left-radius: 4rem;
-    padding-left: 4rem;
-    background: #00ff91;
+    margin-left: 0;
 }
 #learn .list.one .item:last-of-type {
-    border-top-right-radius: 4rem;
-    border-bottom-right-radius: 4rem;
-    padding-right: 4rem;
-    background: #ffff91;
+    margin-right: 0;
 }
 
 #learn .prelide .list.one .item {
@@ -513,7 +512,7 @@
 }
 #learn .list.one .item:hover {
     transition-delay: 0;
-    background: white;
+    background: var(--pink);
 }
 
 

@@ -84,12 +84,19 @@ p {
 
 
 
-
+#nav {
+    background: none;
+}
 #first {
     position: relative;
     box-sizing: border-box;
     text-align: center;
     padding: 10%;
+    background: url(src/dot.svg) center repeat;
+    background-size: 30px;
+}
+#first .center {
+    width: 100%
 }
 #first .title {
     padding-bottom: 5rem;
@@ -102,6 +109,20 @@ p {
     margin-top: 3rem;
     transform: none;
     opacity: 1;
+}
+
+#first .img {
+    position: relative;
+    background: url(src/teaser.png) center no-repeat;
+    background-size: cover;
+    width: 300%;
+    max-width: 60rem;
+    border-radius: 2rem;
+    margin: auto;
+    margin-bottom: 5rem;
+}
+#first .img > div {
+    padding-bottom: 60%;
 }
 
 
