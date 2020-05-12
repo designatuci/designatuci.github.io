@@ -245,6 +245,7 @@
     left: 1.5rem;
 }
 .person .icon .links .soic {
+    pointer-events: none;
     font-size: 0;
     display: inline-block;
     width: 2.5rem;
