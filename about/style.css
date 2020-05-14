@@ -157,6 +157,7 @@
     font-weight: bold;
     display: table;
     height: 4rem;
+    color: black;
     padding-left: 6rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
@@ -165,10 +166,6 @@
     background-size: 3rem;
     background-repeat: no-repeat;
 }
-#modal .icon .links .soic.linkedin { color: #2867B2 }
-#modal .icon .links .soic.dribbble { color: #EA4C89 }
-#modal .icon .links .soic.personal { color: #009A4B }
-#modal .icon .links .soic.instagram { color: #C6328A }
 
 
 #modal .name {
@@ -261,6 +258,7 @@
 .soic.dribbble { background-image: url(src/icon-dribbble.svg); }
 .soic.personal { background-image: url(src/icon-personal.svg); }
 .soic.instagram { background-image: url(src/icon-instagram.svg); }
+.soic.behance { background-image: url(src/icon-behance.svg); }
 
 
 
