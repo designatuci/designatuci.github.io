@@ -1,0 +1,56 @@
+#nav {
+    max-width: 96rem;
+    margin: auto;
+    border-bottom: dotted 2px black;
+}
+#nav .text {
+    float: right;
+}
+
+#first {
+    max-width: 96rem;
+    margin: auto;
+    padding: 4rem;
+    padding-top: 6.5rem;
+}
+
+
+
+#first h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+#first .list {
+    padding: 5rem 3rem;
+}
+#first .list .item {
+    display: table;
+    position: relative;
+    color: black;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;    
+}
+#first .list .item:hover {
+    text-decoration: underline;
+    color: var(--orange);
+}
+#first .list .item::after {
+    content: "→";
+    display: block;
+    position: absolute;
+    right: -4rem;
+    top: -0.125rem;
+    color: var(--orange);
+    font-size: 3rem;
+    font-weight: bold;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(.36,1.41,.6,1);
+    opacity: 0;
+    transform: translateX(-1rem);
+}
+#first .list .item:hover::after {
+    opacity: 1;
+    transform: none;
+}
