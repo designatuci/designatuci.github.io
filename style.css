@@ -452,7 +452,7 @@
 
 
 #learn {
-    background: linear-gradient(black,#00007D);
+    background: linear-gradient(#00007D,black);
     color: white;
     padding: 15% 5%;
     text-align: center;
@@ -607,25 +607,9 @@
 
 #join h1 {
     margin: auto;
+    margin-bottom: 1rem;
+}
+#join p {
+    font-size: 2.5rem;
     margin-bottom: 5rem;
-}
-
-#join a {
-    display: table;
-    margin: auto;
-    padding: 1rem 2rem;
-    padding-bottom: 1.25rem;
-    font-size: 2rem;
-    font-weight: bold;
-    background: var(--orange);
-    color: white;
-    border-radius: 4rem;
-}
-#join a {
-    transition-duration: 0.4s;
-    transition-timing-function: cubic-bezier(.43,.71,.12,1);
-}
-#join a:hover {
-    background: black;
-    transform: translateY(-0.5rem);
 }

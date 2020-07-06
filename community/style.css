@@ -51,188 +51,109 @@ p {
 
 
 
-.photo {
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: block;
-    margin: 1rem auto;
-    margin-top: 3rem;
-    max-width: 80rem;
-    overflow: hidden;
-    border-radius: 2rem;
-}
-.caption {
-    font-weight: bold;
-    font-size: 2rem;
-    color: var(--grey);
-    margin-bottom: 3rem;
-}
-
-
-.fblink {
-    text-decoration: underline;
-    padding: 0 0.5rem;
-}
-.fblink:hover {
-    text-decoration: none;
-    color: white;
-    background: var(--blue);
-}
-
 
 
 
 #nav {
     background: none;
 }
-#first {
-    position: relative;
-    box-sizing: border-box;
-    text-align: center;
-    padding: 10%;
-    background: url(src/dot.svg) center repeat;
-    background-size: 30px;
-}
-#first .center {
-    box-sizing: border-box;
-    width: 90%
-}
-#first .title {
-    padding-bottom: 5rem;
-    transition-duration: 1s;
-    transition-timing-function: cubic-bezier(.42,1.55,.36,1);
-    transform: translateY(5rem);
-    opacity: 0;
-}
-.ready #first .title {
-    margin-top: 3rem;
-    transform: none;
-    opacity: 1;
-}
 
-#first .img {
-    position: relative;
-    background: url(src/teaser.png) center no-repeat;
-    background-size: cover;
+
+
+#notice {
+    box-sizing: border-box;
+    margin-top: 6rem;
+    padding: 2rem;
     width: 100%;
-    max-width: 72rem;
-    border-radius: 2rem;
-    margin: auto;
-    margin-bottom: 5rem;
-}
-#first .img > div {
-    padding-bottom: 60%;
-}
-
-
-
-
-
-
-
-
-#showtell {
-    padding: 5% 10%;
-    background: var(--blue);
-    color: white;
-}
-#showtell .title {
-    color: white;
-    font-size: 5rem;
+    color: var(--orange);
+    background: var(--softGrey);
+    font-size: 2rem;
     text-align: center;
 }
-#showtell .img.one {
-    height: 5rem;
-    padding-bottom: 3rem;
-    margin: auto;
-    margin-bottom: 4rem;
-    background: url(src/img-showtell.svg) center no-repeat;
-    background-size: contain;
-}
-#showtell p {
-    max-width: 80rem;
-}
-#showtell .button {
-    background: white;
-    color: black;
-}
 
 
-
-
-
-
-
-
-#tickets {
-    text-align: center;
+#first {
+    display: table;
+    width: 100%;
     position: relative;
-    max-width: 100rem;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10% 7%;
 }
 
-#ticketSection .header {
-    text-align: center;
-}
 
-#tickets .guest {
+#first .grid {
     display: grid;
-    text-align: center;
-    padding-bottom: 3rem;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 48rem;
+    grid-gap: 5rem;
 }
-#tickets .guest .name {
-    font-size: 2rem;
-    font-weight: bold;
-    padding-top: 0.5rem;
+#first .grid > .item {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: table;
 }
-#tickets .guest .count {
+#first .grid .item p {
+    padding-right: 10rem;
+    text-align: left;
+    margin-bottom: 3rem;
     font-size: 3rem;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 
-#tickets .notice {
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    bottom: 1rem;
-    margin: auto;
-    text-align: center;
-    font-weight: bold;
+#first .grid > .item.bubble {
+    padding: 4rem;
+    border-radius: 2rem;
+    background: linear-gradient(white, var(--pink));
+}
+
+
+#first .grid > .item .label {
+    font-size: 3rem;
+    text-align: left;
+}
+#first .grid > .item .desc {
     font-size: 2rem;
+    text-align: left;
+    font-weight: bold;
     color: var(--grey);
 }
 
-#tickets.empty {
-    padding-bottom: 10rem;
-}
 
-
-
-
-
-#tease {
-    padding: 5%;
-}
-#tease h1 {
-    font-size: 3rem;
-    font-weight: normal;
-    text-align: center;
-    color: black;
-}
-#tease .icon {
-    display: table;
-    margin: auto;
-    margin-top: 3rem;
+#first .grid > .item #mc_embed_signup_scroll {
     width: 100%;
-    max-width: 80rem;
-    position: relative;
-    background: url(src/img-stickers.png) center no-repeat;
-    background-size: contain;
+    margin: 0;
+    margin-top: 2rem;
 }
-#tease .icon > div {
-    padding-bottom: 50%
+#first .grid > .item #disclaim {
+    text-align: left;
+    margin: 0;
+    margin-left: 1rem;
 }
+
+
+
+#first .grid .socialMedia {
+    text-align: left;
+}
+#first .grid .socialMediaLink {
+    display: table;
+    margin-right: 1rem;
+
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1.5rem 7rem;
+    margin-bottom: 2rem;
+
+    transition-duration: 0.2s;
+}
+#first .grid .socialMediaLink:hover {
+    transform: translateY(-0.25rem);
+}
+
+#first .grid .socialMediaLink.facebook { background: url(/src/socialMedia/facebook-black.svg) left no-repeat; }
+#first .grid .socialMediaLink.instagram { background: url(/src/socialMedia/instagram-black.svg) left no-repeat; }
+
