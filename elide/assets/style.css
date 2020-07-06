@@ -1,0 +1,79 @@
+#nav {
+    max-width: 128rem;
+    margin: auto;
+}
+
+
+#first {
+    max-width: 128rem;
+    margin: auto;
+    padding: 4rem;
+    padding-top: 6rem;
+}
+
+
+
+#first h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+#first .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    padding: 3rem;
+}
+#first .list .item {
+    display: block;
+    position: relative;
+    border: solid 2px var(--softGrey);
+    transition-duration: 0.1s;
+    border-radius: 1rem;
+    overflow: hidden;
+    background: var(--softGrey);
+}
+#first .list .item:hover {
+    border: solid 2px var(--orange);
+    box-shadow: 0 0 0 0.25rem var(--orange);
+}
+
+#first .list .item .img {
+    width: 100%;
+    padding-bottom: 60%;
+    background-repeat:  no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#first .list .item .label {
+    background: var(--softGrey);
+    padding: 2rem;
+    font-size: 2rem;
+    color: black;
+}
+#first .list .item .label span {
+    position: absolute;
+    right: 2rem;
+    float: right;
+    font-size: inherit;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+#first .list .color {
+    box-sizing: border-box;
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 1rem;
+}
+#first .list .color.light {
+    color: black;
+}
