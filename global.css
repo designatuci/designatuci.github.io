@@ -1,13 +1,13 @@
 @font-face {
-    font-family: 'DMSans';
-    src: url('/font/dmsans-bold-webfont.woff2') format('woff2'),
-         url('/font/dmsans-bold-webfont.woff') format('woff');
+    font-family: 'archivo';
+    src: url('/font/archivo-bold-webfont.woff2') format('woff2'),
+         url('/font/archivo-bold-webfont.woff') format('woff');
     font-weight: bold; font-style: normal;
 }
 @font-face {
-    font-family: 'DMSans';
-    src: url('/font/dmsans-medium-webfont.woff2') format('woff2'),
-         url('/font/dmsans-medium-webfont.woff') format('woff');
+    font-family: 'archivo';
+    src: url('/font/archivo-semibold-webfont.woff2') format('woff2'),
+         url('/font/archivo-semibold-webfont.woff') format('woff');
     font-weight: normal; font-style: normal;
 }
 
@@ -25,7 +25,7 @@
 }
 
 * {
-    font-family: 'DMSans', sans-serif;
+    font-family: 'archivo', sans-serif;
     font-size: 0;
     margin: 0;
     padding: 0;
