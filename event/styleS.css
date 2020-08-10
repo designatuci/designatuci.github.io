@@ -1,0 +1,35 @@
+@media only screen and (max-width: 1000px) {
+
+
+
+    .list {
+        grid-template-columns: 1fr 1fr;
+        gap: 10rem;
+    }
+
+
+}
+@media only screen and (max-width: 600px) {
+
+
+    #first {
+        position: relative;
+        box-sizing: border-box;
+        margin-bottom: 20rem;
+    }
+    #first .split {
+        display: block;
+        grid-template-columns: 1fr;
+    }
+    #first .split > * {
+        margin-bottom: 5rem;
+    }
+
+    .list {
+        padding: 15%;
+        grid-template-columns: 1fr;
+        gap: 5rem;
+    }
+
+
+}

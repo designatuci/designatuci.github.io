@@ -15,9 +15,7 @@
 }
 
 
-
 #notice {
-    
     position: absolute;
     box-sizing: border-box;
     top: 11rem; left: 0;
@@ -31,28 +29,29 @@
 
 
 #first {
-    padding: 15%;
-    height: unset;
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 5%;
 }
 #first .split {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto;
     gap: 10%;
+    padding: 10%;
 }
 
 #first .img {
     position: relative;
     width: 100%;
-    max-width: 400px;
     background: url(banner.svg) center no-repeat;
     background-size: contain;
-    margin-bottom: 3rem;
 }
 #first .img > div {
     padding-bottom: 60%;
 }
 
-#first h1 {
+h1 {
     text-align: left;
     font-size: 5rem;
     margin-bottom: 1rem;
@@ -72,4 +71,46 @@
     border: solid 0.5rem var(--blue);
     padding: 3rem;
     border-radius: 1rem;
+}
+
+
+
+h1.head {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+
+
+.list {
+    grid-template-rows: auto;
+    box-sizing: border-box;
+    padding: 10%;
+    padding-top: 5rem;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+}
+.list .photo {
+    position: relative;
+    border-radius: 1rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    background-position: center;
+    background-size: cover;
+}
+.list .photo > div {
+    padding-bottom: 70%;
+}
+.list .name {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.list .bio {
+    text-align: justify;
+    font-weight: normal;
+    font-size: 2rem;
 }
