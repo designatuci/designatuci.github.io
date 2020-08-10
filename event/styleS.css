@@ -18,6 +18,7 @@
         margin-bottom: 20rem;
     }
     #first .split {
+        padding: 10%;
         display: block;
         grid-template-columns: 1fr;
     }
@@ -26,7 +27,7 @@
     }
 
     .list {
-        padding: 15%;
+        padding: 10%;
         grid-template-columns: 1fr;
         gap: 5rem;
     }
