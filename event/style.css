@@ -19,11 +19,11 @@
     position: absolute;
     box-sizing: border-box;
     top: 11rem; left: 0;
-    padding: 2rem;
+    padding: 3rem;
     width: 100%;
     color: white;
     background: var(--blue);
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 
@@ -67,12 +67,6 @@ h1 {
     margin-bottom: 1rem;
 }
 
-#first .notice {
-    margin: 5rem 0;
-    border: solid 0.5rem var(--blue);
-    padding: 3rem;
-    border-radius: 1rem;
-}
 
 
 

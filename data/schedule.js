@@ -207,8 +207,21 @@ var EVENTS = [
     //     "desc":"???"
     // },
     {
+        "id":"OE-20-1",
+        "name":"Online UI-UX Product Design Panel",
+        "epoch":1598587200,
+        "start":"August 27 5:30 PM",
+        "end":"",
+        "date":"",
+        "location":"",
+        "type":"Online Event",
+        "link":"https://designatuci.com/event",
+        "linkText":"Sign up on the event page",
+        "desc":"Learn more about UI-UX Product Design from industry professionals at top companies. The speakers will talk about their experience within UI-UX and Product Design, coming from Facebook, Twitch, Blizzard, WalletJoy and CloudSpot."
+    },
+    {
         "id":"x",
-        "name":"Meetings Suspended",
+        "name":"In-Person Meetings Suspended",
         "epoch":99573569000,
         "start":"",
         "end":"",

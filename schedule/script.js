@@ -17,6 +17,10 @@ $(function() {
     $("#next .name").text(nextEvent.name)
     $("#next .date").text(nextEvent.date)
     $("#next .time").text(nextEvent.start)
+    if ("link" in nextEvent) {
+        $("#next .link").attr("href", nextEvent.link)
+        $("#next .link").text(nextEvent.linkText)
+    }
     if (nextEvent.start == "") {
         $("#next").addClass("announcement")
         $("#next .title").text("Announcement")
