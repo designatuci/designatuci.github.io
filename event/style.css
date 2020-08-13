@@ -3,15 +3,18 @@
 }
 
 
-#nav .icon {
+#nav .icon, #navMobile .icon {
     display: table;
     width: 140px;
     background: url(icon.svg) center no-repeat;
     background-size: contain;
     border-radius: 1.5rem;
 }
-#nav .icon > div {
+#nav .icon > div, #navMobile .icon {
     padding-bottom: 30%;
+}
+#navMobile .icon {
+    width: 100px;
 }
 
 
