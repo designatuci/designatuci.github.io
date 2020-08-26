@@ -216,7 +216,7 @@ var EVENTS = [
         "location":"",
         "type":"Online Event",
         "link":"https://designatuci.com/event",
-        "linkText":"Sign up on the event page",
+        "linkText":"Event page",
         "desc":"Learn more about UI-UX Product Design from industry professionals at top companies. The speakers will talk about their experience within UI-UX and Product Design, coming from Facebook, Twitch, Blizzard, WalletJoy and CloudSpot."
     },
     {
