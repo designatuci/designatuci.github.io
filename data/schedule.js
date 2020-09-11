@@ -220,6 +220,19 @@ var EVENTS = [
         "desc":"Learn more about UI-UX Product Design from industry professionals at top companies. The speakers will talk about their experience within UI-UX and Product Design, coming from Facebook, Twitch, Blizzard, WalletJoy and CloudSpot."
     },
     {
+        "id":"OE-20-2",
+        "name":"Board Game Night",
+        "epoch":1600840800,
+        "start":"",
+        "end":"",
+        "date":"September 22 8:00 PM",
+        "location":"",
+        "type":"Online Event",
+        "link":"https://uci.zoom.us/j/92029637848",
+        "linkText":"Zoom Link",
+        "desc":"Join our first social event online! We will be playing a few online games together over zoom to hang out and get to know other members in the club. We hope to see you there! Come back to click on the zoom link when it starts to join us."
+    },
+    {
         "id":"x",
         "name":"In-Person Meetings Suspended",
         "epoch":99573569000,

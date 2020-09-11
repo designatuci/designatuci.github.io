@@ -11,6 +11,11 @@
         grid-template-columns: 1fr;
     }
 
+    #next .container {
+        grid-template-columns: 1fr;
+        gap: 8rem;
+    }
+
     #info {
         padding: 12% 8%;
     }
