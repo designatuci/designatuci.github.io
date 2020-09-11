@@ -230,7 +230,7 @@ var EVENTS = [
         "type":"Online Event",
         "link":"https://uci.zoom.us/j/92029637848",
         "linkText":"Zoom Link",
-        "desc":"Join our first social event online! We will be playing a few online games together over zoom to hang out and get to know other members in the club. We hope to see you there! Come back to click on the zoom link when it starts to join us."
+        "desc":"Join our first online social event! We will be playing a few online games together over zoom to hang out and get to know other members in the club. We hope to see you there! Come back to click on the zoom link when it starts to join us."
     },
     {
         "id":"x",
