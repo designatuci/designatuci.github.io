@@ -234,14 +234,14 @@ var EVENTS = [
     },
     {
         "id":"x",
-        "name":"In-Person Meetings Suspended",
+        "name":"New Online Events Soon",
         "epoch":99573569000,
         "start":"",
         "end":"",
         "date":"",
         "location":"",
         "type":"announcement",
-        "desc":"Due to the corona virus, UCI has shutdown its campus and switched to online mode. Our meetings have thus been suspended until further notice. Look out for any online events we may hold!"
+        "desc":"We'll be taking things online for the time being. Be sure to follow our social media pages and sign up for our newsletter to get notified!"
     }
     // {
     //     "id":"x",
