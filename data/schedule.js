@@ -243,7 +243,7 @@ var EVENTS = [
         "type":"Online Event",
         "link":"https://uci.zoom.us/j/98437625368",
         "linkText":"Zoom Link",
-        "desc":"Come meet our club and what we'll be up to this quarter! Say hello to our board members, and learn about our goals and plans for this quarter. We will also be answering any questions you have!"
+        "desc":"Come meet our club and see what we'll be up to this quarter! We will be introducing our board members, and describing our goals and plans for this quarter. We will also be answering any questions you have!"
     },
     {
         "id":"x",
