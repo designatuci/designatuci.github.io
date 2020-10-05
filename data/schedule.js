@@ -233,6 +233,19 @@ var EVENTS = [
         "desc":"Join our first online social event! We will be playing a few online games together over zoom to hang out and get to know other members in the club. We hope to see you there! Come back to click on the zoom link when it starts to join us."
     },
     {
+        "id":"OE-20-3",
+        "name":"Introductory Workshop",
+        "epoch":1602257400,
+        "start":"",
+        "end":"",
+        "date":"October 9 5:30 PM",
+        "location":"",
+        "type":"Online Event",
+        "link":"https://uci.zoom.us/j/98437625368",
+        "linkText":"Zoom Link",
+        "desc":"Come meet our club and what we'll be up to this quarter! Say hello to our board members, and learn about our goals and plans for this quarter. We will also be answering any questions you have!"
+    },
+    {
         "id":"x",
         "name":"New Online Events Soon",
         "epoch":99573569000,
