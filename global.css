@@ -1,11 +1,11 @@
 @font-face {
-    font-family: 'archivo';
+    font-family: 'main';
     src: url('/font/dmsans-bold-webfont.woff2') format('woff2'),
          url('/font/dmsans-bold-webfont.woff') format('woff');
     font-weight: bold; font-style: normal;
 }
 @font-face {
-    font-family: 'archivo';
+    font-family: 'main';
     src: url('/font/dmsans-medium-webfont.woff2') format('woff2'),
          url('/font/dmsans-medium-webfont.woff2') format('woff');
     font-weight: normal; font-style: normal;
@@ -25,7 +25,7 @@
 }
 
 * {
-    font-family: 'archivo', sans-serif;
+    font-family: 'main', sans-serif;
     font-size: 0;
     margin: 0;
     padding: 0;

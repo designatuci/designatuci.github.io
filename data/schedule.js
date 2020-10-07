@@ -235,7 +235,7 @@ var EVENTS = [
     {
         "id":"OE-20-3",
         "name":"Introductory Workshop",
-        "epoch":1602257400,
+        "epoch":1602318600,
         "start":"",
         "end":"",
         "date":"October 9 5:30 PM",
