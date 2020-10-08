@@ -16,3 +16,12 @@ function ready(wait = 0) {
     }, 200+wait);
 
 }
+
+
+function getTime() {
+
+    $.post("https://currentmillis.com/time/minutes-since-unix-epoch.php",(data)=>{
+        console.log(data)
+    })
+
+}
