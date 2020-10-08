@@ -1,0 +1,151 @@
+#nav {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+#nav > div:nth-of-type(2) { text-align: center; }
+#nav > div:nth-of-type(3) { text-align: right; padding-right: 2rem;}
+#nav .link {
+    cursor: pointer;
+}
+#nav .link.special {
+    font-size: 2rem;
+    background-color: var(--blue);
+    color: white;
+}
+#nav .link.special:hover {
+    background-color: var(--orange);
+}
+
+#nav .logo {
+    box-sizing: border-box;
+    font-size: 2rem;
+    padding-left: 6rem;
+    padding-top: 0.75rem;
+    background-position: center left;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+#first {
+    padding: 10%;
+}
+
+#first .center {
+    margin-top: 5rem;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#first .img > div {
+    padding-bottom: 60%;
+}
+#first h1 {
+    font-weight: bold;
+    font-style: italic;
+}
+#first p {
+    margin: auto;
+    max-width: 80rem;
+}
+#first .caption {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--blue);
+}
+
+#first .button {
+    cursor: pointer;
+    display: table;
+    margin: auto;
+    padding: 1rem 2rem;
+    padding-bottom: 1.25rem;
+    font-size: 2rem;
+    font-weight: bold;
+    background: var(--yellow);
+    color: white;
+    background: black;
+    border-radius: 4rem;
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(.43,.71,.12,1);
+}
+#first .button:hover {
+    background: var(--orange);
+    color: white;
+    transform: translateY(-0.5rem);
+}
+
+
+
+.section {
+    padding: 10rem;
+}
+.section h1.header {
+    text-align: center;
+    margin-bottom: 8rem;
+}
+
+
+
+
+
+.section.about {
+    background-color: black;
+    color: white;
+}
+.section.about p {
+    max-width: 80rem;
+    margin: auto;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+
+
+
+.section .faq {
+    
+}
+.section.faq .container {
+    width: 100%;
+    max-width: 136rem;
+    margin: auto;
+    position: relative;
+    padding: 2rem;
+    vertical-align: top;
+    text-align: center;
+}
+.section.faq .container .item {
+    text-align: left;
+    vertical-align: top;
+    width: 44%;
+    display: inline-block;
+    padding: 3%;
+    margin-bottom: 2rem;
+}
+
+.section.faq .container .item.long {
+    width: 90%;
+    display: table;
+}
+
+.section.faq .container .item .q {
+    color: var(--orange);
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.section.faq .container .item .a {
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+.section.faq .container .item .a a {
+    text-decoration: underline;
+}
+.section.faq .container .item .a a:hover {
+    color: var(--blue);
+}

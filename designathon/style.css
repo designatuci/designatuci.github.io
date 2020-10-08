@@ -1,63 +1,130 @@
-#nav {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-}
-#nav > div:nth-of-type(2) { text-align: center; }
-#nav > div:nth-of-type(3) { text-align: right; padding-right: 2rem;}
-#nav .link {
-    cursor: pointer;
-}
-#nav .link.special {
-    font-size: 2rem;
-    background-color: var(--blue);
-    color: white;
-}
-#nav .link.special:hover {
-    background-color: var(--orange);
-}
-
-#nav .logo {
-    box-sizing: border-box;
-    font-size: 2rem;
-    padding-left: 6rem;
-    padding-top: 0.75rem;
-    background-position: center left;
-    white-space: nowrap;
-    font-weight: bold;
-}
-
-#first {
-    padding: 10%;
-}
-
-#first .center {
-    margin-top: 5rem;
+html, body {
     width: 100%;
-    box-sizing: border-box;
-    text-align: center;
+    height: 100%;  
+}
+#main {
+    position: relative;
+    width: 100%;
+    max-width: 160rem;
+    min-height: 100%;
+    margin: auto;
+
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: 25rem 1fr;
 }
 
-#first .img > div {
-    padding-bottom: 60%;
+
+
+
+
+
+#navi {
+    padding: 5rem;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    box-sizing: border-box;
 }
-#first h1 {
+#navi .logo {
+    font-size: 2.5rem;
+    white-space: nowrap;
+    padding-left: 5rem;
+    background-position: left center;
+    height: 3rem;
+}
+#navi .links {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#navi .links .link {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    transition-duration: 0.2s;
+}
+#navi .links .link::before {
+    font-size: 3rem;
+    font-weight: bold;
+    content: "→";
+    position: absolute;
+    top: 50%;
+    color: var(--blue);
+    transform: translateY(-50%);
+    left: -8rem;
+    opacity: 0;
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(.31,1.57,.55,1);
+}
+#navi .links .link:hover {
+    color: var(--blue);
+}
+#navi .links .link.selected {
+    padding: 2rem 1rem;
+    font-size: 3rem;
+}
+#navi .links .link.selected::before {
+    opacity: 1;
+    left: -3rem;
+}
+
+
+
+
+
+#content {
+    position: relative;
+}
+#content h1 p {
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+#content h1.title {
+    font-size: 8rem;
     font-weight: bold;
     font-style: italic;
 }
-#first p {
-    margin: auto;
-    max-width: 80rem;
-}
-#first .caption {
+#content .caption {
     font-size: 3rem;
     font-weight: bold;
     color: var(--blue);
 }
 
-#first .button {
+.section {
+    position: relative;
+    box-sizing: border-box;
+    padding: 10rem;
+}
+.section p {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.section h1.header {
+    font-weight: bold;
+    margin-bottom: 8rem;
+    width: 100%;
+    padding: 2rem;
+    border-bottom: 2px dashed var(--orange);
+}
+
+
+
+
+.section.welcome {
+    height: 100vh;
+}
+.section.welcome .container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.section.welcome .button {
     cursor: pointer;
     display: table;
-    margin: auto;
     padding: 1rem 2rem;
     padding-bottom: 1.25rem;
     font-size: 2rem;
@@ -69,7 +136,7 @@
     transition-duration: 0.4s;
     transition-timing-function: cubic-bezier(.43,.71,.12,1);
 }
-#first .button:hover {
+.section.welcome .button:hover {
     background: var(--orange);
     color: white;
     transform: translateY(-0.5rem);
@@ -77,39 +144,6 @@
 
 
 
-.section {
-    padding: 10rem;
-}
-.section h1.header {
-    text-align: center;
-    margin-bottom: 8rem;
-}
-
-
-
-
-
-.section.about {
-    background-color: black;
-    color: white;
-}
-.section.about p {
-    max-width: 80rem;
-    margin: auto;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-}
-
-
-
-
-
-
-
-
-.section .faq {
-    
-}
 .section.faq .container {
     width: 100%;
     max-width: 136rem;
@@ -140,7 +174,7 @@
     margin-bottom: 1rem;
 }
 .section.faq .container .item .a {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     font-weight: normal;
 }
 .section.faq .container .item .a a {
