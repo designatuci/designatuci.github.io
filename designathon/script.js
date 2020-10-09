@@ -9,6 +9,8 @@ var lastVisit = ""
 
 function initialize() { 
 
+    $("#hero").height( $(window).height() )
+
     lastVisit = Cookie.get("lastVisitSpecial")
     if ( lastVisit == "" || parseInt(lastVisit) + 600 <= time() ) {
         $("body").addClass("longIntro")
