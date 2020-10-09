@@ -30,6 +30,7 @@ function scroll() { s = window.pageYOffset
     });
 
 
+
     if (s < window.innerWidth) {
         // const skew =  ( 25 * s / window.innerWidth )
         // const rotX =  ( -10 * s / window.innerWidth )
