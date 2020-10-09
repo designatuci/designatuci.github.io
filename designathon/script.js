@@ -11,12 +11,14 @@ function initialize() {
 
     $("#hero").height( $(window).height() )
 
+    initializeCountdown()
+
     lastVisit = Cookie.get("lastVisitSpecial")
     if ( lastVisit == "" || parseInt(lastVisit) + 600 <= time() ) {
         $("body").addClass("longIntro")
         setTimeout(() => {
             $("body").addClass("expand")
-        }, 800);
+        }, 1600);
         ready(200)
     } else {
         $("body").addClass("expand")
@@ -72,6 +74,27 @@ function time() {
 }
 
 
+
+function initializeCountdown() {
+    updateCountdown()
+    setInterval(() => {
+        updateCountdown()
+    }, 60000);
+}
+function updateCountdown() {
+    getGlobalTime((minutes)=>{
+        var time = minutes*60
+        var targetTime = 1604743140
+        const timeInterval = targetTime - time
+        console.log(timeInterval)
+        $("#timer .time").removeClass("loading")
+        $("#timer .time .days").text(Math.floor(timeInterval/86400))
+        $("#timer .time .hours").text(Math.floor((timeInterval/1440)%24))
+        $("#timer .time .minutes").text(Math.floor((timeInterval/60)%60))
+    })
+}
+
+
 function ready(wait = 0) {
 
     setTimeout(() => {
@@ -82,9 +105,9 @@ function ready(wait = 0) {
 
 
 function getGlobalTime(callback) {
-
+    // Minutes since epoch in PST
     $.post("https://currentmillis.com/time/minutes-since-unix-epoch.php",(data)=>{
-        callback(data)
+        callback(parseInt(data)+1020)
     })
 
 }
