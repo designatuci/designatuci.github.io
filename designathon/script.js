@@ -10,7 +10,7 @@ var lastVisit = ""
 function initialize() { 
 
     lastVisit = Cookie.get("lastVisitSpecial")
-    if ( lastVisit == "" || parseInt(lastVisit) + 1 <= time() ) {
+    if ( lastVisit == "" || parseInt(lastVisit) + 600 <= time() ) {
         $("body").addClass("longIntro")
         setTimeout(() => {
             $("body").addClass("expand")
