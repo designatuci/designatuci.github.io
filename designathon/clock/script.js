@@ -6,7 +6,7 @@ var elements = {}
 var gl
 var w,h = 0
 var run = false
-const RESOLUTION = 0.25  
+const RESOLUTION = 0.5  
 //
 //  Main start
 //

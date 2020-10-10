@@ -26,7 +26,7 @@ const float pi = 3.1415926535897932384626433832795;
 float circle(vec2 p, float radius, float period, float shift) {
     p.x += cos(period)*shift;
     p.y += sin(period)*shift;
-    return smoothstep(radius+0.015,radius-0.015,length(p));
+    return smoothstep(radius+0.012,radius-0.012,length(p));
 }
 
 vec3 colorBurn(vec3 a, vec3 b) {
@@ -63,7 +63,7 @@ void main() {
         float m = circle(p,                             // Position
                          -0.05 + intro*0.55 + 0.09*Tp,  // radius
                          i,                  // Period
-                         -0.3 + 0.55*intro + 0.04*-Tp);   // Shift
+                         -0.3 + 0.52*intro + 0.04*-Tp);   // Shift
         float ci = i;
         vec3 colora = vec3( 0.0 , 0.6, 1.0);
         vec3 colorb = vec3( 1.0, 0.23, 0.57);
