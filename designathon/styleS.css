@@ -13,19 +13,26 @@
     #top > div:nth-of-type(2) { text-align: right; }
 
 
-    #widgets {
 
-        position: relative;
-        height: 60rem;
-        margin-top: -15rem;
-    
+    #hero {
+        margin-bottom: 20rem;
+    }
+
+    #widgets {
+        margin-bottom: -20rem;
     }
     #widgets .container {
         margin: auto;
         padding: 0 10%;
         display: grid;
         grid-template-columns: 1fr;
-        gap: 10rem;
+        gap: 3rem;
+    }
+    #widgets p {
+        margin-bottom: 5rem;
+    }
+    #widgets .container > div:nth-of-type(2) {
+        text-align: left;
     }
 
     .section.faq .grid {
