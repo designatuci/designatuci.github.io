@@ -9,6 +9,8 @@ html, body {
     height: 100%;
 }
 body {
+    width: 100%;
+    box-sizing: border-box;
     overflow-x: hidden;
 }
 #main {
@@ -218,7 +220,7 @@ h2 {
     background: linear-gradient(#FC593D,#FFCC45A0,#01b7ff,#01b7ff50,#ffb7ff50);
     border-radius: 100%;
     transition-duration: 0;
-    transform: translateY(22%) rotateY(20deg); /*rotateY(20deg)*/
+    transform: translateY(15%) rotateY(20deg); /*rotateY(20deg)*/
 }
 .longIntro #flower .petal > div {
     transform: translateY(0) /*rotateY(20deg)*/;
@@ -226,7 +228,7 @@ h2 {
 }
 .longIntro.ready #flower .petal > div {
     transition-duration: 3s;
-    transform: translateY(22%) rotateY(20deg);
+    transform: translateY(15%) rotateY(20deg);
 }
 
 
