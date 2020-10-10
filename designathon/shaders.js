@@ -67,10 +67,10 @@ void main() {
         float ci = i;
         vec3 colora = vec3( 0.0 , 0.6, 1.0);
         vec3 colorb = vec3( 1.0, 0.23, 0.57);
-        vec3 colorc = vec3( 1.0, 0.88, 0.31);
-        vec3 color = mix(colora,colorb,sin(-T*0.33+p.y*4.8+p.x*2.4+intro*16.0+i*0.33)*0.5+0.5);
+        // vec3 colorc = vec3( 1.0, 0.77, 0.31);
+        vec3 color = mix(colora,colorb,sin(-T*0.33+p.y*2.4+p.x+intro*16.0+i*0.33)*0.5+0.5);
 
-        c = mix( c, pow(color/colorc,vec3(1.8))*0.4 + 0.6*c, m );
+        c = mix( c, pow(color,vec3(1.8)), m*0.3 );
 
     }
 
