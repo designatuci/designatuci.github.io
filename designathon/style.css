@@ -6,7 +6,10 @@
 
 html, body {
     width: 100%;
-    height: 100%;  
+    height: 100%;
+}
+body {
+    overflow-x: hidden;
 }
 #main {
     position: relative;
@@ -32,6 +35,10 @@ p {
 }
 h1 {
     font-size: 5rem;
+    font-weight: bold;
+}
+h2 {
+    font-size: 3rem;
     font-weight: bold;
 }
 
@@ -133,7 +140,6 @@ h1 {
 #hero {
     box-sizing: border-box;
     overflow: visible;
-    /* overflow-x: hidden; */
     position: relative;
     width: 100%;
     height: 100vh;
@@ -173,7 +179,9 @@ h1 {
 }
 
 #flower {
+    box-sizing: border-box;
     z-index: -1;
+    overflow: visible;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -210,7 +218,7 @@ h1 {
     background: linear-gradient(#FC593D,#FFCC45A0,#01b7ff,#01b7ff50,#ffb7ff50);
     border-radius: 100%;
     transition-duration: 0;
-    transform: translateY(13%) /*rotateY(20deg)*/;
+    transform: translateY(22%) rotateY(20deg); /*rotateY(20deg)*/
 }
 .longIntro #flower .petal > div {
     transform: translateY(0) /*rotateY(20deg)*/;
@@ -218,7 +226,7 @@ h1 {
 }
 .longIntro.ready #flower .petal > div {
     transition-duration: 3s;
-    transform: translateY(18%) rotateY(20deg);
+    transform: translateY(22%) rotateY(20deg);
 }
 
 
@@ -334,6 +342,9 @@ h1 {
     font-size: 2.5rem;
     margin-top: 5rem;
 }
+.section .header {
+    margin-bottom: 7rem;
+}
 
 
 .sectionBlender {
@@ -352,9 +363,7 @@ h1 {
 
 
 
-.section.faq .header {
-    margin-bottom: 10rem;
-}
+
 .section.faq .grid {
     position: relative;
     padding-right: -5%;
@@ -391,4 +400,50 @@ h1 {
 }
 .section.faq .grid .item .a a:hover {
     color: var(--blue);
+}
+
+
+
+
+
+
+
+.section.schedule h2 {
+    color: var(--blue);
+    margin-bottom: 3rem;
+}
+
+.section.schedule .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+.section.schedule .grid .item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    border-top: solid 1px var(--softGrey);
+    gap: 3rem;
+    padding: 1rem 0;
+}
+.section.schedule .grid .item .time {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.section.schedule .grid .item .time.highlight {
+    color: var(--orange);
+}
+.section.schedule .grid .item .title {
+    color: black;
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+.section.schedule .grid .item .desc {
+    color: var(--grey);
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+.section.schedule .grid .item .desc a {
+    text-decoration: underline;
 }

@@ -73,7 +73,9 @@ function time() {
     return Math.round(new Date() / 1000);
 }
 
-
+function resize() {
+    $("#hero").height( $(window).height() )
+}
 
 function initializeCountdown() {
     updateCountdown()

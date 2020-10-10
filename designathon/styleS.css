@@ -50,7 +50,19 @@
         font-size: 5rem;
     }
     #flower {
-        width: 90%;
+        width: 110%;
+    }
+
+
+    .section.schedule .grid .item {
+        display: grid;
+        grid-template-columns: 10rem 3fr ;
+        border-top: solid 1px var(--softGrey);
+        padding: 2rem 0;
+    }
+    .section.schedule .grid .item .desc {
+        padding-top: 2rem;
+        grid-column: 1/3;
     }
 
 
