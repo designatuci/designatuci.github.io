@@ -6,6 +6,12 @@ var resourceList = [
         img:"LawsOfUx.png",
         desc:"Learn more about the fundamental concepts and rules to make good UX and UI."
     }, {
+        title:"Introduction 2020",
+        link:"/files/F20S1.pdf",
+        type:"workshop",
+        img:"20FOct9.png",
+        desc:"Learn more about what we have in store."
+    }, {
         title:"Cracking the Design Interview",
         type:"workshop",
         link:"/files/W20W8.pdf",
