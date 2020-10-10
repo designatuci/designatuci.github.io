@@ -14,7 +14,7 @@ function initialize() {
     initializeCountdown()
 
     lastVisit = Cookie.get("lastVisitSpecial")
-    if ( lastVisit == "" || parseInt(lastVisit) + 600 <= time() ) {
+    if ( lastVisit == "" || parseInt(lastVisit) + 1 <= time() ) {
         $("body").addClass("longIntro")
         setTimeout(() => {
             $("body").addClass("expand")
