@@ -30,7 +30,7 @@ $(function() {
 
     for (i in EVENTS) {
         var event = EVENTS[i]
-        if (event.id == "x" || event.start != "") {
+        if (event.id == "x" || event.date != "") {
             // check for slide link
             var slidelink = ""
             if (event.slides != null) {

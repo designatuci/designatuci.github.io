@@ -247,6 +247,19 @@ var EVENTS = [
     },
     {
         "id":"OE-20-4",
+        "name":"Sticker Creation Workshop",
+        "epoch":1602928740,
+        "start":"",
+        "end":"",
+        "date":"October 16 5:30 PM",
+        "location":"",
+        "type":"Online Event",
+        "link":"https://uci.zoom.us/j/5080955339",
+        "linkText":"Zoom Link",
+        "desc":"Learn more about how we can create complex objects from just simple shapes like circles and squares. Also get advice on what makes great stickers!"
+    },
+    {
+        "id":"OE-20-5",
         "name":"Portfolio Review with Andrew Ku",
         "epoch":1603533540,
         "start":"",
