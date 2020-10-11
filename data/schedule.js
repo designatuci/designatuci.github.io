@@ -246,6 +246,19 @@ var EVENTS = [
         "desc":"Come meet our club and see what we'll be up to this quarter! We will be introducing our board members, and describing our goals and plans for this quarter. We will also be answering any questions you have!"
     },
     {
+        "id":"OE-20-4",
+        "name":"Portfolio Review with Andrew Ku",
+        "epoch":1603533540,
+        "start":"",
+        "end":"",
+        "date":"October 23 5:30 PM",
+        "location":"",
+        "type":"Online Event",
+        "link":"https://uci.zoom.us/j/5080955339",
+        "linkText":"Zoom Link",
+        "desc":"Andrew Ku, a UX designer at Google, is coming to give us tips and advice for designing portfolios! For a chance for him to review yours, send it to us at submit@designatuci.com"
+    },
+    {
         "id":"x",
         "name":"New Online Events Soon",
         "epoch":99573569000,
