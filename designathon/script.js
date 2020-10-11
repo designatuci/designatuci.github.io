@@ -129,7 +129,7 @@ function initialize() {
     // MARK: Main render loop
     elements.loop = ()=>{ elements.frames += 1
 
-        T = performance.now() * 0.001
+        T = (performance.now()-300.0) * 0.001
         gl.uniform1f(TUniformIndex, T)
 
         gl.clear(gl.DEPTH_BUFFER_BIT | gl.COLOR_BUFFER_BIT)
