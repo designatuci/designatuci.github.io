@@ -181,9 +181,10 @@ function resize() {
             elements.loop()
             resizeCooldown = true
             setTimeout(() => {
+                layout()
                 elements.loop()
                 resizeCooldown = false
-            }, 200);
+            }, 500);
         }
     }
 }
