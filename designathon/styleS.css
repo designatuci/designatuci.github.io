@@ -69,6 +69,9 @@
     }
 
 
+    .section.schedule .grid {
+        row-gap: 0;
+    }
     .section.schedule .grid .item {
         display: grid;
         grid-template-columns: 10rem 3fr ;
@@ -76,7 +79,9 @@
         padding: 2rem 0;
     }
     .section.schedule .grid .item .desc {
-        padding-top: 2rem;
+        padding-top: 0;
+        margin-top: -2rem;
+        margin-bottom: 2rem;
         grid-column: 1/3;
     }
 
