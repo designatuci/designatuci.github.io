@@ -106,7 +106,7 @@ h2 {
     border-radius: 5rem;
 }
 #top .metalink:hover {
-    background: white);
+    background: white;
 }
 .scrolled #top .metalink:hover {
     background: var(--softGrey);
