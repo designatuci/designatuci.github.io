@@ -41,7 +41,7 @@
 #nav .link.selected:hover {
     background: white;
 }
-/* #nav .link.noti::after {
+#nav .link.noti::after {
     background: var(--orange);
     position: absolute;
     content: "";
@@ -51,7 +51,13 @@
     position: absolute;
     top: 1rem;
     right: 1rem;
-} */
+    animation: redpulse 3s cubic-bezier(.18,.58,.75,.11) infinite;
+}
+@keyframes redpulse {
+    0% { background: var(--orange); }
+    50% { background: white; }
+    100% { background: var(--orange); }
+}
 #nav .link:hover {
     background: var(--softGrey);
 }

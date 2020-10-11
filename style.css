@@ -20,6 +20,22 @@
 
 
 
+
+#designathon {
+    display: block;
+    position: relative;
+    background: linear-gradient(-20deg,#886AFF,#1E3AFF);
+    height: 40rem;
+}
+#designathon .center {
+    height: 25rem;
+    width: 100%;
+    background: url(/banner.svg) center no-repeat;
+    background-size: contain;
+}
+
+
+
 #splash {
     overflow: hidden;
     display: grid;
