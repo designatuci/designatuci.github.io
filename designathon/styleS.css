@@ -60,6 +60,14 @@
         width: 110%;
     }
 
+    #widgets p {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+    #widgets p:nth-of-type(2) {
+        margin-bottom: 8rem;
+    }
+
 
     .section.schedule .grid .item {
         display: grid;
