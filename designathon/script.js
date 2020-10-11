@@ -129,15 +129,15 @@ function initialize() {
     // MARK: Main render loop
     elements.loop = ()=>{ elements.frames += 1
 
-        T = (performance.now()-300.0) * 0.001
+        T = Math.min((performance.now()-200.0) * 0.001, 8.0)
         gl.uniform1f(TUniformIndex, T)
 
         gl.clear(gl.DEPTH_BUFFER_BIT | gl.COLOR_BUFFER_BIT)
         gl.drawArrays(gl.TRIANGLES, 0, 6)
 
-        if (run&&T>12) {
+        if (run&&T==8) {
+            RESOLUTION = 2.0
             stop()
-            RESOLUTION = 1.0
             layout()
             elements.loop()
         }
@@ -172,10 +172,20 @@ function time() {
     return Math.round(new Date() / 1000);
 }
 
+resizeCooldown = false
 function resize() {
     $("#hero").css('min-height', $(window).height())
     layout()
-    if (!run) elements.loop()
+    if(!run) {
+        if (!resizeCooldown) {
+            elements.loop()
+            resizeCooldown = true
+            setTimeout(() => {
+                elements.loop()
+                resizeCooldown = false
+            }, 200);
+        }
+    }
 }
 
 function initializeCountdown() {
@@ -208,9 +218,7 @@ function ready(wait = 0) {
 
 function getGlobalTime(callback) {
     // Minutes since epoch in PST
-    console.log("request sent")
     $.post("https://currentmillis.com/time/minutes-since-unix-epoch.php",(data)=>{
-        console.log(data)
         callback(parseInt(data)+1020)
     })
 
@@ -249,7 +257,6 @@ function layout() {
     elements.view.width = w
     elements.view.height = h
     gl.viewport(0,0,w,h)
-
     if (elements.aspectRatio) {
         elements.aspectRatio = h/w
         gl.uniform1f(elements.screenUniformIndex, elements.aspectRatio)
