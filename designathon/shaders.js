@@ -23,10 +23,10 @@ varying vec2 uv;
 varying float T;
 const float pi = 3.1415926535897932384626433832795;
 
-float circle(vec2 p, float radius, float period, float shift) {
+float circle(vec2 p, float sharpness, float radius, float period, float shift) {
     p.x += cos(period)*shift;
     p.y += sin(period)*shift;
-    return smoothstep(radius+0.04,radius-0.04,length(p));
+    return smoothstep(radius+sharpness,radius-sharpness,length(p));
 }
 
 vec3 colorBurn(vec3 a, vec3 b) {
@@ -61,16 +61,17 @@ void main() {
     for (float i = 0.0; i < pi*1.9; i += pi*0.33333333) {
 
         float m = circle(p,                                 // Position
+                        0.001 + (1.0-intro)*0.07,                       // sharpness
                          -0.05 + intro*0.62,      // radius
                          i,                                 // Period
                          -0.33 + 0.57*intro);     // Shift
         if (m<0.001) continue; 
         float ci = i;
         vec3 colora = vec3( 0.08 , 0.35, 1.0);
-        vec3 colorb = vec3( 0.9, 0.40, 0.56);
+        vec3 colorb = vec3( 1.0, 0.49, 0.81);
         vec3 colorc = vec3( 1.0, 1.0, 1.0);
         vec3 color = mix(colora,colorb,sin(-T*0.33+p.y*2.4+p.x+intro*18.0+i*0.33)*0.5+0.5);
-        c += colorc * (length(p)*0.17+0.05);
+        c += (colorc * (length(p)*0.27+0.35))*(1.0-intro);
         c = mix( c, pow(color,vec3(1.8)), m*0.5*d );
 
     }

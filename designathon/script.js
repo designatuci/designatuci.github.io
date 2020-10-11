@@ -129,13 +129,13 @@ function initialize() {
     // MARK: Main render loop
     elements.loop = ()=>{ elements.frames += 1
 
-        T = Math.min((performance.now()-200.0) * 0.001, 8.0)
+        T = Math.min((performance.now()-200.0) * 0.001, 7.0)
         gl.uniform1f(TUniformIndex, T)
 
         gl.clear(gl.DEPTH_BUFFER_BIT | gl.COLOR_BUFFER_BIT)
         gl.drawArrays(gl.TRIANGLES, 0, 6)
 
-        if (run&&T==8) {
+        if (run&&T==7) {
             RESOLUTION = 2.0
             stop()
             layout()
