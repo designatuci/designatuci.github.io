@@ -19,11 +19,11 @@ function initialize() {
     initializeCountdown()
 
     lastVisit = Cookie.get("lastVisitSpecial")
-    if ( lastVisit == "" || parseInt(lastVisit) + 1 <= time() ) {
+    if ( lastVisit == "" || parseInt(lastVisit) + 1800 <= time() ) {
         $("body").addClass("longIntro")
         setTimeout(() => {
             $("body").addClass("expand")
-        }, 1600);
+        }, 2200);
         ready(200)
     } else {
         $("body").addClass("expand")
