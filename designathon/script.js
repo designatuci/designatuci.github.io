@@ -6,7 +6,7 @@ var elements = {}
 var gl
 var w,h = 0
 var run = false
-const RESOLUTION = 0.5  
+var RESOLUTION = 0.5  
 //
 //  Main start
 //
@@ -135,6 +135,13 @@ function initialize() {
         gl.clear(gl.DEPTH_BUFFER_BIT | gl.COLOR_BUFFER_BIT)
         gl.drawArrays(gl.TRIANGLES, 0, 6)
 
+        if (run&&T>12) {
+            stop()
+            RESOLUTION = 1.0
+            layout()
+            elements.loop()
+        }
+
         if (run) requestAnimationFrame(elements.loop)
     }
 
@@ -168,6 +175,7 @@ function time() {
 function resize() {
     $("#hero").css('min-height', $(window).height())
     layout()
+    if (!run) elements.loop()
 }
 
 function initializeCountdown() {
