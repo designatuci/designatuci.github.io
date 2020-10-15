@@ -61,17 +61,17 @@ void main() {
     for (float i = 0.0; i < pi*1.9; i += pi*0.33333333) {
 
         float m = circle(p,                                 // Position
-                        0.001 + (1.0-intro)*0.1,                       // sharpness
+                        0.002 + smoothstep(0.15,0.0,intro)*0.1,                       // sharpness
                          -0.05 + intro*0.62,      // radius
                          i,                                 // Period
                          -0.33 + 0.5*intro);     // Shift
         if (m<0.001) continue; 
         float ci = i;
         vec3 colora = vec3( 0.08 , 0.35, 1.0);
-        vec3 colorb = mix( vec3(1.1, 0.66, 0.0), vec3( 1.0, 0.49, 0.81), intro);
-        vec3 colorc = vec3( 1.0, 1.0, 1.0);
+        vec3 colorb = mix( vec3(0.9, 0.5, 0.0), vec3( 1.0, 0.49, 0.81), intro);
+        vec3 colorc = vec3( 1.0, 0.1, 0.7);
         vec3 color = mix(colora,colorb,sin(-T*0.33+p.y*2.4+p.x+intro*18.0+i*0.33)*0.5+0.5);
-        c += (color * (length(p)*0.27+0.35))*(1.0-intro);
+        // c += (color * (length(p)*0.27+0.35))*(1.0-intro);
         c = mix( c, pow(color,vec3(1.8)), m*0.5*d );
 
     }
