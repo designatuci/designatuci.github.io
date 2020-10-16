@@ -203,7 +203,7 @@ h2 {
 .expand #fallbackBackground {
     opacity: 1;
     transition-duration: 2s;
-    transition-delay: 1s;
+    transition-delay: 2.6s;
 }
 
 
