@@ -367,7 +367,7 @@ function iOS() {
   // iPad on iOS 13 detection
   || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
 }
-var RESOLUTION = 0.5  
+var RESOLUTION = 0.5
 if (iOS()) {
     RESOLUTION = 1.0
 }

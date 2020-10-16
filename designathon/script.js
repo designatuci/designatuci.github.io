@@ -68,6 +68,12 @@ function initialize() {
     // Initialize Shader
     elements.view = document.getElementById("view")
     gl = elements.view.getContext("webgl")
+    try {
+        gl = elements.view.getContext("webgl")
+    } catch (e) {
+        elements.view.remove()
+        return
+    }
     elements.gl = gl
 
     layout()
