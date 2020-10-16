@@ -47,7 +47,7 @@ void main() {
 
     float d = smoothstep(1.1,0.0,length(uv)-smoothstep(10.0,0.0,T)*1.0);
     if (d<0.01) { gl_FragColor = vec4(1.0); return; }
-    float intro = T*0.08;
+    float intro = T*0.09;
     if (intro<1.0)    intro = smoothstep(1.0,0.0,pow(1.0-intro,4.0));
     else                intro = 1.0;
     
@@ -61,7 +61,7 @@ void main() {
     for (float i = 0.0; i < pi*1.9; i += pi*0.33333333) {
 
         float m = circle(p,                                 // Position
-                        0.002 + smoothstep(0.15,0.0,intro)*0.1,                       // sharpness
+                        0.002 + smoothstep(0.15,0.0,intro)*0.1 + smoothstep(1.0,0.9,intro)*0.0012,                       // sharpness
                          -0.05 + intro*0.62,      // radius
                          i,                                 // Period
                          -0.33 + 0.5*intro);     // Shift

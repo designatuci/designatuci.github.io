@@ -53,7 +53,7 @@
             <p class="special">Mindfulness & Productivity</p>
         </div>
         <canvas id="view"></canvas>
-
+        <div id="fallbackBackground"></div>
         <div id="widgets">
             <div class="container">
                 <div>
@@ -367,8 +367,8 @@ function iOS() {
   // iPad on iOS 13 detection
   || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
 }
-var RESOLUTION = 0.75  
-if (ios()) {
+var RESOLUTION = 0.5  
+if (iOS()) {
     RESOLUTION = 1.0
 }
 </script>
