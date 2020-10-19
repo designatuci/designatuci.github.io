@@ -1,6 +1,7 @@
 //
 //  Variables
 //
+var startTime = 0 
 var lastVisit = ""
 var elements = {}
 var gl
@@ -134,7 +135,7 @@ function initialize() {
     // MARK: Main render loop
     elements.loop = ()=>{ elements.frames += 1
 
-        T = Math.min((performance.now()-500.0) * 0.001, 7.0)
+        T = Math.min((performance.now()-500.0-startTime) * 0.001, 7.0)
         gl.uniform1f(TUniformIndex, T)
 
         gl.clear(gl.DEPTH_BUFFER_BIT | gl.COLOR_BUFFER_BIT)
@@ -151,6 +152,7 @@ function initialize() {
     }
 
     // elements.loop()
+    startTime = performance.now()
     start()
 
 
