@@ -38,11 +38,12 @@ function initializeCountdown() {
 function updateCountdown() {
     getGlobalTime((minutes)=>{
         var time = minutes*60
-        var targetTime = 1604743140
+        console.log(time)
+        var targetTime = 1605337200 // Submission deadline: 1606057200
         const timeInterval = targetTime - time
         $("#timer .time").removeClass("loading")
         $("#timer .time .days").text(Math.floor(timeInterval/86400))
-        $("#timer .time .hours").text(Math.floor((timeInterval/1440)%24))
+        $("#timer .time .hours").text(Math.floor((timeInterval/3600)%24))
         $("#timer .time .minutes").text(Math.floor((timeInterval/60)%60))
     })
 }
@@ -60,12 +61,9 @@ function ready(wait = 0) {
 
 
 function getGlobalTime(callback) {
-    // Minutes since epoch in PST
-    console.log("request sent")
+    // Minutes since epoch in GMT
     $.post("https://currentmillis.com/time/minutes-since-unix-epoch.php",(data)=>{
-        console.log(data)
-        callback(parseInt(data)+1020)
+        callback(parseInt(data))
     })
-
 }
 

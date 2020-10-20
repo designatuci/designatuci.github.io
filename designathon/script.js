@@ -206,11 +206,11 @@ function updateCountdown() {
     getGlobalTime((minutes)=>{
         var time = minutes*60
         console.log(time)
-        var targetTime = 1605344400 // 1605348000 // 1605344400 // 1605344400 // 1605319140 // 1605315540 // 1605347940
+        var targetTime = 1605337200 // Submission deadline: 1606057200
         const timeInterval = targetTime - time
         $("#timer .time").removeClass("loading")
         $("#timer .time .days").text(Math.floor(timeInterval/86400))
-        $("#timer .time .hours").text(Math.floor((timeInterval/1440)%24))
+        $("#timer .time .hours").text(Math.floor((timeInterval/3600)%24))
         $("#timer .time .minutes").text(Math.floor((timeInterval/60)%60))
     })
 }
