@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'main';
+    src: url('/font/dmsans-bold-webfont.woff2') format('woff2'),
+         url('/font/dmsans-bold-webfont.woff') format('woff');
+    font-weight: bold; font-style: normal;
+}
+@font-face {
+    font-family: 'main';
+    src: url('/font/dmsans-medium-webfont.woff2') format('woff2'),
+         url('/font/dmsans-medium-webfont.woff2') format('woff');
+    font-weight: normal; font-style: normal;
+}
+
+:root {
+    --blue: #01B7FF;
+    --orange: #FC593D;
+    --yellow: #FFCC45;
+    --pink: #ff9ff4;
+    --deepBlue: #00007D;
+
+    --grey: #7A7A8D;
+    --softGrey: #E4E4E6;
+
+    --lightBlue: #CEF2FF;
+}
+
+* {
+    font-family: 'main', sans-serif;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}
+p, h1, h2 {
+    cursor: default;
+}
+
+html {
+    font-size: 8px;
+    background: white;
+}
+
+
+h1 {
+    font-weight: normal
+}
+p {
+    font-weight: normal;
+}
+a {
+    cursor: pointer;
+    font-size: inherit;
+    color: inherit;
+    text-decoration: inherit;
+}
+
+
+.center {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+@media only screen and (max-width: 900px) {
+
+    
+    html {
+        font-size: 6px;
+    }
+
+    
+}

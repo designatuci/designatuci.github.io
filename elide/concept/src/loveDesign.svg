@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:square;stroke-miterlimit:2;">
+    <g transform="matrix(0.707107,0.707107,-0.707107,0.707107,50,-17.7837)">
+        <path d="M65.05,70L30,70C18.962,70 10,61.038 10,50C10,38.962 18.962,30 30,30L30,29.871C30.07,18.892 39.005,10 50,10C61.038,10 70,18.962 70,30L70,44.909" style="fill:none;stroke:rgb(255,93,213);stroke-width:3px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,-10.7011,10.5129)">
+        <g transform="matrix(1,0,0,1,12.8118,-13.8883)">
+            <path d="M63.499,66.845L76.407,74.297L76.407,82.797L69.045,87.047L61.684,82.797L61.684,67.809C63.344,70.73 64.961,73.676 66.673,76.565C65.866,77.532 65.703,78.939 66.369,80.092C67.222,81.57 69.114,82.077 70.591,81.224C72.068,80.371 72.575,78.479 71.722,77.002C71.047,75.832 69.721,75.271 68.465,75.51C66.828,72.611 65.218,69.695 63.499,66.845Z"/>
+        </g>
+        <g transform="matrix(-0.564682,-0.978057,0.973384,-0.561983,71.3109,144.177)">
+            <rect x="45" y="38" width="2.737" height="11"/>
+        </g>
+    </g>
+    <circle cx="21.716" cy="24.643" r="3"/>
+    <g transform="matrix(1,0,0,1,28.2843,-1.24345e-14)">
+        <circle cx="21.716" cy="24.643" r="3"/>
+    </g>
+    <g transform="matrix(1,0,0,1,56.5685,-1.24345e-14)">
+        <circle cx="21.716" cy="24.643" r="3"/>
+    </g>
+    <g transform="matrix(1,0,0,1,1.77636e-15,28.2843)">
+        <circle cx="21.716" cy="24.643" r="3"/>
+    </g>
+    <g transform="matrix(1,0,0,1,56.5685,28.2843)">
+        <circle cx="21.716" cy="24.643" r="3"/>
+    </g>
+    <g transform="matrix(1.54885,0,0,1.54885,-27.4423,-44.5724)">
+        <path d="M53.229,84.44L46.77,84.44L46.77,77.981L53.229,77.981L53.229,84.44ZM48.71,79.921L48.71,82.5L51.289,82.5L51.289,79.921L48.71,79.921Z"/>
+    </g>
+</svg>

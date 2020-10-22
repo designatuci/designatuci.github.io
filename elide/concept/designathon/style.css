@@ -1,0 +1,421 @@
+@media only screen and (max-width: 900px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    width: 100%;
+    box-sizing: border-box;
+}
+#main {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    margin: auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+img.hide {
+    display: none;
+}
+
+
+p {
+    font-size: 2.5rem;
+}
+h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+#top {
+    z-index: 100;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    background-color: none;
+    opacity: 0;
+    color: black;
+}
+.scrolled #top {
+    background-color: white;
+}
+.longIntro #top {
+    opacity: 0;
+    transition-delay: 0.2s;
+    transform: translateY(-50%);
+}
+.expand #top {
+    opacity: 1;
+    transform: none;
+    transition-duration: 0.4s;
+}
+#top > div {
+    vertical-align: middle;
+    padding: 3rem;
+    transition-duration: 0.4s;
+}
+.scrolled #top > div {
+    vertical-align: middle;
+    padding: 1rem 3rem;
+}
+#top > div:nth-of-type(2) { text-align: center; }
+#top > div:nth-of-type(3) { text-align: right; }
+#top .logo.main {
+    display: inline-block;
+    z-index: 10;
+    font-size: 2rem;
+    white-space: nowrap;
+    padding: 1rem;
+    padding-left: 6rem;
+    margin-left: 1rem;
+    background-position: left center;
+    background-position-x: 1rem;
+    background-size: 3rem;
+    height: 2.5rem;
+    font-weight: bold;
+}
+#top .logo.main:hover {
+    background-image: url(/logo.svg);
+}
+#top .metalink {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2rem;
+    white-space: nowrap;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    border-radius: 5rem;
+}
+#top .metalink:hover {
+    background: white;
+}
+.scrolled #top .metalink:hover {
+    background: var(--softGrey);
+}
+#top .button {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2rem;
+    white-space: nowrap;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    border-radius: 5rem;
+    background: black;
+    color: white;
+    border-radius: 6rem;
+    padding: 1rem 2rem;
+}
+#top .button:hover {
+    background: var(--pink);
+}
+#top .button:hover {
+    animation: pulse 0.8s cubic-bezier(.59,.19,.36,.83) infinite;
+}
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0rem var(--pink); }
+    50% { box-shadow: 0 0 0 0.25rem var(--pink); }
+    100% { box-shadow: 0 0 0 0rem var(--pink); }
+}
+
+
+
+
+#hero {
+    box-sizing: border-box;
+    overflow: visible;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+/* .ready #hero {
+    transition-duration: 2s;
+    transition-delay: 1s;
+    height: 66vh;
+} */
+
+#hero .center {
+    color: white;
+    width: 100%;
+}
+/* #hero .title {
+    font-size: 8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+} */
+#hero .title {
+    width: 80%;
+    margin: auto;
+    max-width: 70rem;
+    background: url(logo-white.svg) center no-repeat;
+    background-size: contain;
+    height: 12rem;
+}
+#hero .special {
+    display: table;
+    margin: auto;
+    text-align: center;
+    font-size: 3rem;
+}
+#hero .caption {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+#view {
+    z-index: -1;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+.expand #timer {
+    transition-duration: 0.6s;
+    opacity: 1;
+}
+#timer .time {
+    margin-bottom: 2rem;
+}
+#timer .time .icon {
+    width: 4rem;
+    min-height: 4rem;
+    margin-bottom: -1rem;
+    margin-right: 2rem;
+    fill: none;
+    stroke: black;
+    stroke-width: 2px;
+    stroke-linecap: round;
+}
+#timer .time.loading .icon {
+    stroke-dasharray: 43px 20px;
+    animation: clockLoad 0.8s linear infinite;
+}
+#timer .icon .minutehand {
+    transform-origin: center;
+    animation: clockhand 12s linear infinite;
+}
+#timer .icon .hourhand {
+    transform-origin: center;
+    animation: clockhand 120s linear infinite;
+}
+#timer .time.loading .minutehand, #time .time.loading .hourhand {
+    opacity: 0;
+} 
+@keyframes clockhand {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@keyframes clockLoad {
+    0% { stroke-dashoffset: 63px; }
+    100% { stroke-dashoffset: 0; }
+}
+#timer .time > div {
+    display: inline;
+}
+#timer .time.loading {
+    color: transparent;
+}
+#timer .time > .number {
+    font-size: 3rem;
+    font-weight: normal;
+}
+#timer .time > .label {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+#timer .time > .label:last-of-type {
+    margin-right: unset;
+}
+
+
+
+
+#widgets {
+    position: absolute;
+    /* height: 30rem; */
+    bottom: 3rem; left: 0; right: 0;
+    width: 100%;
+    opacity: 0;
+}
+#widgets .container > div:nth-of-type(2) {
+    text-align: right;
+}
+.longIntro #widgets {
+    transform: translateY(10rem);
+    transition-timing-function: cubic-bezier(.17,.67,.31,1);
+}
+.longIntro #widgets {
+    transition-duration: 0.6s;
+}
+.expand #widgets {
+    transform: none;
+    opacity: 1;
+}
+#widgets .container {
+    font-size: 2rem;
+    margin: auto;
+    padding: 0 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25%;
+}
+#widgets p {
+    margin-bottom: 2rem;
+}
+#widgets a {
+    text-decoration: underline;
+}
+
+
+
+.section {
+    padding: 10%;
+}
+.section .container {
+    max-width: 120rem;
+    margin: auto;
+}
+.section p  {
+    font-size: 2.5rem;
+    margin-top: 5rem;
+}
+.section .header {
+    margin-bottom: 7rem;
+}
+
+
+.sectionBlender {
+    margin-bottom: -10%;
+}
+
+
+
+
+.section.about {
+    background-color: black;
+    color: white;
+}
+.section.about p {
+    color: var(--softGrey);
+}
+
+
+
+
+
+.section.faq {
+    background-color: var(--softGrey);
+}
+.section.faq .grid {
+    position: relative;
+    padding-right: -5%;
+    vertical-align: top;
+    text-align: justify;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+    padding-bottom: 0;
+}
+.section.faq .grid .item {
+    text-align: left;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.section.faq .grid .item.long {
+    grid-column: 1/3;
+    display: table;
+}
+
+.section.faq .grid .item .q {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.section.faq .grid .item .a {
+    color: var(--grey);
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+.section.faq .grid .item .a a {
+    text-decoration: underline;
+}
+.section.faq .grid .item .a a:hover {
+    color: var(--blue);
+}
+
+
+
+
+
+
+.section.schedule {
+    background: black;
+    color: white;
+}
+
+.section.schedule h2 {
+    color: var(--blue);
+    margin-bottom: 3rem;
+}
+
+.section.schedule .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+.section.schedule .grid .item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    border-top: solid 1px var(--grey);
+    gap: 3rem;
+    padding: 1rem 0;
+}
+.section.schedule .grid .item .time {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.section.schedule .grid .item .time.highlight {
+    color: var(--orange);
+}
+.section.schedule .grid .item .title {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+.section.schedule .grid .item .desc {
+    color: var(--grey);
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+.section.schedule .grid .item .desc a {
+    text-decoration: underline;
+}
