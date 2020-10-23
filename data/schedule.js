@@ -268,7 +268,7 @@ var EVENTS = [
         "date":"October 23 5:30 PM",
         "location":"",
         "type":"Online Event",
-        "link":"https://uci.zoom.us/j/5080955339",
+        "link":"https://uci.zoom.us/j/92836347732",
         "linkText":"Zoom Link",
         "desc":"Andrew Ku, a UX designer at Google, is coming to give us tips and advice for designing portfolios! For a chance for him to review yours, send it to us at submit@designatuci.com"
     },
