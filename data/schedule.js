@@ -273,6 +273,19 @@ var EVENTS = [
         "desc":"Andrew Ku, a UX designer at Google, is coming to give us tips and advice for designing portfolios! For a chance for him to review yours, send it to us at submit@designatuci.com"
     },
     {
+        "id":"OE-20-6",
+        "name":"Pivoting to UX Design with Frank Lee",
+        "epoch":1604134800,
+        "start":"",
+        "end":"",
+        "date":"October 30 5:30 PM",
+        "location":"",
+        "type":"Online Event",
+        "link":"https://uci.zoom.us/j/5080955339",
+        "linkText":"Zoom Link",
+        "desc":"Frank was a high school teacher for ten years, then decided to try a career change late 2018. Turned on to the idea of psychology and empathy in UX Design, he decided to give it a shot. Frank now works as a UX Designer at Microsoft, but the journey looked very different than what he imagined. He enjoys helping other aspiring UX Designers and likes to share his experiences and advice."
+    },
+    {
         "id":"x",
         "name":"New Online Events Soon",
         "epoch":99573569000,
