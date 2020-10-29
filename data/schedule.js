@@ -281,7 +281,7 @@ var EVENTS = [
         "date":"October 30 5:30 PM",
         "location":"",
         "type":"Online Event",
-        "link":"https://uci.zoom.us/j/5080955339",
+        "link":"https://uci.zoom.us/j/95309064591",
         "linkText":"Zoom Link",
         "desc":"Frank was a high school teacher for ten years, then decided to try a career change late 2018. Turned on to the idea of psychology and empathy in UX Design, he decided to give it a shot. Frank now works as a UX Designer at Microsoft, but the journey looked very different than what he imagined. He enjoys helping other aspiring UX Designers and likes to share his experiences and advice."
     },
