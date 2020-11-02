@@ -286,6 +286,19 @@ var EVENTS = [
         "desc":"Frank was a high school teacher for ten years, then decided to try a career change late 2018. Turned on to the idea of psychology and empathy in UX Design, he decided to give it a shot. Frank now works as a UX Designer at Microsoft, but the journey looked very different than what he imagined. He enjoys helping other aspiring UX Designers and likes to share his experiences and advice."
     },
     {
+        "id":"OE-20-7",
+        "name":"Notion For Designers",
+        "epoch":1604687400,
+        "start":"",
+        "end":"",
+        "date":"November 6 5:30 PM",
+        "location":"",
+        "type":"Online Workshop",
+        "link":"https://uci.zoom.us/j/5080955339",
+        "linkText":"Zoom Link",
+        "desc":"Learn how to use Notion and how you can use it to create a portfolio quickly, professionally, and for free! We'll briefly cover how UX designers use Notion to organize their work in the design process for the job search."
+    },
+    {
         "id":"x",
         "name":"New Online Events Soon",
         "epoch":99573569000,
