@@ -288,7 +288,7 @@ var EVENTS = [
     {
         "id":"OE-20-7",
         "name":"Notion For Designers",
-        "epoch":1604687400,
+        "epoch":1604739600,
         "start":"",
         "end":"",
         "date":"November 6 5:30 PM",
