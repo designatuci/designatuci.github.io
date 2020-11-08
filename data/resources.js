@@ -1,5 +1,11 @@
 var resourceList = [
     {
+        title:"Notion Workshop",
+        link:"/files/F20S2.pdf",
+        type:"workshop",
+        img:"20FNov6.png",
+        desc:"Learn about how notion is used as a tool for designers."
+    }, {
         title:"Laws of UX",
         link:"https://lawsofux.com",
         type:"guide",
