@@ -72,6 +72,9 @@
         width: 110%;
     }
 
+    #widgets {
+        margin-bottom: -30rem;
+    }
     #widgets p {
         font-size: 2rem;
         margin-bottom: 3rem;
