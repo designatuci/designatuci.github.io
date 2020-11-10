@@ -5,8 +5,14 @@ var lastVisit = ""
 var elements = {}
 let SCHEDULE = [
     {
-        start: 15340799,
+        start: 1605340799,
         note: "Time remaining to sign up"
+    },{
+        start: 1605920400,
+        note: "Time until Design-a-thon begins"
+    },{
+        start: 1606060800,
+        note: "Time until submissions are due"
     }
 ]
 //
