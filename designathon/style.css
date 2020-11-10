@@ -32,7 +32,7 @@ img.hide {
 
 
 p {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 h1 {
     font-size: 5rem;
@@ -218,38 +218,21 @@ h2 {
 #timer .time {
     margin-bottom: 2rem;
 }
+#timer .time.loading .icon {
+    opacity: 0;
+}
 #timer .time .icon {
+    opacity: 1;
+    transition-duration: 1s;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    background: url(stopwatch.svg) center no-repeat;
+    background-size: contain;
     width: 4rem;
     min-height: 4rem;
     margin-bottom: -1rem;
     margin-right: 2rem;
-    fill: none;
-    stroke: black;
-    stroke-width: 2px;
-    stroke-linecap: round;
-}
-#timer .time.loading .icon {
-    stroke-dasharray: 43px 20px;
-    animation: clockLoad 0.8s linear infinite;
-}
-#timer .icon .minutehand {
-    transform-origin: center;
-    animation: clockhand 12s linear infinite;
-}
-#timer .icon .hourhand {
-    transform-origin: center;
-    animation: clockhand 120s linear infinite;
-}
-#timer .time.loading .minutehand, #time .time.loading .hourhand {
-    opacity: 0;
-} 
-@keyframes clockhand {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-@keyframes clockLoad {
-    0% { stroke-dashoffset: 63px; }
-    100% { stroke-dashoffset: 0; }
 }
 #timer .time > div {
     display: inline;
@@ -277,7 +260,7 @@ h2 {
     z-index: 3;
     position: absolute;
     /* height: 30rem; */
-    bottom: 3rem; left: 0; right: 0;
+    bottom: 5rem; left: 0; right: 0;
     width: 100%;
     opacity: 0;
 }
@@ -324,7 +307,8 @@ h2 {
     margin-top: 3rem;
 }
 .section .header {
-    margin-bottom: 7rem;
+    font-size: 4rem;
+    margin-bottom: 5rem;
 }
 
 
@@ -334,14 +318,151 @@ h2 {
 
 
 
+.section.links {
+    padding: 1rem;
+    background-color: var(--softGrey);
+} 
+.section.links .links {
+    text-align: center;
+}
+.section.links .link {
+    display: inline-block;
+    margin: 1rem;
+    background: var(--ultraviolet);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 10rem;
+    box-shadow: 0 0 0 -2px var(--ultraviolet);
+    transition-duration: 0.2s;
+}
+.section.links .link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px -3px var(--ultraviolet);
+}
+.section.links .link.disabled {
+    background: black;
+    color: var(--grey);
+    cursor: not-allowed;
+} 
+.section.links .link.disabled:hover {
+    transform: none;
+    box-shadow: none;
+} 
+
+
 
 .section.about {
     background-color: black;
     color: white;
+    padding-top: 5%;
+}
+.section.about .img.sketch {
+    display: table;
+    background: url(sketch-logo.svg) center no-repeat;
+    background-size: contain;
+    width: 32rem;
+    height: 16rem;
+}
+.section.about .people {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    text-align: center;
+}
+.section.about .person .portrait {
+    position: relative;
+    display: table;
+    margin: auto;
+    width: 90%;
+    max-width: 12rem;
+    border-radius: 50rem;
+    background-color: var(--grey);
+    margin-bottom: 1rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section.about .person .name {
+    font-size: 2.5rem;
+    color: white;
+}
+.section.about .person .info {
+    color: var(--grey);
+    margin: 0;
+}
+
+.section.about .portrait > div { margin-bottom: 100%; }
+.section.about .split {
+    display: grid;
+    grid-template-columns: 50rem 1fr;
+    gap: 15rem;
 }
 .section.about p {
     color: var(--softGrey);
+    font-size: 2rem;
 }
+.section.about .header {
+    margin-top: 10rem;
+}
+.section.about > .header:first-child {
+    margin-top: 0;
+}
+
+
+.section.about .partners {
+    display: table;
+    margin-top: 5rem;
+}
+.section.about .partners p {
+    display: table;
+    margin: 0;
+    margin-top: 5rem;
+    color: var(--grey);
+}
+
+.section.about .prize .title {
+    display: table;
+    background: linear-gradient(-90deg, var(--blue),var(--ultraviolet));
+    color: white;
+    padding: 0.25rem 2rem;
+    border-radius: 5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.section.about .prize:nth-child(2) .title { background: linear-gradient(-90deg, var(--yellow),var(--orange)); }
+.section.about .prize:nth-child(3) .title { background: linear-gradient(-90deg, var(--pink),var(--red)); }
+.section.about .prizes .info {
+    line-height: 2rem;
+    margin-bottom: 5rem;
+}
+.section.about .prizes .info p {
+    position: relative;
+    padding-left: 2rem;
+    color: var(--softGrey);
+    margin-top: 2rem;
+}
+.section.about .prize {
+    margin-bottom: 5rem;
+}
+.section.about .prizes .info p::before {
+    display: table;
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    content: "";
+    color: white;
+    background: var(--ultraviolet);
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5rem;
+}
+.section.about .prize:nth-child(2) .info p::before { background: var(--orange); }
+.section.about .prize:nth-child(3) .info p::before { background: var(--red); }
 
 
 
@@ -357,8 +478,8 @@ h2 {
     text-align: justify;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10rem;
-    padding-bottom: 0;
+    gap: 5rem;
+    padding-bottom: 10rem;
 }
 .section.faq .grid .item {
     text-align: left;
@@ -378,7 +499,7 @@ h2 {
 }
 .section.faq .grid .item .a {
     color: var(--grey);
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: normal;
 }
 .section.faq .grid .item .a a {
@@ -431,7 +552,7 @@ h2 {
 }
 .section.schedule .grid .item .desc {
     color: var(--grey);
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: normal;
 }
 .section.schedule .grid .item .desc a {
@@ -442,11 +563,3 @@ h2 {
 }
 
 
-
-.section.extras .img.sketch {
-    display: table;
-    background: url(sketch-logo-light.svg) center no-repeat;
-    background-size: contain;
-    width: 32rem;
-    height: 16rem;
-}

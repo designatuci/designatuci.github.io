@@ -7,6 +7,18 @@ var elements = {}
 var gl
 var w,h = 0
 var run = false
+let SCHEDULE = [
+    {
+        start: 1605340799,
+        note: "Time remaining to sign up"
+    },{
+        start: 1605920400,
+        note: "Time until Design-a-thon begins"
+    },{
+        start: 1606060800,
+        note: "Time until submissions are due"
+    }
+]
 //
 //  Main start
 //
@@ -45,21 +57,21 @@ function initialize() {
             // fancy scroll
             if ( 0 < $('html').scrollTop() - $(scrollTo).offset().top) {
                 // downwards
-                $('html').scrollTop( $(scrollTo).offset().top + 20 )
+                $('html').scrollTop( $(scrollTo).offset().top + 64 )
                 $('html').animate({
-                    scrollTop: $(scrollTo).offset().top
+                    scrollTop: $(scrollTo).offset().top - 48
                 }, duration=300 )
             } else {
                 // upwards
-                $('html').scrollTop( $(scrollTo).offset().top - 20 )
+                $('html').scrollTop( $(scrollTo).offset().top - 64 )
                 $('html').animate({
-                    scrollTop: $(scrollTo).offset().top
+                    scrollTop: $(scrollTo).offset().top - 48
                 }, duration=300)
             }
         } else {
             // simple scroll
             $('html').animate({
-                scrollTop: $(scrollTo).offset().top
+                scrollTop: $(scrollTo).offset().top - 48
             }, 300)
         }
     });
@@ -198,20 +210,32 @@ function resize() {
 
 function initializeCountdown() {
     updateCountdown()
-    setInterval(() => {
-        updateCountdown()
-    }, 60000);
 }
+
 function updateCountdown() {
     getGlobalTime((minutes)=>{
         var time = minutes*60
-        console.log(time)
-        var targetTime = 1605337200 // Submission deadline: 1606057200
-        const timeInterval = targetTime - time
+        var i = 0
+        while (SCHEDULE[i].start < time) {
+            ++i
+            if (i>SCHEDULE.length-1) {
+                console.log("done")
+                $("#timer .time .days").text("0")
+                $("#timer .time .hours").text("0")
+                $("#timer .time .minutes").text("0")
+                $("#timer .text").text("Thanks for coming!")
+                return
+            }
+        }
+        const timeInterval = SCHEDULE[i].start - time
         $("#timer .time").removeClass("loading")
         $("#timer .time .days").text(Math.floor(timeInterval/86400))
         $("#timer .time .hours").text(Math.floor((timeInterval/3600)%24))
         $("#timer .time .minutes").text(Math.floor((timeInterval/60)%60))
+        $("#timer .text").text(SCHEDULE[i].note)
+        setTimeout(() => {
+            updateCountdown()
+        }, 60000);
     })
 }
 

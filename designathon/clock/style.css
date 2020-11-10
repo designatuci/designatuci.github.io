@@ -184,40 +184,6 @@ h2 {
 #timer .time {
     margin-bottom: 2rem;
 }
-#timer .time .icon {
-    display: block;
-    width: 10rem;
-    min-height: 10rem;
-    margin: auto;
-    margin-bottom: 5rem;
-    fill: none;
-    stroke: white;
-    stroke-width: 2px;
-    stroke-linecap: round;
-}
-#timer .time.loading .icon {
-    stroke-dasharray: 43px 20px;
-    animation: clockLoad 0.8s linear infinite;
-}
-#timer .icon .minutehand {
-    transform-origin: center;
-    animation: clockhand 30s linear infinite;
-}
-#timer .icon .hourhand {
-    transform-origin: center;
-    animation: clockhand 60s linear infinite;
-}
-#timer .time.loading .minutehand, #time .time.loading .hourhand {
-    opacity: 0;
-} 
-@keyframes clockhand {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-@keyframes clockLoad {
-    0% { stroke-dashoffset: 63px; }
-    100% { stroke-dashoffset: 0; }
-}
 #timer .time > div {
     display: inline;
 }
@@ -235,6 +201,17 @@ h2 {
 }
 #timer .time > .label:last-of-type {
     margin-right: unset;
+}
+#timer .time .icon {
+    display: table;
+    overflow: hidden;
+    position: relative;
+    background: url(stopwatch.svg) center no-repeat;
+    background-size: contain;
+    width: 10rem;
+    height: 10rem;
+    margin: auto;
+    margin-bottom: 5rem;
 }
 
 

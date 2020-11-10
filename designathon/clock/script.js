@@ -3,10 +3,12 @@
 //
 var lastVisit = ""
 var elements = {}
-var gl
-var w,h = 0
-var run = false
-const RESOLUTION = 0.5  
+let SCHEDULE = [
+    {
+        start: 15340799,
+        note: "Time remaining to sign up"
+    }
+]
 //
 //  Main start
 //
@@ -31,20 +33,31 @@ function initialize() {
 
 function initializeCountdown() {
     updateCountdown()
-    setInterval(() => {
-        updateCountdown()
-    }, 60000);
 }
 function updateCountdown() {
     getGlobalTime((minutes)=>{
         var time = minutes*60
-        console.log(time)
-        var targetTime = 1605337200 // Submission deadline: 1606057200
-        const timeInterval = targetTime - time
+        var i = 0
+        while (SCHEDULE[i].start < time) {
+            ++i
+            if (i>SCHEDULE.length-1) {
+                console.log("done")
+                $("#timer .time .days").text("0")
+                $("#timer .time .hours").text("0")
+                $("#timer .time .minutes").text("0")
+                $("#timer .text").text("Thanks for coming!")
+                return
+            }
+        }
+        const timeInterval = SCHEDULE[i].start - time
         $("#timer .time").removeClass("loading")
         $("#timer .time .days").text(Math.floor(timeInterval/86400))
         $("#timer .time .hours").text(Math.floor((timeInterval/3600)%24))
         $("#timer .time .minutes").text(Math.floor((timeInterval/60)%60))
+        $("#timer .text").text(SCHEDULE[i].note)
+        setTimeout(() => {
+            updateCountdown()
+        }, 60000);
     })
 }
 
