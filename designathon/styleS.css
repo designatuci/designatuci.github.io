@@ -73,7 +73,8 @@
     }
 
     #widgets {
-        margin-bottom: -30rem;
+        margin-bottom: -40rem;
+        height: 60rem;
     }
     #widgets p {
         font-size: 2rem;
