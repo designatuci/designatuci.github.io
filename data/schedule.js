@@ -299,6 +299,19 @@ var EVENTS = [
         "desc":"Learn how to use Notion and how you can use it to create a portfolio quickly, professionally, and for free! We'll briefly cover how UX designers use Notion to organize their work in the design process for the job search."
     },
     {
+        "id":"OE-20-8",
+        "name":"Ask me Anything: Life as a Freelance Designer",
+        "epoch":1605340800,
+        "start":"",
+        "end":"",
+        "date":"November 13, 5:30 PM",
+        "location":"",
+        "type":"Industry Speakers",
+        "link":"https://uci.zoom.us/j/5080955339",
+        "linkText":"Zoom Link",
+        "desc":"Meet a panel of several professional freelance designers. Get the opportunity to personally ask them your questions about their experience!"
+    },
+    {
         "id":"x",
         "name":"New Online Events Soon",
         "epoch":99573569000,
