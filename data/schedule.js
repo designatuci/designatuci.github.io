@@ -307,7 +307,7 @@ var EVENTS = [
         "date":"November 13, 5:30 PM",
         "location":"",
         "type":"Industry Speakers",
-        "link":"https://uci.zoom.us/j/5080955339",
+        "link":"https://uci.zoom.us/j/92083744565",
         "linkText":"Zoom Link",
         "desc":"Meet a panel of several professional freelance designers. Get the opportunity to personally ask them your questions about their experience!"
     },
