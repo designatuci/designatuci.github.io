@@ -337,6 +337,7 @@ h2 {
     box-shadow: 0 0 0 -2px var(--ultraviolet);
     transition-duration: 0.2s;
 }
+
 .section.links .link:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px -3px var(--ultraviolet);
@@ -542,9 +543,9 @@ h2 {
     font-weight: bold;
     margin-bottom: 1rem;
 }
-.section.schedule .grid .item .time.highlight {
-    color: var(--orange);
-}
+.section.schedule .grid .item .time.highlight { color: var(--orange); }
+.section.schedule .grid .item .title.highlight { color: var(--orange); }
+.section.schedule .grid .item .title.special { color: var(--pink); }
 .section.schedule .grid .item .title {
     color: white;
     font-size: 2.5rem;
