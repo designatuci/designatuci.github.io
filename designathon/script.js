@@ -12,11 +12,20 @@ let SCHEDULE = [
         start: 1605340799,
         note: "Time remaining to sign up"
     },{
-        start: 1605920400,
+        start: 1605922200,
         note: "Time until Design-a-thon begins"
     },{
         start: 1606060800,
         note: "Time until submissions are due"
+    },{
+        start: 1606086000,
+        note: "Time until finalists are announced"
+    },{
+        start: 1606095000,
+        note: "Time until finalist case studys are due"
+    },{
+        start: 1606101300,
+        note: "Time until winners are announced"
     }
 ]
 //
@@ -223,7 +232,7 @@ function updateCountdown() {
                 $("#timer .time .days").text("0")
                 $("#timer .time .hours").text("0")
                 $("#timer .time .minutes").text("0")
-                $("#timer .text").text("Thanks for coming!")
+                $("#timer .text").text("The event has ended. Thank you for coming!")
                 return
             }
         }
