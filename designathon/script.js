@@ -31,11 +31,11 @@ function initialize() {
     initializeCountdown()
 
     lastVisit = Cookie.get("lastVisitSpecial")
-    if ( lastVisit == "" || parseInt(lastVisit) + 86400 <= time() ) {
+    if ( lastVisit == "" || parseInt(lastVisit) + 864000 <= time() ) {
         $("body").addClass("longIntro")
         setTimeout(() => {
             $("body").addClass("expand")
-        }, 2200);
+        }, 1200);
         ready(200)
     } else {
         $("body").addClass("expand")
