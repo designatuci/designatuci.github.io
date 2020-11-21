@@ -48,7 +48,7 @@ h2 {
 
 #top {
     z-index: 100;
-    position: fixed;
+    position: absolute;
     top: 0; left: 0; right: 0;
     width: 100%;
     display: grid;
@@ -59,7 +59,7 @@ h2 {
 }
 #top > div {
     vertical-align: middle;
-    padding: 10rem;
+    padding: 5rem;
     transition-duration: 0.4s;
 }
 .scrolled #top > div {
@@ -127,7 +127,7 @@ h2 {
     overflow: visible;
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    height: 80vh;
 }
 /* .ready #hero {
     transition-duration: 2s;
@@ -252,3 +252,69 @@ h2 {
     text-decoration: underline;
 }
 
+
+
+
+
+
+
+.section.schedule {
+    background: black;
+    color: white;
+    padding-bottom: 128px;
+}
+.section.schedule .container {
+    width: 90%;
+    max-width: 1024px;
+    margin: auto;
+}
+
+.section.schedule h1.header {
+    margin-bottom: 5rem;
+    font-size: 3rem;
+    text-align: center;
+    color: var(--grey);
+}
+
+.section.schedule h2 {
+    color: var(--blue);
+    margin-bottom: 3rem;
+}
+
+.section.schedule .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+.section.schedule .grid .item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    border-top: solid 1px var(--grey);
+    gap: 3rem;
+    padding: 1rem 0;
+}
+.section.schedule .grid .item .time {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.section.schedule .grid .item .time.highlight { color: var(--orange); }
+.section.schedule .grid .item .title.highlight { color: var(--orange); }
+.section.schedule .grid .item .title.special { color: var(--pink); }
+.section.schedule .grid .item .title {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+.section.schedule .grid .item .desc {
+    color: var(--grey);
+    font-size: 2rem;
+    font-weight: normal;
+}
+.section.schedule .grid .item .desc a {
+    text-decoration: underline;
+}
+.section.schedule .grid .item .desc a:hover {
+    color: white;
+}

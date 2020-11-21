@@ -31,10 +31,7 @@ let SCHEDULE = [
 function initialize() { 
 
     // MARK: Regular Initialize
-    $("#hero").height( $(window).height() )
-
     ready()
-
 
 }
 
