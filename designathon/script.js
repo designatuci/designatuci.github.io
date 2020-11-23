@@ -23,9 +23,6 @@ let SCHEDULE = [
     },{
         start: 1606095000,
         note: "Time until finalist case studies are due"
-    },{
-        start: 1606101300,
-        note: "Time until winners are announced"
     }
 ]
 //
@@ -218,7 +215,7 @@ function resize() {
 }
 
 function initializeCountdown() {
-    updateCountdown()
+    // updateCountdown()
 }
 
 function updateCountdown() {
@@ -232,7 +229,7 @@ function updateCountdown() {
                 $("#timer .time .days").text("0")
                 $("#timer .time .hours").text("0")
                 $("#timer .time .minutes").text("0")
-                $("#timer .text").text("The event has ended. Thank you for coming!")
+                $("#timer .text").text(" ")
                 return
             }
         }

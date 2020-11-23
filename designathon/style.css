@@ -306,7 +306,7 @@ h2 {
     padding: 0 10rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 25%;
+    gap: 40%;
 }
 #widgets p {
     margin-bottom: 2rem;
