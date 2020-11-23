@@ -18,7 +18,7 @@ let SCHEDULE = [
         note: "Time until finalists are announced"
     },{
         start: 1606095000,
-        note: "Time until finalist case studys are due"
+        note: "Time until finalist case studies are due"
     },{
         start: 1606101300,
         note: "Time until winners are announced"
