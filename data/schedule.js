@@ -322,7 +322,7 @@ var EVENTS = [
         "type":"Project Teams",
         "link":"https://uci.zoom.us/j/99782269295",
         "linkText":"Zoom Link",
-        "desc":"Watch our Project Teams present what they've created over the past few weeks, including details what they learned and how they got there."
+        "desc":"Watch our Project Teams present what they've created over the past few weeks, including details about what they learned and how they got there."
     },
     {
         "id":"OE-20-10",
@@ -332,7 +332,7 @@ var EVENTS = [
         "end":"",
         "date":"December 4, 5:30 PM",
         "location":"",
-        "type":"Project Teams",
+        "type":"Industry Speaker",
         "link":"https://uci.zoom.us/j/5080955339",
         "linkText":"Zoom Link",
         "desc":"Are you interested in video game user experience? Design at UCI has invited a guest speaker who knows all about this great topic! Jeff Zhang is a UX and Game Designer working at Riot Games. Previously, he's worked on Teamfight Tactics and League of Legends. This meeting will be hosted through Zoom on December 4, 5:30 pm! Hope to see you this Friday!"
