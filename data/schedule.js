@@ -346,7 +346,7 @@ var EVENTS = [
         "date":"",
         "location":"",
         "type":"announcement",
-        "desc":"We'll be taking things online for the time being. Be sure to follow our social media pages and sign up for our newsletter to get notified!"
+        "desc":"Look out for new online events coming out soon! Be sure to follow our social media pages and sign up for our newsletter to get notified!"
     }
     // {
     //     "id":"x",
