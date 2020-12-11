@@ -1,5 +1,7 @@
 #first {
+    box-sizing: border-box;
     padding: 7%;
+    min-height: 95vh;
 }
 #first .miniseries .title {
     position: relative;
