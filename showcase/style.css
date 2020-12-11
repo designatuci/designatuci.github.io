@@ -41,12 +41,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 5rem;
 }
-.projects .project {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 3rem;
-    margin-bottom: 5rem;
-}
 .projects .project .logo {
     width: 5rem;
     height: 5rem;
@@ -64,6 +58,7 @@
     background-position: center;
     border-radius: 2rem;
     box-shadow: 0 1px 1px 1px var(--softGrey);
+    margin-bottom: 2rem;
 }
 .projects .project .img > div { padding-bottom: 62.5%; }
 .projects .project .category {
