@@ -1,8 +1,23 @@
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
+
 
     #first {
+        position: relative;
+        box-sizing: border-box;
+        text-align: center;
         padding: 5%;
     }
 
+
+    #mc_embed_signup_scroll {
+        max-width: none !important;
+    }
+
+    #first .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 1fr;
+        gap: 0rem;
+    }
 
 }

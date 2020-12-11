@@ -155,6 +155,7 @@ p {
 
 
 #navMobile {
+    z-index: 10;
     position: relative;
     display: none;
     max-height: 11rem;
@@ -170,7 +171,7 @@ p {
 #navMobile.open {
     transition-duration: 0.5s;
     transition-delay: 0s;
-    max-height: 51rem;
+    max-height: 59rem;
     border-bottom: solid 0.25rem var(--softGrey);
 }
 #navMobile .logo {

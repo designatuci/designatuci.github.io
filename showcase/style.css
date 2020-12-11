@@ -1,0 +1,98 @@
+#first {
+    padding: 7%;
+}
+#first .miniseries .title {
+    position: relative;
+    background: url(/src/miniseries.svg) center no-repeat;
+    background-size: contain;
+    width: 26rem;
+}
+#first .miniseries .title > div { padding-bottom: 16%; }
+
+#first .head {
+    font-size: 4rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 8rem;
+}
+#first .label, #first .miniseries {
+    opacity: 0;
+    transition-duration: 0.6s;
+    transform: translateY(1rem);
+}
+.ready #first .label, .ready #first .miniseries {
+    transform: none;
+    opacity: 1;
+}
+
+
+
+
+.head.designathon {
+    padding-left: 7rem;
+    height: 5rem;
+    background: url(logo-designathon.svg) left no-repeat;
+    background-size: contain;
+    display: table;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+}
+.projects .project {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+.projects .project .logo {
+    width: 5rem;
+    height: 5rem;
+    background: url(logo-designathon.svg) center no-repeat;
+    background-size: contain;
+    display: table;
+    margin-bottom: 3rem;
+}
+.projects .project .img {
+    display: block;
+    position: relative;
+    /* max-width: 50rem; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2rem;
+    box-shadow: 0 1px 1px 1px var(--softGrey);
+}
+.projects .project .img > div { padding-bottom: 62.5%; }
+.projects .project .category {
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--blue);
+    margin-bottom: 2rem;
+}
+.projects .project .title {
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.projects .project .title.big {
+    font-size: 3rem;
+}
+.projects .project .author {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.projects .project .button {
+    display: table;
+    font-size: 2rem;
+    padding: 0.75rem 2rem;
+    border-radius: 5rem;
+    background: black;
+    color: white;
+}
+.projects .project .button.special {
+    background: var(--ultraviolet);   
+}

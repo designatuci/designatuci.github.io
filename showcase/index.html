@@ -11,13 +11,14 @@
     <link rel="icon" href="/favicon/favicon192x.png" sizes="192x192">
     <link rel="apple-touch-icon" href="/favicon/favicon180x.png" sizes="180x180">
 
-    <title>Schedule – Design at UCI</title>
+    <title>Showcase – Design at UCI</title>
 
     <script src="/jq.js"></script>
     <script src="/global.js"></script>
     <script src="/main.js"></script>
+    <script src="/data/schedule.js?v=13"></script>
+    <script src="/data/resources.js?v=13"></script>
     <script src="script.js"></script>
-    <script src="/data/schedule.js?v=16"></script>
 
     <link rel="stylesheet" href="/global.css?v=13">
     <link rel="stylesheet" href="/ui.css?v=13">
@@ -30,9 +31,9 @@
 
     <div id="nav">
         <a href="/" class="logo"></a>
-        <a href="/schedule/" class="link selected">Schedule</a>
+        <a href="/schedule/" class="link">Schedule</a>
         <a href="/resources/" class="link">Resources</a>
-        <a href="/showcase/" class="link">Showcase</a>
+        <a href="/showcase/" class="link selected">Showcase</a>
         <a href="/about/" class="link">About</a>
         <a href="/contact/" class="link">Contact</a>
         <a href="/join/" class="link">Join</a>
@@ -55,60 +56,44 @@
     <div id="navGhost"></div>
 
 
-    <div id="modal" hidden="true">
-        <div class="container">
-            <div class="window">
+    <div id="first">
 
+
+
+        <div id="designathonProjects" class="projects">
+            <div class="project">
+                <div>
+                    <h1 class="head designathon">Design-a-thon</h1>
+                    <p class="title" style="margin-bottom: 1rem;">2020</p>
+                    <p class="author">Mindfulness & Productivity</p>
+                    <a class="button special" target="noreferer" href="/designathon/">Visit Website</a>
+                </div>
+            </div>
+            <div class="project">
+                <div>
+                    <a class="img" style="background-image:url(img-motivator.svg);" target="noreferer" href="https://www.figma.com/file/h5bJ9LHNDm1K3PYy0Ck1wk/UCI-Designathon-%E2%80%93-Team-396D84-Copy?node-id=85%3A0"><div></div></a>
+                </div>
+                <div>
+                    <p class="category">Best Overall</p>
+                    <p class="title">Motivator</p>
+                    <p class="author">Created by Allison Yick, Jonathan Lum, and Stephanie Chang</p>
+                    <a class="button" target="noreferer" href="https://www.figma.com/file/h5bJ9LHNDm1K3PYy0Ck1wk/UCI-Designathon-%E2%80%93-Team-396D84-Copy?node-id=85%3A0">View Prototype</a>
+                </div>
+            </div>
+            <div class="project">
+                <div>
+                    <a class="img" style="background-image:url(img-orin.svg);" target="noreferer" href="https://www.figma.com/file/uYMb1cJIA0JCn2twIbbIUE/Orin-Copy"><div></div></a>
+                </div>
+                <div>
+                    <p class="category">Honorable Mention</p>
+                    <p class="title">Orin</p>
+                    <p class="author">Created by Isha Godara</p>
+                    <a class="button" target="noreferer" href="https://www.figma.com/file/uYMb1cJIA0JCn2twIbbIUE/Orin-Copy">View Prototype</a>
+                </div>
             </div>
         </div>
-        <div id="modalExit"></div>
-    </div>
-    
-
-    <div id="next">
-        <!-- <div class="loadAnimation">
-            <svg viewbox="0 0 100 100">
-                <ellipse id="ballL" cx="15" cy="50" rx="10" ry="10" style="fill:black;" />
-                <ellipse id="ballM" cx="50" cy="50" rx="10" ry="10" style="fill:black;" />
-                <ellipse id="ballR" cx="85" cy="50" rx="10" ry="10" style="fill:black;" />
-            </svg>
-        </div> -->
-        <div  class="container">
-            <div class="left">
-                <h1 class="title">Upcoming Event</h1>
-                <h1 class="name"></h1>
-                <p class="date"></p>
-                <a href="none" class="link"></a>
-            </div>
-            <div class="right">
-                <p class="desc"></p>
-            </div>
-        </div>
-    </div>
 
 
-    <div id="info">
-        <p class="one">
-            Design at UCI meets about every week for various events. We may have special events that happen at special times. Be sure to follow us on our <a href="https://wwww.facebook.com/designatuci" target="_blank">facebook page</a> to get the latest updates regarding workshops, meetings and events.
-            <span class="A">We can't wait to see you!</span>
-        </p>
-            
-        <h1 id="all">Upcoming events</h1>
-        <div id="eventContainer" class="events">
-            <!-- <a href="/schedule/event/" class="event">
-                <p class="type">WORKSHOP</p>
-                <p>Aug 24 2019</p>
-                <h1>Typography</h1>
-            </a> -->
-        </div>
-        <h1>Past events</h1>
-        <div id="pastEventContainer" class="events">
-            <!-- <a href="/schedule/event/" class="event">
-                <p class="type">WORKSHOP</p>
-                <p>Aug 24 2019</p>
-                <h1>Typography</h1>
-            </a> -->
-        </div>
     </div>
 
     

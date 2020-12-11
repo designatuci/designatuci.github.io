@@ -67,7 +67,6 @@ $(function() {
                 <div href="/schedule/event/?id=${event.id}" class="event expandable">
                     <div class="exit"></div>
                     <p class="type">${event.type.toUpperCase()}</p>
-                    <p>${event.date}</p>
                     <h1>${event.name}</h1>
                     ${slidelink}
                     <p class="desc">${event.desc}</p>
