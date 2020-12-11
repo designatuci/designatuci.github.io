@@ -107,13 +107,16 @@
     opacity: 0;
 }
 .ready .animCard {
-    animation: card-in 1s cubic-bezier(.12,1,.36,1) forwards;
+    animation: card-in 1s 0.3s cubic-bezier(.12,1,.36,1) forwards;
 }
-.ready .animCard:nth-of-type(2) { animation-delay: 0.05s; }
-.ready .animCard:nth-of-type(3) { animation-delay: 0.10s; }
-.ready .animCard:nth-of-type(4) { animation-delay: 0.15s; }
-.ready .animCard:nth-of-type(5) { animation-delay: 0.20s; }
-.ready .animCard:nth-of-type(6) { animation-delay: 0.25s; }
+.ready .animCard:nth-child(1) { animation-delay: 0.00s; }
+.ready .animCard:nth-child(2) { animation-delay: 0.05s; }
+.ready .animCard:nth-child(3) { animation-delay: 0.10s; }
+.ready .animCard:nth-child(4) { animation-delay: 0.15s; }
+.ready .animCard:nth-child(5) { animation-delay: 0.20s; }
+.ready .animCard:nth-child(6) { animation-delay: 0.25s; }
+.ready .animCard:nth-child(7) { animation-delay: 0.30s; }
+.ready .animCard:nth-child(8) { animation-delay: 0.35s; }
 @keyframes card-in {
     0% {
         transform: translateY(5rem);
