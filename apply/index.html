@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Redirect</title>
+    <link rel="stylesheet" href="/global.css?v=13">
+</head>
+<body onclick="redirect()">
+
+    <h1>Click anywhere to redirect</h1>
+
+    <script>
+
+    function redirect() {
+        location.href = "https://docs.google.com/forms/d/e/1FAIpQLSdCLC64airsQ8LIMD_8QGtXvSbdotozcgVKQNrgqydYHVHSBw/viewform?usp=sf_link"
+    }
+
+    setTimeout(function(){
+        redirect()
+    },100)
+
+    </script>
+
+<style>
+
+    html, body {
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        width: 100%;
+        height: 100%;
+        background: black;
+        color: white;
+        cursor: pointer;
+    }
+    h1 {
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-size: 32px;
+        font-family: sans-serif;
+        position: absolute;
+        width: 90%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        opacity: 0;
+        animation: appear 0.2s 2s forwards;
+    }
+    @keyframes appear {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+
+</style>
+
+</body>
+</html>
