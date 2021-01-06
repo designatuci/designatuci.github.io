@@ -1,7 +1,6 @@
 $(function() {
 
 
-
     var timeNow = Math.round(new Date() / 1000);
     var nextEvent
     // Find and display next event
@@ -12,13 +11,18 @@ $(function() {
         }
     }
 
+
     $("#eventContainer").empty()
 
     $("#next .name").text(nextEvent.name)
     $("#next .date").text(nextEvent.date)
+    $("#next .time").text(nextEvent.start)
     if ("link" in nextEvent) {
         $("#next .link").attr("href", nextEvent.link)
         $("#next .link").text(nextEvent.linkText)
+    }
+    if (nextEvent.id == "x") {
+        $("#next .title").text(nextEvent.type)
     }
     if (nextEvent.type == "announcement") {
         $("#next").addClass("announcement")
@@ -27,6 +31,8 @@ $(function() {
     }
     $("#next .location").text(nextEvent.location)
     $("#next .desc").text(nextEvent.desc)
+
+    var upcomingCount = 0
 
     for (i in EVENTS) {
         var event = EVENTS[i]
@@ -38,6 +44,7 @@ $(function() {
             }
             if (event.epoch > timeNow) {
                 // Future event
+                upcomingCount += 1
                 if (event.id == "x") {
                     var element = `
                     <div class="event announce">
@@ -57,7 +64,6 @@ $(function() {
                         <h1>${event.name}</h1>
                         ${slidelink}
                         <p class="desc">${event.desc}</p>
-                        <div class="bg"></div>
                     </div>`
                     $("#eventContainer").append(element)
                 }
@@ -70,7 +76,6 @@ $(function() {
                     <h1>${event.name}</h1>
                     ${slidelink}
                     <p class="desc">${event.desc}</p>
-                    <div class="bg"></div>
                 </div>
                 `
                 $("#pastEventContainer").prepend(element)
@@ -79,7 +84,9 @@ $(function() {
 
     }
 
-
+    if (upcomingCount < 3) {
+        $("#upcomingEvents").remove()
+    }
 
 
 
@@ -115,15 +122,7 @@ $(function() {
         
     })
 
-
-
-
-
-
-
 }) // End of init func
-
-
 
 function ready(wait = 0) {
     setTimeout(() => {

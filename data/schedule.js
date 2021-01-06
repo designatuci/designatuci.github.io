@@ -338,15 +338,28 @@ var EVENTS = [
         "desc":"Are you interested in video game user experience? Design at UCI has invited a guest speaker who knows all about this great topic! Jeff Zhang is a UX and Game Designer working at Riot Games. Previously, he's worked on Teamfight Tactics and League of Legends. This meeting will be hosted through Zoom on December 4, 5:30 pm! Hope to see you this Friday!"
     },
     {
+        "id":"OE-21-1",
+        "name":"Logo Creation with Simple Shapes and the Golden Ratio",
+        "epoch":1610179200,
+        "start":"6:00pm",
+        "end":"",
+        "date":"January 8",
+        "location":"Online Event",
+        "type":"Online Workshop",
+        "link":"https://uci.zoom.us/j/5080955339",
+        "linkText":"Zoom Link",
+        "desc":"This week, we'll be going over the golden ratio and how it's used in logo design! We'll be playing around with simple shapes and the pathfinder tool in Figma in a live demonstration, so this is a great hands on workshop for Figma beginners!"
+    },
+    {
         "id":"x",
-        "name":"New Online Events Soon",
-        "epoch":99573569000,
+        "name":"More Soon",
+        "epoch":999573569000,
         "start":"",
         "end":"",
         "date":"",
         "location":"",
-        "type":"announcement",
-        "desc":"Look out for new online events coming out soon! Be sure to follow our social media pages and sign up for our newsletter to get notified!"
+        "type":"Stay Tuned",
+        "desc":"We are currently working on new events for our members. Join our social media pages now to get notified when we release new events and more."
     }
     // {
     //     "id":"x",

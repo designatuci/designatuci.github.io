@@ -13,7 +13,7 @@
 
     #next .container {
         grid-template-columns: 1fr;
-        gap: 8rem;
+        gap: 0;
     }
 
     #info {
