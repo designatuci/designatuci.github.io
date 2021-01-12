@@ -351,6 +351,19 @@ var EVENTS = [
         "desc":"This week, we'll be going over the golden ratio and how it's used in logo design! We'll be playing around with simple shapes and the pathfinder tool in Figma in a live demonstration, so this is a great hands on workshop for Figma beginners!"
     },
     {
+        "id":"OE-21-2",
+        "name":"Elements of Editorial Design",
+        "epoch":1610785800,
+        "start":"6:00pm",
+        "end":"",
+        "date":"Friday, January 15",
+        "location":"Online Event",
+        "type":"Online Workshop",
+        "link":"https://uci.zoom.us/j/5080955339",
+        "linkText":"Zoom Link",
+        "desc":"This week we'll be dissecting magazine spreads and learning about the elements that go into a page design! Get to know your fellow Design at UCI members in this more chill workshop: we'll be splitting off into breakout rooms and designing pages together in Figma!"
+    },
+    {
         "id":"x",
         "name":"More Soon",
         "epoch":999573569000,
