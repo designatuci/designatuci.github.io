@@ -1,7 +1,7 @@
 $(function() {
 
 
-    var timeNow = Math.round(new Date() / 1000);
+    var timeNow = Math.floor((new Date()).getTime() / 1000)
     var nextEvent
     // Find and display next event
     for (i in EVENTS) {
