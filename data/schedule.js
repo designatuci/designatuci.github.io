@@ -364,6 +364,32 @@ var EVENTS = [
         "desc":"This week we'll be dissecting magazine spreads and learning about the elements that go into a page design! Get to know your fellow Design at UCI members in this more chill workshop: we'll be splitting off into breakout rooms and designing pages together in Figma!"
     },
     {
+        "id":"OE-21-3",
+        "name":"Basic Components in Figma",
+        "epoch":1611370800,
+        "start":"6:00pm",
+        "end":"",
+        "date":"Friday, January 22",
+        "location":"Online Event",
+        "type":"Online Workshop",
+        "link":"https://uci.zoom.us/j/5080955339",
+        "linkText":"Zoom Link",
+        "desc":"Components can really speed up your workflow, but are intimidating to learn. Join us this week for a follow-along demo on the basics of using components in Figma! There will also be an Escape Room social event right after this event."
+    },
+    {
+        "id":"OE-21-4",
+        "name":"Escape Room Social",
+        "epoch":1611378000,
+        "start":"7:00pm",
+        "end":"",
+        "date":"Friday, January 22",
+        "location":"Online Event",
+        "type":"Social Event",
+        "link":"https://uci.zoom.us/j/5080955339",
+        "linkText":"Zoom Link",
+        "desc":"Right after our meeting, we will be hosting an Escape Room Social. Join us for the chance to hang out with the design community as we solve the mystery!"
+    },
+    {
         "id":"x",
         "name":"More Soon",
         "epoch":999573569000,
