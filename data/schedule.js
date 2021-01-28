@@ -400,7 +400,7 @@ var EVENTS = [
         "type":"Networking Event",
         "link":"https://uci.zoom.us/j/5080955339",
         "linkText":"Zoom Link",
-        "desc":"Manifest at UCI will be presenting their startups and opening up opportunities to deisngers like you to get connected!"
+        "desc":"Let’s make some new connections! Design at UCI will be collaborating with the awesome individuals from Manifest. Bringing together student start-ups, this will be a great opportunity for you to grow your portfolio as these companies will be looking for UX designers to join their new exciting projects!"
     },
     {
         "id":"OE-21-6",
@@ -413,7 +413,7 @@ var EVENTS = [
         "type":"Social Event",
         "link":"https://discord.com/invite/MBVrKe9",
         "linkText":"Discord Inviation",
-        "desc":"Hang out with your fellow designers on Discord to chill out with some designs, or have fun with some games together."
+        "desc":"We will be having Design Study Hours through our Discord! Take this time to relax and meet some awesome people!"
     },
     {
         "id":"x",
