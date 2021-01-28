@@ -390,6 +390,32 @@ var EVENTS = [
         "desc":"Right after our meeting, we will be hosting an Escape Room Social. Join us for the chance to hang out with the design community as we solve the mystery!"
     },
     {
+        "id":"OE-21-5",
+        "name":"Manifest x Design Pitch and Collaboration",
+        "epoch":1611973800,
+        "start":"6:00pm",
+        "end":"",
+        "date":"Friday, January 29",
+        "location":"Online Event",
+        "type":"Networking Event",
+        "link":"https://uci.zoom.us/j/5080955339",
+        "linkText":"Zoom Link",
+        "desc":"Manifest at UCI will be presenting their startups and opening up opportunities to deisngers like you to get connected!"
+    },
+    {
+        "id":"OE-21-6",
+        "name":"Design study hours",
+        "epoch":1611976200,
+        "start":"6:30pm",
+        "end":"",
+        "date":"Friday, January 29",
+        "location":"Online Event",
+        "type":"Social Event",
+        "link":"https://discord.com/invite/MBVrKe9",
+        "linkText":"Discord Inviation",
+        "desc":"Hang out with your fellow designers on Discord to chill out with some designs, or have fun with some games together."
+    },
+    {
         "id":"x",
         "name":"More Soon",
         "epoch":999573569000,
