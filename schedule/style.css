@@ -41,6 +41,22 @@
 #next .link[href="none"] {
     display: none;
 }
+#next .desc .portrait {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    margin-right: 3rem;
+    width: 96px;
+    height: 96px;
+    float: left;
+}
+#modal .desc .portrait {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    margin-right: 3rem;
+    width: 96px;
+    height: 96px;
+    float: left;
+}
 
 
 #next .container {

@@ -30,7 +30,7 @@ $(function() {
         $("#next .container").removeAttr("href")
     }
     $("#next .location").text(nextEvent.location)
-    $("#next .desc").text(nextEvent.desc)
+    $("#next .desc").html(nextEvent.desc)
 
     var upcomingCount = 0
 

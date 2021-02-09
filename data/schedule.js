@@ -416,6 +416,32 @@ var EVENTS = [
         "desc":"We will be having Design Study Hours through our Discord! Take this time to relax and meet some awesome people!"
     },
     {
+        "id":"OE-21-7",
+        "name":"We’re Not Really Strangers Virtual Card Game Social",
+        "epoch":1613104200,
+        "start":"7:30PM",
+        "end":"",
+        "date":"Thursday, Feb 11",
+        "location":"Online Event",
+        "type":"Social Event",
+        "link":"https://uci.zoom.us/j/91616027376",
+        "linkText":"Zoom Link",
+        "desc":"We're playing the 'We’re Not Really Strangers' card game virtually! Card dealers will read off one question at a time, and we will go around the virtual room and one person answers one question (You can opt for a different one if you feel uncomfortable sharing). A fun game that is meant to deepen existing relationships and create new ones!"
+    },
+    {
+        "id":"OE-21-8",
+        "name":"Differences Between In-House & AgencyProduct Design",
+        "epoch":1613185200,
+        "start":"6:00PM",
+        "end":"",
+        "date":"Friday, Feb 12",
+        "location":"Online Event",
+        "type":"Industry Speaker",
+        "link":"https://uci.zoom.us/j/5080955339",
+        "linkText":"Zoom Link",
+        "desc":"Join our two live industry guest speakers talk about the differences between in-house product design and agency product design.<br/><img src=\"/data/imgs/vinson-gotingco.png\" class=\"portrait\"><br/>Hi I’m Vinson Gotingco, an experience designer with 4 years of experience in the industry. I started off at UCI as a computer science major (when IC21 was the intro course. I’m that old.) , but coding wasn’t really for me. I was more interested in the work I was doing as a graphic designer at the bookstore. I eventually switched into informatics and the rest is history.<br/><img src=\"/data/imgs/nathaniel-valerio.png\" class=\"portrait\"><br/>Hi I’m Nathaniel Valerio, a Product Designer currently at Mixpanel. I previously worked as a designer on Firebase as well as many other different industries. I am a self taught designer, who like Vinson, at UCI, saw coding was not my cup of tea and thus took up Informatics. I was inspired to enter the creative world from my time as a dancer."
+    },
+    {
         "id":"x",
         "name":"More Soon",
         "epoch":999573569000,
