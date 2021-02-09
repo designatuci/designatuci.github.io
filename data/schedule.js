@@ -430,7 +430,7 @@ var EVENTS = [
     },
     {
         "id":"OE-21-8",
-        "name":"Differences Between In-House & AgencyProduct Design",
+        "name":"Differences Between In-House & Agency Product Design",
         "epoch":1613185200,
         "start":"6:00PM",
         "end":"",
