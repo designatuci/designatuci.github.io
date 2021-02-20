@@ -442,6 +442,19 @@ var EVENTS = [
         "desc":"Join our two live industry guest speakers talk about the differences between in-house product design and agency product design.<br/><img src=\"/data/imgs/vinson-gotingco.png\" class=\"portrait\"><br/>Hi I’m Vinson Gotingco, an experience designer with 4 years of experience in the industry. I started off at UCI as a computer science major (when IC21 was the intro course. I’m that old.) , but coding wasn’t really for me. I was more interested in the work I was doing as a graphic designer at the bookstore. I eventually switched into informatics and the rest is history.<br/><img src=\"/data/imgs/nathaniel-valerio.png\" class=\"portrait\"><br/>Hi I’m Nathaniel Valerio, a Product Designer currently at Mixpanel. I previously worked as a designer on Firebase as well as many other different industries. I am a self taught designer, who like Vinson, at UCI, saw coding was not my cup of tea and thus took up Informatics. I was inspired to enter the creative world from my time as a dancer."
     },
     {
+        "id":"OE-21-9",
+        "name":"Marketing Design",
+        "epoch":1613797200,
+        "start":"6:00PM",
+        "end":"",
+        "date":"Friday, Feb 19",
+        "location":"Online Event",
+        "type":"Workshop",
+        "link":"https://uci.zoom.us/j/5080955339",
+        "linkText":"Zoom Link",
+        "desc":"This week we'll be talking about the kinds of questions designers in the marketing space have to consider in their designs. We'll be covering things like landing page conversion practices, what A/B testing is, and the role marketing designers in the companies they work for."
+    },
+    {
         "id":"x",
         "name":"More Soon",
         "epoch":999573569000,
