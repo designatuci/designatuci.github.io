@@ -455,6 +455,19 @@ var EVENTS = [
         "desc":"This week we'll be talking about the kinds of questions designers in the marketing space have to consider in their designs. We'll be covering things like landing page conversion practices, what A/B testing is, and the role marketing designers in the companies they work for."
     },
     {
+        "id":"OE-21-10",
+        "name":"How to Nail a UX interview",
+        "epoch":1614394800,
+        "start":"6:00PM",
+        "end":"",
+        "date":"Friday, Feb 26",
+        "location":"Online Event",
+        "type":"Industry Speaker",
+        "link":"https://uci.zoom.us/j/5080955339",
+        "linkText":"Zoom Link",
+        "desc":"Originally from Hawaii, Chris Ota started off designing and building websites after graduating community college 13 years ago. He packed his bags in 2015 and moved to San Francisco with no job lined up, looking for a new chapter in his life. Starting from the bottom as a product designer, Chris has been at Lyft for about 3.5 years now, focused on patient transportation to and from their appointments. Besides his day to day, he helps with interviewing full time and intern candidates, does design mentorship at work, and is an active mentor with ADPList."
+    },
+    {
         "id":"x",
         "name":"More Soon",
         "epoch":999573569000,
