@@ -456,7 +456,7 @@ var EVENTS = [
     },
     {
         "id":"OE-21-10",
-        "name":"How to Nail your UX interview",
+        "name":"How to Nail your UX Interview",
         "epoch":1614394800,
         "start":"6:00PM",
         "end":"",
