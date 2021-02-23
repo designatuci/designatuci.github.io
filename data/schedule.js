@@ -463,7 +463,7 @@ var EVENTS = [
         "date":"Friday, Feb 26",
         "location":"Online Event",
         "type":"Industry Speaker",
-        "link":"https://uci.zoom.us/j/5080955339",
+        "link":"https://uci.zoom.us/j/96275532919",
         "linkText":"Zoom Link",
         "desc":"Originally from Hawaii, Chris Ota started off designing and building websites after graduating community college 13 years ago. He packed his bags in 2015 and moved to San Francisco with no job lined up, looking for a new chapter in his life. Starting from the bottom as a product designer, Chris has been at Lyft for about 3.5 years now, focused on patient transportation to and from their appointments. Besides his day to day, he helps with interviewing full time and intern candidates, does design mentorship at work, and is an active mentor with ADPList."
     },
