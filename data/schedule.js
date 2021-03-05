@@ -468,6 +468,19 @@ var EVENTS = [
         "desc":"Originally from Hawaii, Chris Ota started off designing and building websites after graduating community college 13 years ago. He packed his bags in 2015 and moved to San Francisco with no job lined up, looking for a new chapter in his life. Starting from the bottom as a product designer, Chris has been at Lyft for about 3.5 years now, focused on patient transportation to and from their appointments. Besides his day to day, he helps with interviewing full time and intern candidates, does design mentorship at work, and is an active mentor with ADPList."
     },
     {
+        "id":"OE-21-11",
+        "name":"Project Teams Presentation",
+        "epoch":1615006800,
+        "start":"6:00PM",
+        "end":"",
+        "date":"Friday, March 5",
+        "location":"Online Event",
+        "type":"Project Teams",
+        "link":"https://uci.zoom.us/j/5080955339",
+        "linkText":"Zoom Link",
+        "desc":"This week we will have Winter Project Teams Presentations on Friday! Design at UCI Project Teams is a 4-week program catered for UCI students to practice creating a product, building technical skills, and working in a group. The theme for this quarter was one-ended so members were allowed to go creative with their projects! Let's support our Project Teams as they present their awesome products!"
+    },
+    {
         "id":"x",
         "name":"More Soon",
         "epoch":999573569000,
