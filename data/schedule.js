@@ -456,7 +456,7 @@ var EVENTS = [
     },
     {
         "id":"OE-21-10",
-        "name":"How to Nail your UX Interview",
+        "name":"How to Nail your UX Interview with Chris Ota",
         "epoch":1614394800,
         "start":"6:00PM",
         "end":"",
@@ -479,6 +479,19 @@ var EVENTS = [
         "link":"https://uci.zoom.us/j/5080955339",
         "linkText":"Zoom Link",
         "desc":"This week we will have Winter Project Teams Presentations on Friday! Design at UCI Project Teams is a 4-week program catered for UCI students to practice creating a product, building technical skills, and working in a group. The theme for this quarter was one-ended so members were allowed to go creative with their projects! Let's support our Project Teams as they present their awesome products!"
+    },
+    {
+        "id":"OE-21-12",
+        "name":"Introduction to UX with Jane Chang",
+        "epoch":1615604400,
+        "start":"6:00PM",
+        "end":"",
+        "date":"Friday, March 12",
+        "location":"Online Event",
+        "type":"Industry Speaker",
+        "link":"https://uci.zoom.us/j/5080955339",
+        "linkText":"Zoom Link",
+        "desc":"Jane is a Product Design Lead at Google in Irvine/Seattle. Before Google, she worked for Walt Disney, Universal Pictures, Toyota/Lexus, Apple, Volkswagen AG and led product design in the cybersecurity space. She started her career in the agency world at Saatchi & Saatchi and RPA, and led design at TBWA/Chiat/Day. She studied Graphic Design at NYU and received her Master's in Visual Communication from Johns Hopkins University. Jane currently lives in Irvine with her husband and 6-year-old son."
     },
     {
         "id":"x",
