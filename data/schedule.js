@@ -489,7 +489,7 @@ var EVENTS = [
         "date":"Friday, March 12",
         "location":"Online Event",
         "type":"Industry Speaker",
-        "link":"https://uci.zoom.us/j/5080955339",
+        "link":"https://uci.zoom.us/j/98550215133",
         "linkText":"Zoom Link",
         "desc":"Jane is a Product Design Lead at Google in Irvine/Seattle. Before Google, she worked for Walt Disney, Universal Pictures, Toyota/Lexus, Apple, Volkswagen AG and led product design in the cybersecurity space. She started her career in the agency world at Saatchi & Saatchi and RPA, and led design at TBWA/Chiat/Day. She studied Graphic Design at NYU and received her Master's in Visual Communication from Johns Hopkins University. Jane currently lives in Irvine with her husband and 6-year-old son."
     },
