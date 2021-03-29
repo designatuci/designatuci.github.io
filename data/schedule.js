@@ -494,6 +494,19 @@ var EVENTS = [
         "desc":"Jane is a Product Design Lead at Google in Irvine/Seattle. Before Google, she worked for Walt Disney, Universal Pictures, Toyota/Lexus, Apple, Volkswagen AG and led product design in the cybersecurity space. She started her career in the agency world at Saatchi & Saatchi and RPA, and led design at TBWA/Chiat/Day. She studied Graphic Design at NYU and received her Master's in Visual Communication from Johns Hopkins University. Jane currently lives in Irvine with her husband and 6-year-old son."
     },
     {
+        "id":"e21Apr2a",
+        "name":"The Basics of UX Recruiting",
+        "epoch":1617415200,
+        "start":"6:00PM",
+        "end":"",
+        "date":"Friday, April 2",
+        "location":"Online Event",
+        "type":"Workshop",
+        "link":"https://uci.zoom.us/j/5080955339",
+        "linkText":"Zoom Link",
+        "desc":"Portfolios? Resumes? What's a whiteboard challenge? Are you interested in applying for UI/UX roles, but don't know what to expect? We'll be going over the different kinds of UX jobs, tips on the job application process, and how to position yourself for a design role no matter your major."
+    },
+    {
         "id":"x",
         "name":"More Soon",
         "epoch":999573569000,
