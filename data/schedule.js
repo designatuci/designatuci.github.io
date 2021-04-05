@@ -507,6 +507,32 @@ var EVENTS = [
         "desc":"Portfolios? Resumes? What's a whiteboard challenge? Are you interested in applying for UI/UX roles, but don't know what to expect? We'll be going over the different kinds of UX jobs, tips on the job application process, and how to position yourself for a design role no matter your major."
     },
     {
+        "id":"e21Apr8a",
+        "name":"Persuasive Design with Marketing Association",
+        "epoch":1617933600,
+        "start":"6:30PM",
+        "end":"",
+        "date":"Thursday, April 8",
+        "location":"Online Event",
+        "type":"Workshop",
+        "link":"https://uci.zoom.us/j/5080955339",
+        "linkText":"Zoom Link",
+        "desc":"Join us for this exciting collab workshop with Marketing Association as we explore persuasive design: design principles based on human behavior and psychology! How do these principles influence decision-making, and how can both designers and marketers use this knowledge to their advantage to create better user experiences and increased conversions? Don’t miss out on this special cross-subject deep dive into the effects of persuasive design in guiding users towards marketing goals!"
+    },
+    {
+        "id":"e21Apr9a",
+        "name":"Ask Me Anything: Student Intern Panel",
+        "epoch":1618020000,
+        "start":"6:00PM",
+        "end":"",
+        "date":"Friday, April 9",
+        "location":"Online Event",
+        "type":"AMA",
+        "link":"https://uci.zoom.us/j/5080955339",
+        "linkText":"Zoom Link",
+        "desc":"Join us for an \"ask-me-anything\" panel from fellow UCI students on how they've landed design internships and roles! We'll be discussing personal tips from our own job application processes, so come prepared with questions or just come chat for a chill time!"
+    },
+    {
         "id":"x",
         "name":"More Soon",
         "epoch":999573569000,
