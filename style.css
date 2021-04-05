@@ -19,6 +19,24 @@
 }
 
 
+#alert {
+    display: block;
+    position: absolute;
+    bottom: -32px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px 32px;
+    font-size: 16px;
+    color: white;
+    background: linear-gradient(90deg,var(--ultraviolet),var(--blue));
+    opacity: 0;
+    animation: alert-in 0.6s 0.4s forwards;
+    transform-origin: top;
+}
+@keyframes alert-in {
+    0% { opacity: 0; transform: scaleY(0); }
+    100% { opacity: 1; transform: none; }
+}
 
 
 #designathon {
