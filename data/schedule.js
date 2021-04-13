@@ -533,6 +533,32 @@ var EVENTS = [
         "desc":"Join us for an \"ask-me-anything\" panel from fellow UCI students on how they've landed design internships and roles! We'll be discussing personal tips from our own job application processes, so come prepared with questions or just come chat for a chill time!"
     },
     {
+        "id":"e21Apr16a",
+        "name":"How to Conduct User Iterviews",
+        "epoch":1618624200,
+        "start":"6:00PM",
+        "end":"",
+        "date":"Friday, April 12",
+        "location":"Online Event",
+        "type":"Workshop",
+        "link":"https://uci.zoom.us/j/5080955339",
+        "linkText":"Zoom Link",
+        "desc":"UX designers utilize user interviews early in the design process to understand the audience they are designing for. How do you organize a user interview? We'll be going over the basics in this workshop so you'll be ready to conduct user interviews for your own projects! We will also be hosting an after-event social, 'Something in Common', so stick around to the end and get to know each other!"
+    },
+    {
+        "id":"e21Apr16b",
+        "name":"Something in Common",
+        "epoch":1618626600,
+        "start":"6:00PM",
+        "end":"",
+        "date":"Friday, April 12",
+        "location":"Online Event",
+        "type":"Social",
+        "link":"https://uci.zoom.us/j/5080955339",
+        "linkText":"Zoom Link",
+        "desc":"Get to know your fellow designers better! We’ll put memebers into groups and they'll work together to find something in common in several different rounds. More limitations will be added each round to increase difficulty."
+    },
+    {
         "id":"x",
         "name":"More Soon",
         "epoch":999573569000,
