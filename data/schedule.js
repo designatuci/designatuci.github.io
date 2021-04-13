@@ -556,7 +556,7 @@ var EVENTS = [
         "type":"Social",
         "link":"https://uci.zoom.us/j/5080955339",
         "linkText":"Zoom Link",
-        "desc":"Get to know your fellow designers better! We’ll put memebers into groups and they'll work together to find something in common in several different rounds. More limitations will be added each round to increase difficulty."
+        "desc":"Get to know your fellow designers better! We’ll put participants into groups and they'll work together to find something in common in several different rounds. More limitations will be added each round to increase difficulty."
     },
     {
         "id":"x",
