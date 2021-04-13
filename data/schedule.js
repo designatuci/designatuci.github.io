@@ -549,7 +549,7 @@ var EVENTS = [
         "id":"e21Apr16b",
         "name":"Something in Common",
         "epoch":1618626600,
-        "start":"6:00PM",
+        "start":"7:00PM",
         "end":"",
         "date":"Friday, April 12",
         "location":"Online Event",
