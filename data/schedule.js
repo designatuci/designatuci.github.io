@@ -559,6 +559,19 @@ var EVENTS = [
         "desc":"Get to know your fellow designers better! We’ll put participants into groups and they'll work together to find something in common in several different rounds. More limitations will be added each round to increase difficulty."
     },
     {
+        "id":"e21Apr23a",
+        "name":"Happy Hour Social",
+        "epoch":1619229600,
+        "start":"6:00PM",
+        "end":"",
+        "date":"Friday, April 23",
+        "location":"Online Event",
+        "type":"Social",
+        "link":"https://discord.com/invite/MBVrKe9",
+        "linkText":"Join Discord",
+        "desc":"This week, we will have a happy hour to chill after classes, bond with one another, and relax with your favorite drink (non-alcoholic drinks for anyone underage ofc ;). We will also have a live tutorial on how to make a Mojito 🥴. The event will be hosted over Discord at 6pm, so let's meet, make drinks, and chat with videos on!  We can always switch to playing games or wherever the night leads."
+    },
+    {
         "id":"x",
         "name":"More Soon",
         "epoch":999573569000,
