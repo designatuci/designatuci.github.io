@@ -572,6 +572,19 @@ var EVENTS = [
         "desc":"This week, we will have a happy hour to chill after classes, bond with one another, and relax with your favorite drink (non-alcoholic drinks for anyone underage ofc ;). We will also have a live tutorial on how to make a Mojito 🥴. The event will be hosted over Discord at 6pm, so let's meet, make drinks, and chat with videos on!  We can always switch to playing games or wherever the night leads."
     },
     {
+        "id":"e21may7a",
+        "name":"Social Media Marketing",
+        "epoch":1620439200,
+        "start":"6:00PM",
+        "end":"",
+        "date":"Friday, May 7",
+        "location":"Online Event",
+        "type":"Workshop",
+        "link":"https://uci.zoom.us/j/5080955339",
+        "linkText":"Zoom Link",
+        "desc":"Are you a board member of a campus organization that’s struggling with marketing? Join Design at UCI’s crash course on marketing specifically for student organizations! We’ll be going over some basic aspects of branding such as logo, flyer, and web design that you can utilize to attract more attention on campus. As a design based organization, we’ll also be sharing some of our own marketing tips and tricks that have been effective for our club!"
+    },
+    {
         "id":"x",
         "name":"More Soon",
         "epoch":999573569000,
