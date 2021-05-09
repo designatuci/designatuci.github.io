@@ -28,7 +28,8 @@
     padding: 8px 32px;
     font-size: 16px;
     color: white;
-    background: linear-gradient(90deg,var(--ultraviolet),var(--blue));
+    background: linear-gradient(90deg,var(--blue) 62%, white);
+    text-shadow: 1px 1px 24px var(--ultraviolet);
     opacity: 0;
     animation: alert-in 0.6s 0.4s forwards;
     transform-origin: top;

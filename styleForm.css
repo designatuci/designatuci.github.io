@@ -39,6 +39,7 @@
 
 
 #mc_embed_signup input {
+    display: block;
     text-align: left;
     position: relative;
     box-sizing: border-box;
@@ -46,7 +47,8 @@
     width: 100%;
     border: none;
     box-shadow: none;
-
+    outline: none;
+    appearance: none;
 }
 
 
@@ -57,6 +59,9 @@
 }
 #mc_embed_signup input:focus {
     color: black;
+    border-color: var(--blue);
+    box-shadow: 0 1px 4px var(--blue);
+    z-index: 1;
 }
 
 
@@ -90,6 +95,12 @@
     background: black;
     color: white;
     text-align: right;
+    transition-duration: 0.3s;
+}
+#mc_embed_signup #mc-embedded-subscribe:hover, #mc_embed_signup #mc-embedded-subscribe:active {
+    transition-duration: 0s;
+    background: var(--blue);
+    border-color: var(--blue);
 }
 
 
