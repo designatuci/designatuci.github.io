@@ -595,7 +595,7 @@ var EVENTS = [
         "type":"Social",
         "link":"https://discord.com/invite/MBVrKe9",
         "linkText":"Discord Link",
-        "desc":"Are you a board member of a campus organization that’s struggling with marketing? Join Design at UCI’s crash course on marketing specifically for student organizations! We’ll be going over some basic aspects of branding such as logo, flyer, and web design that you can utilize to attract more attention on campus. As a design based organization, we’ll also be sharing some of our own marketing tips and tricks that have been effective for our club!"
+        "desc":"This week we will be having a game night social. Come hang out with peers and board as we play some virtual games together. This event will take place on Discord at 6PM so join our server by this Friday! Let's have some fun!"
     },
     {
         "id":"x",
