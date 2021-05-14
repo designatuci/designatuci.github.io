@@ -594,7 +594,7 @@ var EVENTS = [
         "location":"Online Event",
         "type":"Social",
         "link":"https://discord.com/invite/MBVrKe9",
-        "linkText":"Zoom Link",
+        "linkText":"Discord Link",
         "desc":"Are you a board member of a campus organization that’s struggling with marketing? Join Design at UCI’s crash course on marketing specifically for student organizations! We’ll be going over some basic aspects of branding such as logo, flyer, and web design that you can utilize to attract more attention on campus. As a design based organization, we’ll also be sharing some of our own marketing tips and tricks that have been effective for our club!"
     },
     {
