@@ -598,6 +598,19 @@ var EVENTS = [
         "desc":"This week we will be having a game night social. Come hang out with peers and board as we play some virtual games together. This event will take place on Discord at 6PM so join our server by this Friday! Let's have some fun!"
     },
     {
+        "id":"e21may28a",
+        "name":"Project Teams Presentations",
+        "epoch":1622253600,
+        "start":"6:00PM",
+        "end":"",
+        "date":"Friday, May 28",
+        "location":"Online Event",
+        "type":"Project Teams",
+        "link":"https://uci.zoom.us/j/5080955339",
+        "linkText":"Zoom Link",
+        "desc":"It's almost the end of Spring Quarter! You know what that means... Project Teams Presentations! The theme was open-ended so participants were allowed to go creative with their projects. Attend the meeting this Friday to see what our teams have made!"
+    },
+    {
         "id":"x",
         "name":"More Soon",
         "epoch":999573569000,
